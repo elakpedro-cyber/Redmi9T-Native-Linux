@@ -1,0 +1,76 @@
+{"event":"input_dispatch","method":"CreateSession","start_us":4875186493,"elapsed_us":4482}
+{"event":"input_dispatch","method":"Start","start_us":4875192649,"elapsed_us":4099}
+{"event":"input_dispatch","method":"NotifyKeyboardKeycode","start_us":4875198335,"elapsed_us":3718}
+{"event":"input_dispatch","method":"NotifyKeyboardKeycode","start_us":4875202754,"elapsed_us":68864}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4877772899,"elapsed_us":3631}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4877776900,"elapsed_us":5387}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4877818501,"elapsed_us":70066}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4877888958,"elapsed_us":3723}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4877928880,"elapsed_us":18664}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4877948105,"elapsed_us":38654}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878022784,"elapsed_us":11455}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878034847,"elapsed_us":44933}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878116647,"elapsed_us":5367}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878122455,"elapsed_us":44184}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878204893,"elapsed_us":9688}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878214949,"elapsed_us":42140}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878293041,"elapsed_us":25123}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878318491,"elapsed_us":40706}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878396894,"elapsed_us":22815}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878420207,"elapsed_us":40875}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878500663,"elapsed_us":19947}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878521832,"elapsed_us":3108}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878561697,"elapsed_us":33596}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878596398,"elapsed_us":6096}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878638606,"elapsed_us":28958}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878667854,"elapsed_us":5120}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878709071,"elapsed_us":33878}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878743339,"elapsed_us":6949}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878785883,"elapsed_us":46504}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878832846,"elapsed_us":35383}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878903891,"elapsed_us":3563}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878907823,"elapsed_us":3646}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878947575,"elapsed_us":4182}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4878952445,"elapsed_us":40410}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879028824,"elapsed_us":7340}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879036646,"elapsed_us":40302}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879113050,"elapsed_us":5721}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879119208,"elapsed_us":39994}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879195386,"elapsed_us":5860}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879201811,"elapsed_us":40754}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879278391,"elapsed_us":7571}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879286398,"elapsed_us":41987}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879364386,"elapsed_us":5783}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879370699,"elapsed_us":40186}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879446946,"elapsed_us":4700}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879452269,"elapsed_us":41972}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879529905,"elapsed_us":5087}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879535402,"elapsed_us":41288}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879612984,"elapsed_us":4489}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879618004,"elapsed_us":38918}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879693076,"elapsed_us":6398}
+{"event":"input_dispatch","method":"NotifyKeyboardKeysym","start_us":4879699910,"elapsed_us":38801}
+INPUT_ACTION=terminal command typed
+{"event":"input_dispatch","method":"NotifyKeyboardKeycode","start_us":4882275792,"elapsed_us":3517}
+{"event":"input_dispatch","method":"NotifyKeyboardKeycode","start_us":4882279853,"elapsed_us":4202}
+INPUT_ACTION=Super overview
+{"event":"input_dispatch","method":"NotifyKeyboardKeycode","start_us":4884784859,"elapsed_us":4670}
+{"event":"input_dispatch","method":"NotifyKeyboardKeycode","start_us":4884790014,"elapsed_us":134329}
+{"event":"input_dispatch","method":"NotifyPointerMotionRelative","start_us":4884925008,"elapsed_us":5204}
+INPUT_ACTION=virtual pointer motion
+{"event":"input_dispatch","method":"NotifyKeyboardKeycode","start_us":4884930912,"elapsed_us":9188}
+{"event":"input_dispatch","method":"NotifyKeyboardKeycode","start_us":4884940676,"elapsed_us":41603}
+{"event":"input_dispatch","method":"NotifyKeyboardKeycode","start_us":4884982865,"elapsed_us":35986}
+{"event":"input_dispatch","method":"NotifyKeyboardKeycode","start_us":4885019176,"elapsed_us":112385}
+INPUT_ACTION=Super+A applications
+{"event":"input_dispatch","method":"NotifyKeyboardKeycode","start_us":4887632674,"elapsed_us":4801}
+{"event":"input_dispatch","method":"NotifyKeyboardKeycode","start_us":4887637948,"elapsed_us":94723}
+INPUT_ACTION=Settings opened
+01:21:29.1432              Adwaita[ 1450]: WARNING: The resource style-dark.css is deprecated and shouldn't be used anymore. Use style.css with media queries instead.
+01:21:29.1439              Adwaita[ 1450]: WARNING: The resource style-hc.css is deprecated and shouldn't be used anymore. Use style.css with media queries instead.
+{"event":"input_dispatch","method":"NotifyKeyboardKeycode","start_us":4890241434,"elapsed_us":4402}
+{"event":"input_dispatch","method":"NotifyKeyboardKeycode","start_us":4890246307,"elapsed_us":4427}
+{"event":"input_dispatch","method":"NotifyKeyboardKeycode","start_us":4890251157,"elapsed_us":3697}
+{"event":"input_dispatch","method":"NotifyKeyboardKeycode","start_us":4890255221,"elapsed_us":3752}
+INPUT_ACTION=Alt+Tab window switching
+{"event":"input_dispatch","method":"Stop","start_us":4890259128,"elapsed_us":3240}

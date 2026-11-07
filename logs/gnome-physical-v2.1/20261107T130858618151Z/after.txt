@@ -1,0 +1,39 @@
+UPTIME 4917.01 39082.77
+MemAvailable:    2138532 kB
+sda        5        0       40        1        0        0        0        0        0        0        1        0        0        0        0        0        0
+sdb        5        0       40        1        0        0        0        0        0        0        1        0        0        0        0        0        0
+sdc        5        0       40        2        0        0        0        0        0        0        2        0        0        0        0        0        0
+sdd        5        0       40        1        0        0        0        0        0        0        1        0        0        0        0        0        0
+sde        7        0       56        2        0        0        0        0        0        0        2        0        0        0        0        0        0
+sdf        5        0       40        2        0        0        0        0        0        0        2        0        0        0        0        0        0
+tty1
+SWAPS_ROWS 1
+rootfs / rootfs rw,size=1824648k,nr_inodes=456162 0 0
+devtmpfs /dev devtmpfs rw,relatime,size=1824648k,nr_inodes=456162,mode=755 0 0
+proc /proc proc rw,relatime 0 0
+sysfs /sys sysfs rw,relatime 0 0
+tmpfs /run tmpfs rw,relatime 0 0
+tmpfs /tmp tmpfs rw,relatime 0 0
+devpts /dev/pts devpts rw,relatime,mode=600,ptmxmode=000 0 0
+configfs /sys/kernel/config configfs rw,relatime 0 0
+none /sys/fs/pstore pstore rw,relatime 0 0
+suspended
+RUN_PERMISSIONS 0:0:1777
+MDSS_OVERRIDE lemon-stage-b-hold
+DISPLAY_ISOLATED_1
+TEMP 44500
+TEMP 44200
+TEMP 45100
+TEMP 45100
+TEMP 44500
+TEMP 43500
+TEMP 44500
+TEMP 43500
+TEMP 43500
+TEMP 43500
+TEMP 43900
+TEMP 43500
+TEMP 44200
+TEMP 44500
+TEMP 45400
+TEMP 45100

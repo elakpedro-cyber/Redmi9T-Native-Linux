@@ -1,0 +1,6 @@
+/dts-v1/;
+/plugin/;
+
+&{/soc@0/display-subsystem@5e00000/display-controller@5e01000} {
+	status = "disabled";
+};

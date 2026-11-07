@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<openbox_menu>
+  <menu id="root-menu" label="Lemon applications">
+    <item label="Open terminal"><action name="Execute" command="foot -w 400x205 /bin/sh -i" /></item>
+    <item label="System information"><action name="Execute" command="foot -H -w 400x205 /bin/sh -c 'uname -a; cat /etc/alpine-release; free -m'" /></item>
+    <item label="Close desktop"><action name="Exit" /></item>
+  </menu>
+</openbox_menu>

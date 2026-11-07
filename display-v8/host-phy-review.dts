@@ -1,0 +1,19 @@
+/dts-v1/;
+/plugin/;
+
+/* Offline schema fixture for stage B. Never consumed by the boot builder. */
+&{/soc@0/clock-controller@5f00000} {
+	status = "okay";
+};
+
+&{/soc@0/display-subsystem@5e00000} {
+	status = "okay";
+};
+
+&{/soc@0/display-subsystem@5e00000/dsi@5e94000} {
+	status = "okay";
+};
+
+&{/soc@0/display-subsystem@5e00000/phy@5e94400} {
+	status = "okay";
+};

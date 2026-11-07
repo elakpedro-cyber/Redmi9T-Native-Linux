@@ -1,0 +1,39 @@
+--- v2/windowPreview.js
++++ v2.1/windowPreview.js
+@@ -343,7 +343,7 @@
+         const {scaleFactor} = St.ThemeContext.get_for_stage(global.stage);
+         const activeExtraSize = WINDOW_ACTIVE_SIZE_INC * 2 * scaleFactor;
+         const origSize = Math.max(width, height);
+-        const scale = (origSize + activeExtraSize) / origSize;
++        const scale = origSize > 0 ? (origSize + activeExtraSize) / origSize : 1;
+ 
+         this.window_container.ease({
+             scale_x: scale,
+@@ -618,6 +618,8 @@
+     }
+ 
+     _restack() {
++        if (this._destroyed)
++            return;
+         // We may not have a parent if DnD completed successfully, in
+         // which case our clone will shortly be destroyed and replaced
+         // with a new one on the target workspace.
+@@ -625,14 +627,16 @@
+         if (parent !== null) {
+             if (this._overlayShown) {
+                 parent.set_child_above_sibling(this, null);
+-            } else if (this._stackAbove === null) {
++            } else if (this._stackAbove === null || this._stackAbove._destroyed ||
++                this._stackAbove.get_parent() !== parent) {
++                this._stackAbove = null;
+                 parent.set_child_below_sibling(this, null);
+             } else if (!this._stackAbove._overlayShown) {
+                 parent.set_child_above_sibling(this, this._stackAbove);
+             } else {
+                 // This window shall still be above this._stackAbove._stackAbove
+                 const above = this._stackAbove._stackAbove;
+-                if (above === null)
++                if (above === null || above._destroyed || above.get_parent() !== parent)
+                     parent.set_child_below_sibling(this, null);
+                 else
+                     parent.set_child_above_sibling(this, above);

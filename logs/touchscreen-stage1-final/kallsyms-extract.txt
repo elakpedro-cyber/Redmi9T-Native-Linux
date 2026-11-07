@@ -1,0 +1,47 @@
+[+] Version string: Linux version 4.19.252-sucksguuji-45543a51f5f8 (nobody@kernel-build) (playground clang version 15.0.0 (https://github.com/llvm/llvm-project c2e3e91ddec002ac2514708867153e5f6b03dc48), LLD 15.0.0) #1 SMP PREEMPT Sat Jul 16 17:59:41 WIB 2022
+[+]   Other related strings containing the version number: [b'/lib/firmware/updates/4.19.252-sucksguuji-45543a51f5f8', b'/lib/firmware/4.19.252-sucksguuji-45543a51f5f8', b'4.19.252-sucksguuji-45543a51f5f8', b'Linux version 4.19.252-sucksguuji-45543a51f5f8 (nobody@kernel-build) (playground clang version 15.0.0 (https://github.com/llvm/llvm-project c2e3e91ddec002ac2514708867153e5f6b03dc48), LLD 15.0.0) #1 SMP PREEMPT Sat Jul 16 17:59:41 WIB 2022', b'4.19.252-sucksguuji-45543a51f5f8']
+[+] Guessed architecture: aarch64 successfully in 0.43 seconds
+[+] Kernel found in database
+[+]   Read kernel source: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/?id=v4.19
+[+]   Download kernel: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/snapshot/v4.19.tar.gz
+[+]   Kernel release date: 2018-10-22
+[+]   Interesting files:
+[~]     - kernel/kallsyms.c: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/kernel/kallsyms.c?id=v4.19
+[~]     - scripts/kallsyms.c: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/scripts/kallsyms.c?id=v4.19
+[~]     - include/linux/elf.h: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/linux/elf.h?id=v4.19
+[~]     - include/uapi/linux/elf-em.h: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/uapi/linux/elf-em.h?id=v4.19
+[~]     - include/uapi/linux/elf.h: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/uapi/linux/elf.h?id=v4.19
+[~]     - Documentation/process/changes.rst: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/process/changes.rst?id=v4.19
+[+]   Architecture arm64 (EM_AARCH64) supports 64-bit, big-endian, little-endian
+[~]     - Documentation/arm64/booting.txt: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/arm64/booting.txt?id=v4.19
+[~]     - arch/arm64/kernel/vmlinux.lds.S: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/kernel/vmlinux.lds.S?id=v4.19
+[~]     - arch/arm64/kernel/head.S: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/kernel/head.S?id=v4.19
+[~]     - arch/arm64/kernel/Makefile: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/kernel/Makefile?id=v4.19
+[~]     - arch/arm64/boot/Makefile: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/Makefile?id=v4.19
+[~]     - arch/arm64/include/asm/elf.h: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/include/asm/elf.h?id=v4.19
+[+]   Suggested build environment: docker run -it debian/eol:stretch (Debian 9.0 "Stretch" released 2017-06-17)
+Traceback (most recent call last):
+  File "/home/hadirpc/Redmi9T-Native-Linux/touch-final-tools/lib/python3.12/site-packages/vmlinux_to_elf/core/kallsyms.py", line 227, in __init__
+    self.find_kallsyms_names_uncompressed()
+  File "/home/hadirpc/Redmi9T-Native-Linux/touch-final-tools/lib/python3.12/site-packages/vmlinux_to_elf/core/kallsyms.py", line 786, in find_kallsyms_names_uncompressed
+    raise KallsymsNotFoundException(
+vmlinux_to_elf.core.kallsyms.KallsymsNotFoundException: No embedded symbol table found in this kernel
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hadirpc/Redmi9T-Native-Linux/touch-final-tools/bin/vmlinux-to-elf", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/hadirpc/Redmi9T-Native-Linux/touch-final-tools/lib/python3.12/site-packages/vmlinux_to_elf/scripts/vmlinux_to_elf.py", line 104, in main
+    ElfSymbolizer(
+  File "/home/hadirpc/Redmi9T-Native-Linux/touch-final-tools/lib/python3.12/site-packages/vmlinux_to_elf/core/elf_symbolizer.py", line 66, in __init__
+    kallsyms_finder = KallsymsFinder(
+                      ^^^^^^^^^^^^^^^
+  File "/home/hadirpc/Redmi9T-Native-Linux/touch-final-tools/lib/python3.12/site-packages/vmlinux_to_elf/core/kallsyms.py", line 232, in __init__
+    raise first_error
+  File "/home/hadirpc/Redmi9T-Native-Linux/touch-final-tools/lib/python3.12/site-packages/vmlinux_to_elf/core/kallsyms.py", line 221, in __init__
+    self.find_kallsyms_token_table()
+  File "/home/hadirpc/Redmi9T-Native-Linux/touch-final-tools/lib/python3.12/site-packages/vmlinux_to_elf/core/kallsyms.py", line 646, in find_kallsyms_token_table
+    raise KallsymsNotFoundException(
+vmlinux_to_elf.core.kallsyms.KallsymsNotFoundException: 0 candidates for kallsyms_token_table in kernel image

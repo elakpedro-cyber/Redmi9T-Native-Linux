@@ -1,0 +1,4 @@
+FAIL_CLOSED_CHECK_AND_RUN_PASS code78; no active path
+R2_SOURCE_GUARDS_PASS CS0 FW5 opt-in; no sensor reset/power/upload or GENI auto-upload
+READONLY_FIXTURE_PASS no mutations; electrical levels never inferred
+PASS: ARM64 QEMU NVT contact slots, frame release, checksum, bounds, duplicate ID, watchdog/palm

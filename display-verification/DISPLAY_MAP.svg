@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1184" height="940" viewBox="0 0 1184 940" role="img" aria-labelledby="title desc">
+  <title id="title">Redmi 9T NFC — карта дисплейных цепей</title>
+  <desc id="desc">Отдельные маршруты VDD_MX, LCD_VSP, LCD_VSN, VDDIO, LED_A и неподтверждённый запрос REFGEN.</desc>
+  <style>
+    text { font-family: "Segoe UI", "DejaVu Sans", sans-serif; fill: #192535 }
+    .heading { font-size: 33px; font-weight: 700 }
+    .sub { font-size: 16px }
+    .tag { font-size: 14px; fill: currentColor; font-weight: 700 }
+    .box { fill: white; stroke: currentColor; stroke-width: 1.6 }
+    .node { font-size: 18px; font-weight: 700 }
+    .note { font-size: 14px }
+    .arrow { fill: none; stroke: currentColor; stroke-width: 2 }
+    .dashed { stroke-dasharray: 4 3 }
+  </style>
+  <rect width="1184" height="940" fill="#f6f8fa"/>
+  <text x="32" y="48" class="heading">Redmi 9T NFC — карта дисплейных цепей</text>
+  <text x="32" y="78" class="sub">Stage C/B NO-GO   •   Логические связи по источникам, без распиновки</text>
+  <text x="32" y="104" class="sub">Синий — подтверждено кодом/DT   •   Зелёный — цепь из схемы   •   Янтарный — требует идентификации</text>
+  <g style="color:#a45c13">
+  <text x="32" y="140" class="tag">DT / физически уточнить</text>
+  <rect x="32" y="149" width="344" height="73" rx="8" class="box"/>
+  <text x="45" y="172" class="node">PCB и модуль</text>
+  <text x="45" y="192" class="note">DT IDP 0x22 / 0x10000 / 0</text>
+  <text x="45" y="210" class="note">Маркировка PCB и FPC нужны</text>
+  <rect x="424" y="149" width="344" height="73" rx="8" class="box"/>
+  <text x="437" y="172" class="node">Пассивный осмотр</text>
+  <text x="437" y="192" class="note">Сверить сборку, pin 1 и GND</text>
+  <text x="437" y="210" class="note">TD4330 Truly v2 — профиль</text>
+  <rect x="816" y="149" width="344" height="73" rx="8" class="box"/>
+  <text x="829" y="172" class="node">CN2701</text>
+  <text x="829" y="192" class="note">Контакты требуют сверки</text>
+  <text x="829" y="210" class="note">Схема J19S, лист 27</text>
+  </g>
+  <g style="color:#225c9b">
+  <text x="32" y="249" class="tag">Программно подтверждено</text>
+  <rect x="32" y="258" width="344" height="73" rx="8" class="box"/>
+  <text x="45" y="281" class="node">PM6125 S5</text>
+  <text x="45" y="301" class="note">RPM SMD rwmx:0 / vlvl</text>
+  <text x="45" y="319" class="note">NOM 256, stock off vote 16</text>
+  <rect x="424" y="258" width="344" height="73" rx="8" class="box"/>
+  <text x="437" y="281" class="node">VDD_MX</text>
+  <text x="437" y="301" class="note">MX → 14-нм DSI PHY</text>
+  <text x="437" y="319" class="note">Lifecycle остаётся UNKNOWN</text>
+  <rect x="816" y="258" width="344" height="73" rx="8" class="box"/>
+  <text x="829" y="281" class="node">DSI PHY</text>
+  <text x="829" y="301" class="note">XO 19,2 МГц — отдельно</text>
+  <text x="829" y="319" class="note">Stock DT и genpd</text>
+  <path d="M380 294h39m-8 -5 8 5-8 5" class="arrow"/>
+  <path d="M772 294h39m-8 -5 8 5-8 5" class="arrow"/>
+  </g>
+  <g style="color:#a45c13">
+  <text x="32" y="358" class="tag">Источник неизвестен</text>
+  <rect x="32" y="367" width="344" height="73" rx="8" class="box"/>
+  <text x="45" y="390" class="node">REFGEN ?</text>
+  <text x="45" y="410" class="note">Provider, MMIO и lifecycle</text>
+  <text x="45" y="428" class="note">SM6115 не подтверждены</text>
+  <rect x="424" y="367" width="344" height="73" rx="8" class="box"/>
+  <text x="437" y="390" class="node">Запрос refgen в DT</text>
+  <text x="437" y="410" class="note">В stock нет refgen-supply</text>
+  <text x="437" y="428" class="note">Путь на схеме неизвестен</text>
+  <rect x="816" y="367" width="344" height="73" rx="8" class="box"/>
+  <text x="829" y="390" class="node">DSI Host</text>
+  <text x="829" y="410" class="note">0x05e94000</text>
+  <text x="829" y="428" class="note">VDDA отдельно, PM6125 L18</text>
+  <path d="M380 403h39m-8 -5 8 5-8 5" class="arrow dashed"/>
+  <path d="M772 403h39m-8 -5 8 5-8 5" class="arrow dashed"/>
+  </g>
+  <g style="color:#117157">
+  <text x="32" y="467" class="tag">Физическая сверка нужна</text>
+  <rect x="32" y="476" width="344" height="73" rx="8" class="box"/>
+  <text x="45" y="499" class="node">PMI632 LAB / LDO</text>
+  <text x="45" y="519" class="note">VDISP_P_OUT</text>
+  <text x="45" y="537" class="note">Схема J19S, лист 19</text>
+  <rect x="424" y="476" width="344" height="73" rx="8" class="box"/>
+  <text x="437" y="499" class="node">LCD_VSP (+)</text>
+  <text x="437" y="519" class="note">Независимая точка у панели</text>
+  <text x="437" y="537" class="note">Проверить ramp и разряд</text>
+  <rect x="816" y="476" width="344" height="73" rx="8" class="box"/>
+  <text x="829" y="499" class="node">CN2701 / VSP</text>
+  <text x="829" y="519" class="note">Контакт уточняет специалист</text>
+  <text x="829" y="537" class="note">Схема J19S, лист 27</text>
+  <path d="M380 512h39m-8 -5 8 5-8 5" class="arrow"/>
+  <path d="M772 512h39m-8 -5 8 5-8 5" class="arrow"/>
+  </g>
+  <g style="color:#117157">
+  <text x="32" y="576" class="tag">Физическая сверка нужна</text>
+  <rect x="32" y="585" width="344" height="73" rx="8" class="box"/>
+  <text x="45" y="608" class="node">PMI632 IBB / NCP</text>
+  <text x="45" y="628" class="note">VDISP_M_OUT</text>
+  <text x="45" y="646" class="note">Схема J19S, лист 19</text>
+  <rect x="424" y="585" width="344" height="73" rx="8" class="box"/>
+  <text x="437" y="608" class="node">LCD_VSN (−)</text>
+  <text x="437" y="628" class="note">Независимая точка у панели</text>
+  <text x="437" y="646" class="note">Проверить ramp и разряд</text>
+  <rect x="816" y="585" width="344" height="73" rx="8" class="box"/>
+  <text x="829" y="608" class="node">CN2701 / VSN</text>
+  <text x="829" y="628" class="note">Контакт уточняет специалист</text>
+  <text x="829" y="646" class="note">Схема J19S, лист 27</text>
+  <path d="M380 621h39m-8 -5 8 5-8 5" class="arrow"/>
+  <path d="M772 621h39m-8 -5 8 5-8 5" class="arrow"/>
+  </g>
+  <g style="color:#117157">
+  <text x="32" y="685" class="tag">Физическая сверка нужна</text>
+  <rect x="32" y="694" width="344" height="73" rx="8" class="box"/>
+  <text x="45" y="717" class="node">PM6125 L9</text>
+  <text x="45" y="737" class="note">VDDIO панели</text>
+  <text x="45" y="755" class="note">Схема J19S, лист 27</text>
+  <rect x="424" y="694" width="344" height="73" rx="8" class="box"/>
+  <text x="437" y="717" class="node">VDDIO</text>
+  <text x="437" y="737" class="note">Отдельное питание логики</text>
+  <text x="437" y="755" class="note">Проверить подпитку при off</text>
+  <rect x="816" y="694" width="344" height="73" rx="8" class="box"/>
+  <text x="829" y="717" class="node">CN2701 / VDDIO</text>
+  <text x="829" y="737" class="note">Контакт уточняет специалист</text>
+  <text x="829" y="755" class="note">Схема J19S, лист 27</text>
+  <path d="M380 730h39m-8 -5 8 5-8 5" class="arrow"/>
+  <path d="M772 730h39m-8 -5 8 5-8 5" class="arrow"/>
+  </g>
+  <g style="color:#a45c13">
+  <text x="32" y="794" class="tag">Компонент уточнить</text>
+  <rect x="32" y="803" width="344" height="73" rx="8" class="box"/>
+  <text x="45" y="826" class="node">U2732, подсветка</text>
+  <text x="45" y="846" class="note">LM36923YFFR — кандидат</text>
+  <text x="45" y="864" class="note">I²C 0x36, GPIO99 HWEN</text>
+  <rect x="424" y="803" width="344" height="73" rx="8" class="box"/>
+  <text x="437" y="826" class="node">LED_A</text>
+  <text x="437" y="846" class="note">Отдельно от VSP и VSN</text>
+  <text x="437" y="864" class="note">Первый bias-тест без BL</text>
+  <rect x="816" y="803" width="344" height="73" rx="8" class="box"/>
+  <text x="829" y="826" class="node">CN2701 / LED_A</text>
+  <text x="829" y="846" class="note">Контакт и BOM неизвестны</text>
+  <text x="829" y="864" class="note">Схема J19S, листы 8, 27</text>
+  <path d="M380 839h39m-8 -5 8 5-8 5" class="arrow"/>
+  <path d="M772 839h39m-8 -5 8 5-8 5" class="arrow"/>
+  </g>
+  <text x="32" y="910" class="sub">PMI_DISP_HW_EN и LCD reset требуют отдельной сверки. Пунктир REFGEN обозначает запрос в DT, электрический путь неизвестен.</text>
+</svg>

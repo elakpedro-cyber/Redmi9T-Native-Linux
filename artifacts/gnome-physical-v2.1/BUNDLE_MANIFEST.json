@@ -1,0 +1,2747 @@
+[
+  {
+    "path": "GNOME_PHYSICAL_LCD_V21.md",
+    "bytes": 7906,
+    "sha256": "62b6bf0052c1113b7bfb5a85817228de60f3e3e1f58ff2134fc30859e4f244f1"
+  },
+  {
+    "path": "GNOME_PHYSICAL_V21_MEMORY_PERFORMANCE.md",
+    "bytes": 7720,
+    "sha256": "5f3a884839121814c04baf21f8dd520a93490b2a6349a501ec5f7020430ef599"
+  },
+  {
+    "path": "GNOME_PHYSICAL_V21_TOUCH.md",
+    "bytes": 3823,
+    "sha256": "7ff30538d1de7125d5f0e290f5cbb8391e3a90aa28522250f26fb54e8d0fa71e"
+  },
+  {
+    "path": "GNOME_PHYSICAL_V21_VALIDATION.md",
+    "bytes": 5479,
+    "sha256": "e2f649af64a4bdc65c4187e90d563a0f7a4e46e613df464ba0905c3ca84ae0f9"
+  },
+  {
+    "path": "GNOME_PHYSICAL_V21_WARNINGS.md",
+    "bytes": 13294,
+    "sha256": "0df361c2be6efba3b53b913045ecb7f75e05f9a205c3876830549c5667e03f51"
+  },
+  {
+    "path": "PROJECT_CHECKPOINT.md",
+    "bytes": 13865,
+    "sha256": "478f54a750cb20f0f9dcc512b41c300d56ae0bcd7ea30d91b95b023e657579ac"
+  },
+  {
+    "path": "RESUME_INSTRUCTIONS.md",
+    "bytes": 9887,
+    "sha256": "c3df7ccd99559812693d76fcf8cc65c8dabc1a43ef90c7f70ee5bba334b50ac6"
+  },
+  {
+    "path": "artifacts/gnome-physical-v2.1/dbus-trace.so",
+    "bytes": 71040,
+    "sha256": "01a47dbadce5321f76b8ea2d36200538961dcd97f88aac68927c0beff5317b80"
+  },
+  {
+    "path": "artifacts/gnome-physical-v2.1/drm-probe",
+    "bytes": 703880,
+    "sha256": "e5e9c455eae86d168f2ed7f42ca5751d7e75511921f62d05ffa4bede4d178f5d"
+  },
+  {
+    "path": "artifacts/gnome-physical-v2.1/frame-trace.so",
+    "bytes": 71832,
+    "sha256": "aa1e4a4af8923d0366ee0fd64498ec078b57b773b1dc4e0bbd190b14ec8f3eb6"
+  },
+  {
+    "path": "artifacts/gnome-physical-v2.1/gnome-remote-desktop-daemon",
+    "bytes": 5988784,
+    "sha256": "5122e6324273d07dcae9e113efd9a84c1896cdf35c03c0c572657b7c9a33c4fa"
+  },
+  {
+    "path": "artifacts/gnome-physical-v2.1/modes.json",
+    "bytes": 529,
+    "sha256": "7298a5ca800eac63a124021cd9106554bd358750a46cb3ad38000f6bdadab262"
+  },
+  {
+    "path": "artifacts/gnome-physical-v2.1/payload.json",
+    "bytes": 1538,
+    "sha256": "2b4dcd9601178735e1c34a3873dcba845da4c70e195657645730c75dfc537799"
+  },
+  {
+    "path": "artifacts/gnome-physical-v2.1/rdp-copy-trace.so",
+    "bytes": 71224,
+    "sha256": "3112830c249e4d6a48b23aea69e60323a130edd6a57c6f2abdda9423c8082b3d"
+  },
+  {
+    "path": "artifacts/gnome-physical-v2.1/root-manifest.json",
+    "bytes": 260,
+    "sha256": "4cf8a0063af273e00456a389801a3b36921a121e0fb27a9591d94e548b53af12"
+  },
+  {
+    "path": "artifacts/gnome-physical-v2.1/roots/gnome-root.tar.gz",
+    "bytes": 373354477,
+    "sha256": "f2a37bfbc767f138f1ffa578627e2c5088ca7d2f95b9b754a50ff702a878e98f"
+  },
+  {
+    "path": "artifacts/gnome-physical-v2.1/roots/weston-root.tar.gz",
+    "bytes": 135685849,
+    "sha256": "a99c4bc3bc60c6b939d320576f349a3f718d2e85e1f1e94f7233fe2e9f6e7641"
+  },
+  {
+    "path": "artifacts/gnome-physical-v2.1/vt-cleanup",
+    "bytes": 774720,
+    "sha256": "d0559e19a2186fe6f365255930f3bb35ba8510311d7d93f50f70f4b722f16152"
+  },
+  {
+    "path": "artifacts/gnome-physical-v2.1/watchdog",
+    "bytes": 705728,
+    "sha256": "4b5a92ca7f2629fa7afbe4b5157589de253b8e0a6a2b3f1078a25c204b2cc30c"
+  },
+  {
+    "path": "downloads/gnome-physical-v2.1/gnome-remote-desktop-50.1.tar.xz",
+    "bytes": 398728,
+    "sha256": "089049119e1f2442fe9773f0285365cedc207f4cbc7ce9af388e153668e2b171"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/accounting-test.txt",
+    "bytes": 41,
+    "sha256": "36808ea27e8bc0b9bb39655e6d34d0fe261a453ad8cb6f6120575f506460f0b6"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/actual-gnomeSession.js",
+    "bytes": 1941,
+    "sha256": "ede7fc92a49088b8f49cab274c57e6e60efc3c1ee32e0b5deb7c2abbee0b6a74"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/actual-main.js",
+    "bytes": 36177,
+    "sha256": "6e8236a1b8aad8ad2125473173954e4aa0bc17b372bd8809ef55ccc09fe93994"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/actual-remoteAccess.js",
+    "bytes": 6621,
+    "sha256": "8a5a484c8cb18abecfddf02c07f007d4c8441ec9c154a6375f19c12b4df045e0"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/actual-windowPreview.js",
+    "bytes": 22370,
+    "sha256": "ae91d24f72a2fbc01aed18c96232631eb26722399f86c7d47634c1cabcc35d26"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/actual-workspace.js",
+    "bytes": 52069,
+    "sha256": "357389c7b22e36199e0ed6897fafed6335494e872646b013820ca97aafb24732"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/build-sha256.txt",
+    "bytes": 1151,
+    "sha256": "b28181d09f8ffd9e05be7216039b7845b80aa46a2e74e73e78dad4f0a97cda65"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/build.txt",
+    "bytes": 1931,
+    "sha256": "f840eef4617325272eedb59f12d3a166aaed328bdfe3b7a4bc3d1ef8c7fe609d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/checkpoint-verification.json",
+    "bytes": 385,
+    "sha256": "a845c5b72299213f3b6167d151c54b0204a6aa05ec3cf3da8d02f09838b9b568"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/controller-tests.txt",
+    "bytes": 620,
+    "sha256": "44d764a130f2683c5245aa889518556c6dd58ea7f34bee56b27928969bd1ac0b"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/gnome-shell-main-50.3.c",
+    "bytes": 20930,
+    "sha256": "27f30e4a78f6b2377839a75169875cae45f4d6540eefa068a7ea3f7ce980078e"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/grd-build-stage.txt",
+    "bytes": 77,
+    "sha256": "6eb2ec32c3d079fd66266f8fbaf01cc1460fce752de6f27e895d7465d8051140"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/grd-build.txt",
+    "bytes": 142721,
+    "sha256": "c93adbc2a2cd4b00cb39c3c6712681e9280f510ac4762eca5295a7688233a55c"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/grd-dependencies.txt",
+    "bytes": 911,
+    "sha256": "ba4f84a3947263b3270cca0a057f643c10afc795ca4826d19e7fce1d36011ea5"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/grd-egl-negative.txt",
+    "bytes": 377,
+    "sha256": "d23bb78c5629857b7f3f543dafc9cbc9d2fc7ec63737757fe4920095bb5bff60"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/grd-loader.txt",
+    "bytes": 4907,
+    "sha256": "d65784dcb181fc47290bc2f6822ec5a6b46f67dd8653e460749a2668829fc4ec"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/client.log",
+    "bytes": 3064,
+    "sha256": "8edea6e3ea26a2c50b08cd90ce4256cb2e1fd82f3a2e035f9c36954d497df03c"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/console.log",
+    "bytes": 161,
+    "sha256": "bfe4cbfcd4cddd7d022a9e322278d3da385432a917cbe008cc43faa1e472ee8b"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/gnome-frames.jsonl",
+    "bytes": 3727,
+    "sha256": "6b0e5f84ec8df5a461875083e71eae32d5af5c6ac3e8db430262280688959ba8"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/gnome.log",
+    "bytes": 3655,
+    "sha256": "cee9d81923cd99cd0ec74760a8a456fad7576e95e8317344b4f5a8b904286363"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/input.log",
+    "bytes": 7210,
+    "sha256": "fa58fa2eeec6ca54c389c6947c5c52c6d43cc84f21514e161afb71bf8782ecdb"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/pipewire.log",
+    "bytes": 780,
+    "sha256": "c5bf25fd8a854a1e6355cbcc0054ff63ed17d400b3844c173d677715cd2a5807"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/rdp-frames.jsonl",
+    "bytes": 2614,
+    "sha256": "ba4c29ada3f48221db043e5623e58e09152a5dc56e58a47874511eb1b45a6fd7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/rdp.log",
+    "bytes": 2059,
+    "sha256": "aaeca7d2911ece58e173f5c4a684ce836a6eb274dbfe0a279e6f303900935662"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/result.txt",
+    "bytes": 48,
+    "sha256": "f019f9b34cecc7fd078de5cfff9ce74e91d555dedc1bc518deec0dd5f46cd652"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/samples.txt",
+    "bytes": 417200,
+    "sha256": "74dea971a06b4692a0ee56855bfecdbb503899b412ea0f55e4928f7d1eeded9f"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/seat.log",
+    "bytes": 116,
+    "sha256": "e8ab3941cba0d8eae5ac87ac34bcbc3391d04c35540e3c821c2ee0e4117b3f12"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/session.txt",
+    "bytes": 143,
+    "sha256": "47fa8b76cded13bde18a4ebe7ef4b529717608940f9ba502b227df3ad0de57a9"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/stage.txt",
+    "bytes": 63,
+    "sha256": "37bc6785b298ed3887e8c3e4dea1eb94cf599e7a28fd22ba4b25506909ebc12a"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/system-bus.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/timeline.jsonl",
+    "bytes": 30106,
+    "sha256": "9cd3fc1730a5d04f7892c35d364f8dd1ceae428f2f338464eeb0fe7c8834a4df"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/timeline.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/user-session.log",
+    "bytes": 4229,
+    "sha256": "4a0be39ca953357ddd7b9bda86c28f02f1a84029ba851bc8ac78c4e82a1dfe5d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-56-40.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-56-42.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-56-44.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-56-47.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-56-49.png",
+    "bytes": 20230,
+    "sha256": "c83b64e66cbfaaa77809ea12f223fb7d7ab39da235ac62a65c6f0a1e223d1d3c"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-56-51.png",
+    "bytes": 20230,
+    "sha256": "c83b64e66cbfaaa77809ea12f223fb7d7ab39da235ac62a65c6f0a1e223d1d3c"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-56-54.png",
+    "bytes": 20230,
+    "sha256": "c83b64e66cbfaaa77809ea12f223fb7d7ab39da235ac62a65c6f0a1e223d1d3c"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-56-56.png",
+    "bytes": 83663,
+    "sha256": "65e6771a5cc3fd5823df8ad63960a12ad3720ee0692fa6cb9b9781d2845d7fa5"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-56-58.png",
+    "bytes": 83663,
+    "sha256": "65e6771a5cc3fd5823df8ad63960a12ad3720ee0692fa6cb9b9781d2845d7fa5"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-57-01.png",
+    "bytes": 83663,
+    "sha256": "65e6771a5cc3fd5823df8ad63960a12ad3720ee0692fa6cb9b9781d2845d7fa5"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-57-03.png",
+    "bytes": 49343,
+    "sha256": "6b14296988902e375dc4e9fbf109324702c50e43cd5d1870cd9dc5b935da19d1"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-57-05.png",
+    "bytes": 18447,
+    "sha256": "2c769d0a98d147ceebb7ecaa17de2293c4789950ec9a2febfb948e534a3ed6d5"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-57-07.png",
+    "bytes": 18447,
+    "sha256": "2c769d0a98d147ceebb7ecaa17de2293c4789950ec9a2febfb948e534a3ed6d5"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-57-10.png",
+    "bytes": 62000,
+    "sha256": "5ac3c37ec9b97beca6d5303eb5b267ac4043acf8e3f66fc31b7c4ae02ffaf7e1"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-57-12.png",
+    "bytes": 18447,
+    "sha256": "2c769d0a98d147ceebb7ecaa17de2293c4789950ec9a2febfb948e534a3ed6d5"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-57-14.png",
+    "bytes": 80017,
+    "sha256": "29da7b919a5ba930804810b2f7d524c2a94c219fabd2bfab3fbc70396e583d93"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-57-17.png",
+    "bytes": 62000,
+    "sha256": "5ac3c37ec9b97beca6d5303eb5b267ac4043acf8e3f66fc31b7c4ae02ffaf7e1"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-57-18.png",
+    "bytes": 70507,
+    "sha256": "14b2513d7629b31144f6436c4c6932a6fd48952c9196bb09e90cb926655ff985"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-57-20.png",
+    "bytes": 70507,
+    "sha256": "14b2513d7629b31144f6436c4c6932a6fd48952c9196bb09e90cb926655ff985"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-57-23.png",
+    "bytes": 70507,
+    "sha256": "14b2513d7629b31144f6436c4c6932a6fd48952c9196bb09e90cb926655ff985"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-57-25.png",
+    "bytes": 101880,
+    "sha256": "4aff48b09eca6e7fed079392d09f25fba6359e18d7d7c1512a5f59bee34c0830"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-57-27.png",
+    "bytes": 95934,
+    "sha256": "6622c019c6a2fd7d08981ebcd838fde1df606c42050ab21176e13c1c34f041c0"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-57-30.png",
+    "bytes": 156290,
+    "sha256": "145b4c0a91796445d340e32e1030f6704758c31cb6f88a7b03f3d4127344fdfa"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wayland-screenshot-2026-11-07_11-57-32.png",
+    "bytes": 156854,
+    "sha256": "a0ab82ef5a1ccde047515b8ddbb982a7b191bb056bc4f7a92bd57e82456bf674"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/weston.log",
+    "bytes": 1675,
+    "sha256": "397c9ae08d4fb3599b5bab2cf3c6a5ace8b05f592a16408ea7ef992481c95f17"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r1/wireplumber.log",
+    "bytes": 1091,
+    "sha256": "fb19f8bb3cbdee1490909e58e33d0f0a5466a27574dd4cbf996ce09e4d622093"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/client.log",
+    "bytes": 3064,
+    "sha256": "7bc71ed05115a2e0677bf0403f46b4864aa9d5f8e4b3ef381d476ed09352d60e"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/console.log",
+    "bytes": 161,
+    "sha256": "9e8b299186618bccdf12ce0dd43f932d01096a7c4d231040292b5f57c3920d19"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/gnome-frames.jsonl",
+    "bytes": 3282,
+    "sha256": "46575c90adccf0f050b4a30fa980740ff938a46fb60494193d153f4753972356"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/gnome.log",
+    "bytes": 3655,
+    "sha256": "e577ee006f3ce18d802a26728d9f57a4acdcc37e8985d98dd3abd35a5d0316e1"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/input.log",
+    "bytes": 7209,
+    "sha256": "92f11a4e218ce885f3f63fa79d8267f1fdaa8f9bfc791c5c5b668ff28237d97d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/pipewire.log",
+    "bytes": 780,
+    "sha256": "1cbed1377611c4207f0eba2995b524eea186a3f53ac9bc11ec368d4e02fe402d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/rdp-frames.jsonl",
+    "bytes": 2122,
+    "sha256": "11786f66b41a470dbd64e0f49c15c4c9be32682038f6165f93f9cb0a2b0cf36e"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/rdp.log",
+    "bytes": 1487,
+    "sha256": "41fd15d3c3923909a97267702c02bd62db1fb2860c95414304740b54621a5694"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/result.txt",
+    "bytes": 48,
+    "sha256": "f019f9b34cecc7fd078de5cfff9ce74e91d555dedc1bc518deec0dd5f46cd652"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/samples.txt",
+    "bytes": 388507,
+    "sha256": "797c4c09481c8b6d319fc6d63a42a913fb4b8435e4d000e264e5eb808739b592"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/seat.log",
+    "bytes": 116,
+    "sha256": "e8ab3941cba0d8eae5ac87ac34bcbc3391d04c35540e3c821c2ee0e4117b3f12"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/session.txt",
+    "bytes": 149,
+    "sha256": "7a3066080e998f735bc5f93a3ea98286485aa4aee306583ccc65fa03fc322e54"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/stage.txt",
+    "bytes": 63,
+    "sha256": "919b6b09dc81087b815148bfa1cdfb2cab2420b003ec0b7745df1fa37e2e0f7c"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/system-bus.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/timeline.jsonl",
+    "bytes": 25421,
+    "sha256": "4b9be187fb8b30e92a7e5d50a76feeaf621da27b347beb520aba74172ae6ee43"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/timeline.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/user-session.log",
+    "bytes": 4591,
+    "sha256": "bf6481c61f664c057e57b503e3299e58e51485cd14c108f13b0c60e636c94c05"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-01-42.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-01-44.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-01-47.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-01-49.png",
+    "bytes": 20056,
+    "sha256": "12d48ab30ea9d7d4f2a1832710ec46856bfbd44b49ce52b4d1ce0f0e7510cb4f"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-01-50.png",
+    "bytes": 20056,
+    "sha256": "12d48ab30ea9d7d4f2a1832710ec46856bfbd44b49ce52b4d1ce0f0e7510cb4f"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-01-53.png",
+    "bytes": 20056,
+    "sha256": "12d48ab30ea9d7d4f2a1832710ec46856bfbd44b49ce52b4d1ce0f0e7510cb4f"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-01-55.png",
+    "bytes": 20056,
+    "sha256": "12d48ab30ea9d7d4f2a1832710ec46856bfbd44b49ce52b4d1ce0f0e7510cb4f"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-01-57.png",
+    "bytes": 83496,
+    "sha256": "0b95bc8f08b8ac43256af0155f35a27be4484ed7437497e6f7c0e7ae41bbc654"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-01-59.png",
+    "bytes": 83496,
+    "sha256": "0b95bc8f08b8ac43256af0155f35a27be4484ed7437497e6f7c0e7ae41bbc654"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-02-02.png",
+    "bytes": 83496,
+    "sha256": "0b95bc8f08b8ac43256af0155f35a27be4484ed7437497e6f7c0e7ae41bbc654"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-02-04.png",
+    "bytes": 49535,
+    "sha256": "fd2c9391e3c4de11df32f496f16049f436125ae66e56ad6799b75cbd2db4391f"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-02-06.png",
+    "bytes": 18570,
+    "sha256": "941216ebbd457d2fbc9a4e7add13a9ea69b5ce5aed07b7c469bf4b5904c23d41"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-02-09.png",
+    "bytes": 18570,
+    "sha256": "941216ebbd457d2fbc9a4e7add13a9ea69b5ce5aed07b7c469bf4b5904c23d41"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-02-11.png",
+    "bytes": 62166,
+    "sha256": "eb6fdb81610d830bb2304acd96c65da8aa963dde6e08d3b7841a51d06b50a9e2"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-02-13.png",
+    "bytes": 80162,
+    "sha256": "3172d068428e2b5a5744be1e7ca5c92e6e65221a5c8c09cd96e9bf75bff50678"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-02-15.png",
+    "bytes": 80162,
+    "sha256": "3172d068428e2b5a5744be1e7ca5c92e6e65221a5c8c09cd96e9bf75bff50678"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-02-18.png",
+    "bytes": 62166,
+    "sha256": "eb6fdb81610d830bb2304acd96c65da8aa963dde6e08d3b7841a51d06b50a9e2"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-02-20.png",
+    "bytes": 70678,
+    "sha256": "d8b14296a45b8c3ded9bca381a8a621ca2ba529b68a119e7d489d2294489f660"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-02-22.png",
+    "bytes": 70678,
+    "sha256": "d8b14296a45b8c3ded9bca381a8a621ca2ba529b68a119e7d489d2294489f660"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-02-24.png",
+    "bytes": 70678,
+    "sha256": "d8b14296a45b8c3ded9bca381a8a621ca2ba529b68a119e7d489d2294489f660"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wayland-screenshot-2026-11-07_12-02-26.png",
+    "bytes": 95156,
+    "sha256": "1eee2f00781821328bd2b2e53c5b3be242ea9e6ac004a8a6260279e7e962d899"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/weston.log",
+    "bytes": 1675,
+    "sha256": "7edde843c53c3ea1d06fe7f3d6be9ac98271be74aa1c49ed17815ed86c9961dd"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-cleanup-r2/wireplumber.log",
+    "bytes": 1091,
+    "sha256": "b602c56a44a501948f164964037f23ced6388779304da5f072bda5096d7484ed"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/client.log",
+    "bytes": 3838,
+    "sha256": "6c78ad66b44d386fd94a899a4c188050edf883bbc40942abae7e3222c46ffa78"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/console.log",
+    "bytes": 161,
+    "sha256": "50603ab5415bf56f1db1f8559f6834a33fadb2ae5dfd42b9c83ca9405d833c04"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/gnome-frames.jsonl",
+    "bytes": 2142,
+    "sha256": "d373b633e366e9486419720f28d2d3378ff9123d218314fb4d7eadfd2e537d43"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/gnome.log",
+    "bytes": 4351,
+    "sha256": "8d6d9dceadeb23beb61e3413e462a3ce94be70e84791996d7b02deca329630a9"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/input.log",
+    "bytes": 7211,
+    "sha256": "6a5f669f334e0bc9e590a6917505a609d2de80b190b1d0c23ed3dc5803d97f88"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/pipewire.log",
+    "bytes": 780,
+    "sha256": "fd27bd539700adacdf1cf608b434dad26d400e88c4ad87e1cfd982be61b05698"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/rdp-frames.jsonl",
+    "bytes": 1220,
+    "sha256": "50366f74aba7e989d1b6822822e17dd107e527eb28b9c5acf0a51168da7c7eee"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/rdp.log",
+    "bytes": 1731,
+    "sha256": "edef468f2a53b328c7422faffd6a082759cdcb8a42f689c5d7f9c7df0254d393"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/result.txt",
+    "bytes": 28,
+    "sha256": "474470b61f2b2b201bc82a49824e03dee86f36a120422f1fc9fb10a596646f1f"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/samples.txt",
+    "bytes": 443478,
+    "sha256": "1beffadb0bafa42933e2497f23adab1c8433c5373b49b59e74005e5c7ea245d2"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/seat.log",
+    "bytes": 116,
+    "sha256": "e8ab3941cba0d8eae5ac87ac34bcbc3391d04c35540e3c821c2ee0e4117b3f12"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/session.txt",
+    "bytes": 375,
+    "sha256": "a8286b6f6cfdfd3b75e36c6fcdeed359051173243b2106d821e90b25b7c7902e"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/stage.txt",
+    "bytes": 63,
+    "sha256": "0b8b038a8a7896059896c524c61f04af2e5126e4d1f4512506e5cb755c8fcef4"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/system-bus.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/timeline.jsonl",
+    "bytes": 15582,
+    "sha256": "5c10f7eae64575a78895b455590d33fcc833f2813f96c90be71423e48b534cd0"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/timeline.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/user-session.log",
+    "bytes": 4392,
+    "sha256": "a49f1d697a330a7bd53b13dbfb99fafda2742663a6679ffd37f248748ff2a9c7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wayland-screenshot-2026-11-07_12-33-05.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wayland-screenshot-2026-11-07_12-33-07.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wayland-screenshot-2026-11-07_12-33-09.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wayland-screenshot-2026-11-07_12-33-12.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wayland-screenshot-2026-11-07_12-33-14.png",
+    "bytes": 20377,
+    "sha256": "f96b06c62eb5f80c005b813d786de02970887775b09fa7695eff72212156abd4"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wayland-screenshot-2026-11-07_12-33-16.png",
+    "bytes": 20377,
+    "sha256": "f96b06c62eb5f80c005b813d786de02970887775b09fa7695eff72212156abd4"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wayland-screenshot-2026-11-07_12-33-19.png",
+    "bytes": 20377,
+    "sha256": "f96b06c62eb5f80c005b813d786de02970887775b09fa7695eff72212156abd4"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wayland-screenshot-2026-11-07_12-33-21.png",
+    "bytes": 83816,
+    "sha256": "598aa309aa40c105c5c8efc45518f1cf9a9ae01b4179f44a48d9597e384f97ba"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wayland-screenshot-2026-11-07_12-33-23.png",
+    "bytes": 83816,
+    "sha256": "598aa309aa40c105c5c8efc45518f1cf9a9ae01b4179f44a48d9597e384f97ba"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wayland-screenshot-2026-11-07_12-33-25.png",
+    "bytes": 83816,
+    "sha256": "598aa309aa40c105c5c8efc45518f1cf9a9ae01b4179f44a48d9597e384f97ba"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wayland-screenshot-2026-11-07_12-33-27.png",
+    "bytes": 49624,
+    "sha256": "30f96e153725dfd3aecf15272bf9d1b195ce9d50f20c4f4649b1689c9876a99f"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wayland-screenshot-2026-11-07_12-33-29.png",
+    "bytes": 49624,
+    "sha256": "30f96e153725dfd3aecf15272bf9d1b195ce9d50f20c4f4649b1689c9876a99f"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wayland-screenshot-2026-11-07_12-33-31.png",
+    "bytes": 18664,
+    "sha256": "09733113428f63c32ce646a4c080b691a73e97d731bee4eeb549c813213773bd"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wayland-screenshot-2026-11-07_12-33-34.png",
+    "bytes": 18664,
+    "sha256": "09733113428f63c32ce646a4c080b691a73e97d731bee4eeb549c813213773bd"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wayland-screenshot-2026-11-07_12-33-36.png",
+    "bytes": 80198,
+    "sha256": "effa2c980535f3609194a19fdb1d8c6d6241ce6e772a2144c143fcffcdfb3057"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wayland-screenshot-2026-11-07_12-33-39.png",
+    "bytes": 80198,
+    "sha256": "effa2c980535f3609194a19fdb1d8c6d6241ce6e772a2144c143fcffcdfb3057"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/weston.log",
+    "bytes": 1707,
+    "sha256": "4b8f33016ef46d5ff2c1c8e782b782eeacc9e9e9c7dbdc35b282ab31dc14fd1e"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-deadline/wireplumber.log",
+    "bytes": 1091,
+    "sha256": "dd5f2c1b07c54196e191e5e2fb8ed4cc2f3501e17d5214a55c305d23245a2e92"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/client.log",
+    "bytes": 3838,
+    "sha256": "bb28a115f374648241177cba16bbd61432bd49f7adb32563ac9436adb7f1fd2c"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/console.log",
+    "bytes": 161,
+    "sha256": "831b1d9fd6fb48dbe500f6f9ca96e2f2efe4ae4b565c538d21ac12829e75c817"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/gnome-frames.jsonl",
+    "bytes": 3348,
+    "sha256": "3e00d61b6f248dbee69e2036453af1528e01aba855ca5f7f657c75fd69fef226"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/gnome.log",
+    "bytes": 3529,
+    "sha256": "ffbe2fca5400ae8694ea5d897f64ed998113610e33566a79e74fb6f36e0d9776"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/input.log",
+    "bytes": 7146,
+    "sha256": "d52ad1646c9b5543b00de74d2e6d4c76eb91961ba8c97a0d86138c8a9c7a3103"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/pipewire.log",
+    "bytes": 780,
+    "sha256": "bef91f754f9d6db3ef970df15bef14fe5c547b567ffea31de6c92cba8e3f07d6"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/rdp-frames.jsonl",
+    "bytes": 2420,
+    "sha256": "bd65497dac6431b04037bee770646535e809fd1cbab6eb331eaf7c949e270bd7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/rdp.log",
+    "bytes": 1731,
+    "sha256": "2c9a0a4ec8a2449206cc05445f4774d86bad486aaa7555cdd80980241f15e09d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/result.txt",
+    "bytes": 46,
+    "sha256": "2eb8227f38957d5c532445977d8e4a494f07832f67f6a5c41816807f973a76ac"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/samples.txt",
+    "bytes": 569115,
+    "sha256": "d1fa3f96c22b59e9634b42633603652f83ad9d8f2edbf6a2ac2c6c78208485e1"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/seat.log",
+    "bytes": 116,
+    "sha256": "e8ab3941cba0d8eae5ac87ac34bcbc3391d04c35540e3c821c2ee0e4117b3f12"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/session.txt",
+    "bytes": 303,
+    "sha256": "14df839ef203a45e5afb09b97c2c310c1e7b971836090bb5082ab0d0ce1b82a2"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/stage.txt",
+    "bytes": 63,
+    "sha256": "2d1d89e6667f2bb27044ae948ed3a5df2484bb94dac0e876641dddd19069242e"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/system-bus.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/timeline.jsonl",
+    "bytes": 27940,
+    "sha256": "40307f32133ff9b194da7954ef41ea638cae08208fc1cc011e7bb3110c492891"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/timeline.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/user-session.log",
+    "bytes": 4395,
+    "sha256": "a45549097d9e588f1c908ba3be28f98059f32bbff01172699fc5a201262e749b"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-31-42.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-31-45.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-31-47.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-31-49.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-31-51.png",
+    "bytes": 20152,
+    "sha256": "dd5fb3750c3d3ffedf0056b6a169a8fe330eb450424210260d55d5db2608a008"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-31-54.png",
+    "bytes": 20152,
+    "sha256": "dd5fb3750c3d3ffedf0056b6a169a8fe330eb450424210260d55d5db2608a008"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-31-56.png",
+    "bytes": 20152,
+    "sha256": "dd5fb3750c3d3ffedf0056b6a169a8fe330eb450424210260d55d5db2608a008"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-31-58.png",
+    "bytes": 20152,
+    "sha256": "dd5fb3750c3d3ffedf0056b6a169a8fe330eb450424210260d55d5db2608a008"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-32-01.png",
+    "bytes": 83610,
+    "sha256": "696b56447ce11bdbdd9dc49d7e33ff425b98dc1b093542982f8e5b394dc72bc7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-32-03.png",
+    "bytes": 18638,
+    "sha256": "b87edd4f634f4cac35bbbea8bdc57f7ea0c5a0895b5e9446a694a9daaf296de7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-32-05.png",
+    "bytes": 18638,
+    "sha256": "b87edd4f634f4cac35bbbea8bdc57f7ea0c5a0895b5e9446a694a9daaf296de7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-32-07.png",
+    "bytes": 18638,
+    "sha256": "b87edd4f634f4cac35bbbea8bdc57f7ea0c5a0895b5e9446a694a9daaf296de7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-32-10.png",
+    "bytes": 62126,
+    "sha256": "bdd95a14adc3c595a83e6f9636c43bec3fa0120beb2576a39a16856f18d4408a"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-32-12.png",
+    "bytes": 18638,
+    "sha256": "b87edd4f634f4cac35bbbea8bdc57f7ea0c5a0895b5e9446a694a9daaf296de7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-32-14.png",
+    "bytes": 80151,
+    "sha256": "7c04f86f808dfb65d83ad5d9f02e8661154aa24629e49fb98effa1a223e729ed"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-32-17.png",
+    "bytes": 62126,
+    "sha256": "bdd95a14adc3c595a83e6f9636c43bec3fa0120beb2576a39a16856f18d4408a"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-32-19.png",
+    "bytes": 70636,
+    "sha256": "b38432df11cd9a4644924e8110f3b15dae0d4b31adc380622cea75a687d9e8bf"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-32-21.png",
+    "bytes": 70636,
+    "sha256": "b38432df11cd9a4644924e8110f3b15dae0d4b31adc380622cea75a687d9e8bf"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-32-23.png",
+    "bytes": 70636,
+    "sha256": "b38432df11cd9a4644924e8110f3b15dae0d4b31adc380622cea75a687d9e8bf"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-32-25.png",
+    "bytes": 95134,
+    "sha256": "b8c121498277fab2ab15e00be652bc1de42c9d049a6f6a7cab3d12d9b4dab7b7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-32-28.png",
+    "bytes": 96063,
+    "sha256": "6cfbf211b49ba6ed6110e6a0a316f42bd0c2b457948b3da8f8102b5de6697f92"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wayland-screenshot-2026-11-07_12-32-30.png",
+    "bytes": 156989,
+    "sha256": "196bec6f5135625569a9945aa43012f78f77e2f28c83b1d72a743f8e75c24616"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/weston.log",
+    "bytes": 1707,
+    "sha256": "fb25758ba115089c29f2de8c22e3e668d167a062e5e2a9e6d03adac1ec5d801b"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-int/wireplumber.log",
+    "bytes": 1091,
+    "sha256": "b1efb2bde0ba1736051707d8c7151996ee73fe1dd4f4966892334ba6d0db0dc0"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/client.log",
+    "bytes": 3838,
+    "sha256": "72362d5bbe3356adf8b8e00dd1a2a3535d0f1a5708674c8606b6c030ce1999aa"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/console.log",
+    "bytes": 161,
+    "sha256": "cf8d2ddef2ebdab6c9755738eac45a8cad969261c4bede07941571d23915c763"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/gnome-frames.jsonl",
+    "bytes": 2751,
+    "sha256": "277a1ebe4f88e0de051b29cc953e4dd77138778af4860201bb86a4429189ab2f"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/gnome.log",
+    "bytes": 3529,
+    "sha256": "118be5a9dbee7b2b650b7e9ba1db9eb19ef7c668f59c88bb3efb51a132472580"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/input.log",
+    "bytes": 7205,
+    "sha256": "f251c0b47339717b2edf4d4e8675177abf5794f540287904d176b8f0df2ff0f0"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/pipewire.log",
+    "bytes": 780,
+    "sha256": "5bdb2cb4c640e21d10c4aeca37dc29cea1966928c276f9daf1ef2abe99a57f33"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/rdp-frames.jsonl",
+    "bytes": 1704,
+    "sha256": "2a23661f73160bf5b63abdba38b387949e3385c2cc60a423798b538149b87a23"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/rdp.log",
+    "bytes": 1731,
+    "sha256": "2c70fcd031afcb683ab956f1d7c8d4d592085e46698bc7936c86069fbb480383"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/result.txt",
+    "bytes": 46,
+    "sha256": "2eb8227f38957d5c532445977d8e4a494f07832f67f6a5c41816807f973a76ac"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/samples.txt",
+    "bytes": 552839,
+    "sha256": "701d4591ede375d0d129da7f08605251f5c4aac3a4c77a3385f58a2f05139301"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/seat.log",
+    "bytes": 116,
+    "sha256": "e8ab3941cba0d8eae5ac87ac34bcbc3391d04c35540e3c821c2ee0e4117b3f12"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/session.txt",
+    "bytes": 304,
+    "sha256": "f1a7d18d48ed43037e8fbebf727a3ed6a49deb73880803461a8817b6177428f2"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/stage.txt",
+    "bytes": 63,
+    "sha256": "75e0956e75b3dc6b59405e9851da9391f62e92939bd71538d75daf709e3b05a3"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/system-bus.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/timeline.jsonl",
+    "bytes": 23087,
+    "sha256": "b1d90bc84310dd323f14fc14aa1ead5f1ecb016502b2824d76e035718a2f4690"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/timeline.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/user-session.log",
+    "bytes": 4395,
+    "sha256": "0d6ff6f8b2ef979be232bd3c5fa1c321395c2f1911cfc49bc258029a1d357d89"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-15.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-17.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-20.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-22.png",
+    "bytes": 20242,
+    "sha256": "4dc267074056a691ff3b82aed64f3fe933a561d1f9fd8d4ea25909ef0c89c539"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-23.png",
+    "bytes": 20242,
+    "sha256": "4dc267074056a691ff3b82aed64f3fe933a561d1f9fd8d4ea25909ef0c89c539"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-26.png",
+    "bytes": 20242,
+    "sha256": "4dc267074056a691ff3b82aed64f3fe933a561d1f9fd8d4ea25909ef0c89c539"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-28.png",
+    "bytes": 20242,
+    "sha256": "4dc267074056a691ff3b82aed64f3fe933a561d1f9fd8d4ea25909ef0c89c539"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-30.png",
+    "bytes": 83726,
+    "sha256": "fdc1551e9772ea15a6971c4b1084a897b011e291f2b09caabcd9701dfff932ef"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-33.png",
+    "bytes": 83726,
+    "sha256": "fdc1551e9772ea15a6971c4b1084a897b011e291f2b09caabcd9701dfff932ef"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-35.png",
+    "bytes": 83726,
+    "sha256": "fdc1551e9772ea15a6971c4b1084a897b011e291f2b09caabcd9701dfff932ef"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-37.png",
+    "bytes": 49577,
+    "sha256": "37e1e71d99824a80547419ac0370ef8415bb048aa6333ff8f8587e4c47aeecd5"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-40.png",
+    "bytes": 18640,
+    "sha256": "469531fcbf723c6a0c640655bc20323822a74a489460c3aa9c01664bfe678811"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-42.png",
+    "bytes": 18640,
+    "sha256": "469531fcbf723c6a0c640655bc20323822a74a489460c3aa9c01664bfe678811"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-44.png",
+    "bytes": 62126,
+    "sha256": "0177270411a8157846fd8044e06155279e9344666ee65c37e7cf369e03f51576"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-46.png",
+    "bytes": 80144,
+    "sha256": "7a42a1bec446f815f563122d6d39b152d8e1c0521e2cc191d7dc3973010da518"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-49.png",
+    "bytes": 80144,
+    "sha256": "7a42a1bec446f815f563122d6d39b152d8e1c0521e2cc191d7dc3973010da518"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-51.png",
+    "bytes": 62126,
+    "sha256": "0177270411a8157846fd8044e06155279e9344666ee65c37e7cf369e03f51576"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-54.png",
+    "bytes": 70638,
+    "sha256": "6d9d160da09ed1c84dfb03f13f625e4a1395d8a4a337ca40413429544f194c48"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-55.png",
+    "bytes": 70638,
+    "sha256": "6d9d160da09ed1c84dfb03f13f625e4a1395d8a4a337ca40413429544f194c48"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-27-57.png",
+    "bytes": 70638,
+    "sha256": "6d9d160da09ed1c84dfb03f13f625e4a1395d8a4a337ca40413429544f194c48"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-28-00.png",
+    "bytes": 95131,
+    "sha256": "ec11b3e4059b0162755dea63c862cd01978a25802474b92f1e5d7d71b049c63d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wayland-screenshot-2026-11-07_12-28-02.png",
+    "bytes": 101954,
+    "sha256": "db8ccbb0b01085c767f2593039bd183b1d7a5751156317d6481742e01921a967"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/weston.log",
+    "bytes": 1707,
+    "sha256": "bfbb789140c255bdbc55ed1a30e307c111892bc37b15d2562bd3522ad3a77093"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-final-term/wireplumber.log",
+    "bytes": 1091,
+    "sha256": "e9e6370d24d0835ef75e4aef6677b258577970554615a05b8c5a5f2c6db51654"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/client.log",
+    "bytes": 3838,
+    "sha256": "4ad6097b4152c712d3df296bbd557f81a9fb9c01d06ea901e5960d7743e719be"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/console.log",
+    "bytes": 161,
+    "sha256": "28822df68231e3f06a719e28e6e899654990c5d601b84d3debb9a0cc9ae6e73b"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/gnome-frames.jsonl",
+    "bytes": 3084,
+    "sha256": "1450f48bd4a56d5199082005c205b16604f292b9c50c9d509ee6f15ce7cb0715"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/gnome.log",
+    "bytes": 6695,
+    "sha256": "a732b8335c83dcace8a82b44462bf9a54d67b9f2bf5117a73c87e41272cc4dd9"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/input.log",
+    "bytes": 7140,
+    "sha256": "458cc26bf24ff02d1dff0325777f14fd758d4696976709790a72e60225a7e55b"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/pipewire.log",
+    "bytes": 780,
+    "sha256": "fb8fc12576da6bd2632f2ad0a5957ba22944809cbc8f56560c0661bf408f4c7d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/rdp-frames.jsonl",
+    "bytes": 2096,
+    "sha256": "3bfc272a408a5ba32e52344d614b2dca33fb5d3e2e4274399b68963862143940"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/rdp.log",
+    "bytes": 1731,
+    "sha256": "9ef6b016eb0eed893f54af28e25cb51746ba73cf5c32f4515fb788a98c261a69"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/result.txt",
+    "bytes": 46,
+    "sha256": "2eb8227f38957d5c532445977d8e4a494f07832f67f6a5c41816807f973a76ac"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/samples.txt",
+    "bytes": 364064,
+    "sha256": "18cb9e695fccd665ba34982302a60f3ec8d699f96583da99e01f4ca731bf8f30"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/seat.log",
+    "bytes": 116,
+    "sha256": "e8ab3941cba0d8eae5ac87ac34bcbc3391d04c35540e3c821c2ee0e4117b3f12"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/session.txt",
+    "bytes": 259,
+    "sha256": "42db8c4da1f6ded9f41ddc2fde9fe212fcdce6668146d1c8697557f917b3bd3a"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/stage.txt",
+    "bytes": 63,
+    "sha256": "449d1304ad7aa3b459c9ec01da65046eef53ac404253f32b2c241b89d8ddfd8e"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/system-bus.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/timeline.jsonl",
+    "bytes": 25961,
+    "sha256": "54ba0b5f4e50ee12c33f5a860aa061b61583c6a280b87c45ccc84c83a7511946"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/timeline.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/user-session.log",
+    "bytes": 4395,
+    "sha256": "88f2334932c51296490c9e89cfb6cf593d665bfb14be2092faa8a5a8f160b4c3"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-18-46.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-18-48.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-18-50.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-18-52.png",
+    "bytes": 20143,
+    "sha256": "cdbc20b581966163f2676cb7149a2dbcc10dd973d1f094863b5b693e20b82ad3"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-18-55.png",
+    "bytes": 20143,
+    "sha256": "cdbc20b581966163f2676cb7149a2dbcc10dd973d1f094863b5b693e20b82ad3"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-18-57.png",
+    "bytes": 20143,
+    "sha256": "cdbc20b581966163f2676cb7149a2dbcc10dd973d1f094863b5b693e20b82ad3"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-18-59.png",
+    "bytes": 20143,
+    "sha256": "cdbc20b581966163f2676cb7149a2dbcc10dd973d1f094863b5b693e20b82ad3"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-19-02.png",
+    "bytes": 83637,
+    "sha256": "1c6561779edef55422cca0360d73544cfb451f58822e879337ef418e1046094f"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-19-04.png",
+    "bytes": 83621,
+    "sha256": "904d62b82ec3cfe253376b5217beed3b5e0165207f3ae98c4a4f502605e49bf8"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-19-06.png",
+    "bytes": 83621,
+    "sha256": "904d62b82ec3cfe253376b5217beed3b5e0165207f3ae98c4a4f502605e49bf8"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-19-08.png",
+    "bytes": 83621,
+    "sha256": "904d62b82ec3cfe253376b5217beed3b5e0165207f3ae98c4a4f502605e49bf8"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-19-11.png",
+    "bytes": 18604,
+    "sha256": "9defc3e5ce1c3ef2bd7fab20dec2ff97db1cd5b59db1a32fb3bf17c0ab8d8c03"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-19-13.png",
+    "bytes": 18604,
+    "sha256": "9defc3e5ce1c3ef2bd7fab20dec2ff97db1cd5b59db1a32fb3bf17c0ab8d8c03"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-19-15.png",
+    "bytes": 61971,
+    "sha256": "04571f44dabd62d25fa91279dec7a6df604ec2e4f4066b1bd51179fda784a9f3"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-19-18.png",
+    "bytes": 80000,
+    "sha256": "f5a09845a86e7f2102377bc62338071b4b588891dbb16ed0970ebb4939ec9fd3"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-19-20.png",
+    "bytes": 80000,
+    "sha256": "f5a09845a86e7f2102377bc62338071b4b588891dbb16ed0970ebb4939ec9fd3"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-19-22.png",
+    "bytes": 61971,
+    "sha256": "04571f44dabd62d25fa91279dec7a6df604ec2e4f4066b1bd51179fda784a9f3"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-19-24.png",
+    "bytes": 70478,
+    "sha256": "95d07896915856adad3c66bb7864255d0a12c854edc0a16d0f29afd623e72e73"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-19-26.png",
+    "bytes": 70478,
+    "sha256": "95d07896915856adad3c66bb7864255d0a12c854edc0a16d0f29afd623e72e73"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-19-28.png",
+    "bytes": 70478,
+    "sha256": "95d07896915856adad3c66bb7864255d0a12c854edc0a16d0f29afd623e72e73"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-19-31.png",
+    "bytes": 94974,
+    "sha256": "5c619462d72ce1f66258163f19c85cd8659c726b71fa24ae3d4e46480c8977ad"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wayland-screenshot-2026-11-07_12-19-33.png",
+    "bytes": 95911,
+    "sha256": "a4f97b643d15186e5000393d91e3db09a4a5df91946c6dabf5fc57e5e0bfc7c5"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/weston.log",
+    "bytes": 1707,
+    "sha256": "68c8d826f0667c2bd43a349bdf75267d01bdd4d88d1245d9e7bdc11d8a61cc72"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-fixed/wireplumber.log",
+    "bytes": 1091,
+    "sha256": "4b95fb519058fbff09314e0b2fcf9d1edf5846b0ef0a69e9dd1b05de2e729f89"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/client.log",
+    "bytes": 3838,
+    "sha256": "0da585383719ae1b0fd077bf49523bd06e952630ea03620b1e30199c82c4e438"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/console.log",
+    "bytes": 161,
+    "sha256": "a9b1725273eab59136350bca424abd7392c8f13581376b22e934e1cf879d600a"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/gnome-frames.jsonl",
+    "bytes": 3033,
+    "sha256": "61c0810a1710de61453c13adc6c40b23937f39d686f3ef108360a2ab617306e7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/gnome.log",
+    "bytes": 3529,
+    "sha256": "29a2c9ef871163c585c14c797efccba0612ee27b2f4c207f911bdeed1f9a2672"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/input.log",
+    "bytes": 7210,
+    "sha256": "b47f3d110d4f4a21559d66bc40db6424e869a5f61a7ba110677e9d2304e836f5"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/pipewire.log",
+    "bytes": 780,
+    "sha256": "c71853c7352a54730b7b3f3491be6a4c26fcba3e6250355f36f0c71df34a639e"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/rdp-frames.jsonl",
+    "bytes": 1958,
+    "sha256": "bff02700820c2fbd9f49a8a9257af1a04e12bb24b7a1a26a2a5e4f365287ecb2"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/rdp.log",
+    "bytes": 1731,
+    "sha256": "062a9fb21968cffd0f0d06623434516906118790f48fb670531dc8ab932190c5"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/samples.txt",
+    "bytes": 370285,
+    "sha256": "adeb593f666a3d58ce83b20a684d28cb4e4f3395c29c55f5f7d90aa6f16e5128"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/seat.log",
+    "bytes": 116,
+    "sha256": "e8ab3941cba0d8eae5ac87ac34bcbc3391d04c35540e3c821c2ee0e4117b3f12"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/session.txt",
+    "bytes": 259,
+    "sha256": "a2fcf8173dc48d6765bab8aeb179926a5938404efbd9d00899860d7125a263ba"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/stage.txt",
+    "bytes": 63,
+    "sha256": "af0808d13e34aa37cc610c86c09af0c58219453cf63628c7285c42be99db3c4b"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/system-bus.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/timeline.jsonl",
+    "bytes": 24937,
+    "sha256": "e2681f1445f677da2c48c5aa8fe450c7191d7b9b895f0f184b8dd49526d5e4e1"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/timeline.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/user-session.log",
+    "bytes": 4395,
+    "sha256": "e33af4eed70ffd900f9e3ed7e28df5a18a234b39dd539b5c20336a2916e6bc44"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-23-29.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-23-32.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-23-34.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-23-36.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-23-38.png",
+    "bytes": 20283,
+    "sha256": "04b9ad52c3db93dc106a9432cbcd1c124eda7735c7b888594046678afa90abc4"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-23-41.png",
+    "bytes": 20283,
+    "sha256": "04b9ad52c3db93dc106a9432cbcd1c124eda7735c7b888594046678afa90abc4"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-23-43.png",
+    "bytes": 20283,
+    "sha256": "04b9ad52c3db93dc106a9432cbcd1c124eda7735c7b888594046678afa90abc4"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-23-45.png",
+    "bytes": 83754,
+    "sha256": "10cf73eb1e64dedb89ae76b39e2a58eb6a38f3d0592331673592be4b2f3c5d52"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-23-48.png",
+    "bytes": 83754,
+    "sha256": "10cf73eb1e64dedb89ae76b39e2a58eb6a38f3d0592331673592be4b2f3c5d52"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-23-50.png",
+    "bytes": 83754,
+    "sha256": "10cf73eb1e64dedb89ae76b39e2a58eb6a38f3d0592331673592be4b2f3c5d52"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-23-52.png",
+    "bytes": 49650,
+    "sha256": "5d534f7b94180199cf4fe43092be52a7580745980bcfae6053b5de93fd2175fb"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-23-54.png",
+    "bytes": 49650,
+    "sha256": "5d534f7b94180199cf4fe43092be52a7580745980bcfae6053b5de93fd2175fb"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-23-57.png",
+    "bytes": 18695,
+    "sha256": "f6eeefa410f09da3f9d2aede32cb6fb16672e4cd8cc8153724d281373ffe306d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-23-59.png",
+    "bytes": 18695,
+    "sha256": "f6eeefa410f09da3f9d2aede32cb6fb16672e4cd8cc8153724d281373ffe306d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-24-01.png",
+    "bytes": 80050,
+    "sha256": "25035d8b4fc8da146506e08cfc021ee39e7b779c9e256c4fc0f4927721b14548"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-24-04.png",
+    "bytes": 80050,
+    "sha256": "25035d8b4fc8da146506e08cfc021ee39e7b779c9e256c4fc0f4927721b14548"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-24-06.png",
+    "bytes": 62020,
+    "sha256": "daa9b163eb73c3027facba42a0f2fcea546a1ea9e2770f9365531733a155a253"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-24-08.png",
+    "bytes": 70526,
+    "sha256": "deee0faefb1f9b5fc90befda9cc38c8ba0f9f055eead78413a66f932640cc7ed"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-24-10.png",
+    "bytes": 70526,
+    "sha256": "deee0faefb1f9b5fc90befda9cc38c8ba0f9f055eead78413a66f932640cc7ed"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-24-12.png",
+    "bytes": 70526,
+    "sha256": "deee0faefb1f9b5fc90befda9cc38c8ba0f9f055eead78413a66f932640cc7ed"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-24-14.png",
+    "bytes": 95027,
+    "sha256": "cf59fe4f94eaf01ea433089b0d5007bec5e0590bb3d0a5bd7f6c9c9d10b21bc5"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wayland-screenshot-2026-11-07_12-24-17.png",
+    "bytes": 101902,
+    "sha256": "3bc88c158b4fcf4e1e954d4e4daa0c2d6d26ba052a959dee1d62cb311efec608"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/weston.log",
+    "bytes": 1707,
+    "sha256": "1b5c1727ac5908a13bea00b5b45dd6fc901687c2c6dbc3f1ab94882792f7d302"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-lifecycle-r2/wireplumber.log",
+    "bytes": 1091,
+    "sha256": "df8d4fad4cd826e35f33f24c73e6e964dda0047c83a8987ddde215c5d0131e33"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-memory.txt",
+    "bytes": 1912,
+    "sha256": "45d3144bcda6702486b0277bd7a597907bbbf017c0bd7ae544404d896596159d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-metrics.txt",
+    "bytes": 1930,
+    "sha256": "5cf76fae4c7100d775154d819b4f5a47f4ca2c8c18de391ac7cb7acbe00750e9"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-rdp/gnome-frames.jsonl",
+    "bytes": 282,
+    "sha256": "68975d3b814a6c120a7efeeb17d723456374ecec6b7ccc74a60a247d19ca92c1"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-rdp/gnome.log",
+    "bytes": 2256,
+    "sha256": "35668056091617fcd3d1b8b1d06e124cad638c1cb524333bcbe951e485d62d80"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-rdp/input.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-rdp/pipewire.log",
+    "bytes": 780,
+    "sha256": "51d7945d1fa98816403de529327eb79a3abb3a9b808b8109ac0b04b7a9ec6955"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-rdp/rdp.log",
+    "bytes": 18,
+    "sha256": "0b99ec3fb34dd477a0e34cd2d6ceaa44bebb7d4c7f96b460ba6d286b32d2c261"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-rdp/result.txt",
+    "bytes": 58,
+    "sha256": "a00d5029823f681bc6f65d1f018d5737bed722bb1a496eeeda734bb3f67b752c"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-rdp/samples.txt",
+    "bytes": 52283,
+    "sha256": "7663dbb97c90cc7b4ed31722f730a34a8a560404f3f89641e7db04e73806aece"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-rdp/seat.log",
+    "bytes": 116,
+    "sha256": "e8ab3941cba0d8eae5ac87ac34bcbc3391d04c35540e3c821c2ee0e4117b3f12"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-rdp/session.txt",
+    "bytes": 329,
+    "sha256": "bdfca0c79f4d72a080171177c7eb1a2579919d7fb35c96d6bc8d448b842d1a3a"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-rdp/stage.txt",
+    "bytes": 63,
+    "sha256": "bf4fff778652a6a5d0b1cd77686a31e68523f43f48a31c1d6a01ebcb4005461f"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-rdp/system-bus.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-rdp/timeline.jsonl",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-rdp/timeline.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-rdp/user-session.log",
+    "bytes": 4030,
+    "sha256": "8896adf028564ef81582f887ee07a4ddf3de83d45151b622a058413eceec1414"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-rdp/weston.log",
+    "bytes": 1707,
+    "sha256": "710a4f902db567d2eeeccef0514d763669760c8ac2a19f44cac006eee6362493"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-rdp/wireplumber.log",
+    "bytes": 1091,
+    "sha256": "a6c79cf927d1c5a3a941fa69b0adf6f445b01164165788d2ae97f18f593a4aeb"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-start/result.txt",
+    "bytes": 58,
+    "sha256": "a00d5029823f681bc6f65d1f018d5737bed722bb1a496eeeda734bb3f67b752c"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-start/samples.txt",
+    "bytes": 22,
+    "sha256": "90757ebe4ad827e1c4cc453d2a9e9e6d9ab6cb568faea66b3617ac3c4067f9d6"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-start/session.txt",
+    "bytes": 237,
+    "sha256": "c5646eea30c0831a3e8c4709b575e763631b394318ddf4c1dd673b3fe469c9fb"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-partial-start/stage.txt",
+    "bytes": 63,
+    "sha256": "0201bf59e0ccf12520960869652945ebb37c0f270282c0632557dd485b8b1303"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/client.log",
+    "bytes": 3838,
+    "sha256": "2977b33366376db146ee588e36f0b39ed97a7b2a2b320635bd39c5e2df449727"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/console.log",
+    "bytes": 161,
+    "sha256": "2bdf5064006a60b2ca7a86b1992b00f070068d3f567a72015c21de4115cc804c"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/gnome-frames.jsonl",
+    "bytes": 2232,
+    "sha256": "87d7d18a87eacb7a268d4866378af375c73bd4127cb899b80e58b665ff70cbd6"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/gnome.log",
+    "bytes": 3529,
+    "sha256": "a68f71afbb700de8d9f7ce89ba4b44f45023542d26f93f7e921336cc9b5373f8"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/input.log",
+    "bytes": 7209,
+    "sha256": "956f49cce5ac73254c7dff1fd80b3a47a9de168f15fedef4dd0af1c816a42dfc"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/memory-accounting.json",
+    "bytes": 9552,
+    "sha256": "02285be8b6828ea14f764546597fde7a29dab492d0ca2c14546ab3fcff5a6e4f"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/metrics.json",
+    "bytes": 1930,
+    "sha256": "5cf76fae4c7100d775154d819b4f5a47f4ca2c8c18de391ac7cb7acbe00750e9"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/pipewire.log",
+    "bytes": 780,
+    "sha256": "f205d61f54139dd41bf4317132e07a2bc54cc1a15673b0b1edd8cea312551fef"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/rdp-copies.jsonl",
+    "bytes": 3867,
+    "sha256": "18319df1afb09ac1194d6088cf13b26cc0a531c7dea915a27995398f86545942"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/rdp-frames.jsonl",
+    "bytes": 1384,
+    "sha256": "3899a5b9b72a3f4cd4ea10109eaf7d5a77d4798b190feea6df5fa5bdb2a9ec2f"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/rdp.log",
+    "bytes": 1731,
+    "sha256": "3212b0141e551977c92a8af9144793cc1e5f4e106abf19a0e4e906a65badd864"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/result.txt",
+    "bytes": 58,
+    "sha256": "fe546a6fa326b4bcff4362f10c0e449039e5b645fa443defe59e6dcc2b48dc6d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/samples.txt",
+    "bytes": 438743,
+    "sha256": "38e06473317219bf85bb314e083c7dc73f313b40c97094199b5e23f366da2fbb"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/seat.log",
+    "bytes": 116,
+    "sha256": "e8ab3941cba0d8eae5ac87ac34bcbc3391d04c35540e3c821c2ee0e4117b3f12"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/session.txt",
+    "bytes": 299,
+    "sha256": "d6642ee4ea42e323242e87ab1db0dfac69914e1a9c81dbf47854e4047c58125f"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/stage.txt",
+    "bytes": 63,
+    "sha256": "9589d4403f623b4eff8af3c5bc3c090a4d4ed26156c42ff673d28786c2a2b173"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/system-bus.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/timeline.jsonl",
+    "bytes": 17332,
+    "sha256": "2bae63a5de067cc535ba475bbcf1425e7ecd325d2ae04923f9ab9aac9b6b9cdc"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/timeline.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/user-session.log",
+    "bytes": 4395,
+    "sha256": "fedce3aa2aaee8a94a1976249777d349b290832a3766def3fa6b67fce39e6556"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wayland-screenshot-2026-11-07_12-35-14.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wayland-screenshot-2026-11-07_12-35-17.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wayland-screenshot-2026-11-07_12-35-19.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wayland-screenshot-2026-11-07_12-35-21.png",
+    "bytes": 20348,
+    "sha256": "42b152197cc05c54ce4b7d9b2bee99b6b468a0d8c90be8c11eeecbd850402821"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wayland-screenshot-2026-11-07_12-35-23.png",
+    "bytes": 20348,
+    "sha256": "42b152197cc05c54ce4b7d9b2bee99b6b468a0d8c90be8c11eeecbd850402821"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wayland-screenshot-2026-11-07_12-35-25.png",
+    "bytes": 20348,
+    "sha256": "42b152197cc05c54ce4b7d9b2bee99b6b468a0d8c90be8c11eeecbd850402821"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wayland-screenshot-2026-11-07_12-35-27.png",
+    "bytes": 20348,
+    "sha256": "42b152197cc05c54ce4b7d9b2bee99b6b468a0d8c90be8c11eeecbd850402821"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wayland-screenshot-2026-11-07_12-35-29.png",
+    "bytes": 83732,
+    "sha256": "06738accc410b75b65845822ec2f7d2eee8be07eec0967a89d856daa6cd7f176"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wayland-screenshot-2026-11-07_12-35-32.png",
+    "bytes": 18628,
+    "sha256": "85d3fd7093824d8fc9d5b3fb6089ca29c9a4a74e3187d93f3b4b0d31b59b51eb"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wayland-screenshot-2026-11-07_12-35-34.png",
+    "bytes": 18628,
+    "sha256": "85d3fd7093824d8fc9d5b3fb6089ca29c9a4a74e3187d93f3b4b0d31b59b51eb"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wayland-screenshot-2026-11-07_12-35-36.png",
+    "bytes": 18628,
+    "sha256": "85d3fd7093824d8fc9d5b3fb6089ca29c9a4a74e3187d93f3b4b0d31b59b51eb"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wayland-screenshot-2026-11-07_12-35-39.png",
+    "bytes": 62140,
+    "sha256": "114c57b6682d6b1fc200498cd480c764369344167c26c858872c8465b010b2cf"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wayland-screenshot-2026-11-07_12-35-41.png",
+    "bytes": 62140,
+    "sha256": "114c57b6682d6b1fc200498cd480c764369344167c26c858872c8465b010b2cf"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wayland-screenshot-2026-11-07_12-35-43.png",
+    "bytes": 18628,
+    "sha256": "85d3fd7093824d8fc9d5b3fb6089ca29c9a4a74e3187d93f3b4b0d31b59b51eb"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wayland-screenshot-2026-11-07_12-35-46.png",
+    "bytes": 80166,
+    "sha256": "36a8cbae262d83e8320a84522df71f12d71eeaa325b0e630fe8b1dbae8b9aa26"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wayland-screenshot-2026-11-07_12-35-48.png",
+    "bytes": 62140,
+    "sha256": "114c57b6682d6b1fc200498cd480c764369344167c26c858872c8465b010b2cf"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/weston.log",
+    "bytes": 1707,
+    "sha256": "1b3bd71daac757a979d7dcfc657d0588404ca7d8470a273eb4d5131fee6fb824"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-deadline/wireplumber.log",
+    "bytes": 1091,
+    "sha256": "d47d7071c2ea100dc66516a602e121fc3382d3f058482ad65948972fc13d86ce"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/client.log",
+    "bytes": 3838,
+    "sha256": "d7f317a9243af6ae40c25906eeb2f7d0417f73518155220a47de3c9ed0060c03"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/console.log",
+    "bytes": 161,
+    "sha256": "76da01771f5ba63aacb483caa6b31a00faa219b1669480d9ea13464a1e18ccc2"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/gnome-frames.jsonl",
+    "bytes": 2029,
+    "sha256": "c521c3c702faf4b957ed4149d60aabb46c12d9dad19a8b22ebff5623bcefe7cc"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/gnome.log",
+    "bytes": 3529,
+    "sha256": "b9a05cd2799e1098d432cb696cb96bdbdd5a564ab39ad912beb32a7a04cd2885"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/input.log",
+    "bytes": 6296,
+    "sha256": "f9706191d577750ef23edde9871e6c731ec5a3669c35d695cb1110da618a9f27"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/pipewire.log",
+    "bytes": 780,
+    "sha256": "a7882a94b3f2ed6bcfa181d5294de925e34fc2a7a1c133ca6f699e6aa43d8174"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/rdp-frames.jsonl",
+    "bytes": 1205,
+    "sha256": "8a45d38d6f920fcaa968b4356fe179be7368d1d59159695af2f722863f3a0cab"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/rdp.log",
+    "bytes": 1731,
+    "sha256": "58ef61621e4b71a642e1411e06f6ffd86ef6c09ef2e8bc2bab6f986d36c89ed2"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/result.txt",
+    "bytes": 58,
+    "sha256": "fe546a6fa326b4bcff4362f10c0e449039e5b645fa443defe59e6dcc2b48dc6d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/samples.txt",
+    "bytes": 433083,
+    "sha256": "206b4ae14542b374b4248050e73945925ce23e3874233982d675f446209c4146"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/seat.log",
+    "bytes": 116,
+    "sha256": "e8ab3941cba0d8eae5ac87ac34bcbc3391d04c35540e3c821c2ee0e4117b3f12"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/session.txt",
+    "bytes": 306,
+    "sha256": "3a1a61f905b9eaf750ae70f668a2ffe6c504f03e54a1c6c7937459e8ed85bcb9"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/stage.txt",
+    "bytes": 63,
+    "sha256": "e517b3562ec5f5fb264179af09e97e00011ce2bf1909086807c63ea86636a035"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/system-bus.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/timeline.jsonl",
+    "bytes": 14813,
+    "sha256": "439657018e6f1123d395eaa53d17310fb5e836fc0ade9dfe00957ce59de89853"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/timeline.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/user-session.log",
+    "bytes": 4395,
+    "sha256": "68a84403d09c2ab867e6e5077864e9774eb332221f27b973211ed10de66d7484"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/wayland-screenshot-2026-11-07_12-49-10.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/wayland-screenshot-2026-11-07_12-49-12.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/wayland-screenshot-2026-11-07_12-49-14.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/wayland-screenshot-2026-11-07_12-49-17.png",
+    "bytes": 20209,
+    "sha256": "37c3754a418a3596f527e1c172c7764298329760742f09210a39452069a85459"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/wayland-screenshot-2026-11-07_12-49-19.png",
+    "bytes": 20209,
+    "sha256": "37c3754a418a3596f527e1c172c7764298329760742f09210a39452069a85459"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/wayland-screenshot-2026-11-07_12-49-21.png",
+    "bytes": 20209,
+    "sha256": "37c3754a418a3596f527e1c172c7764298329760742f09210a39452069a85459"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/wayland-screenshot-2026-11-07_12-49-23.png",
+    "bytes": 20209,
+    "sha256": "37c3754a418a3596f527e1c172c7764298329760742f09210a39452069a85459"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/wayland-screenshot-2026-11-07_12-49-26.png",
+    "bytes": 83656,
+    "sha256": "759ade580cf5149a0656927a06c495cff4a34616304f327413a7369214bc6ad8"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/wayland-screenshot-2026-11-07_12-49-28.png",
+    "bytes": 83656,
+    "sha256": "759ade580cf5149a0656927a06c495cff4a34616304f327413a7369214bc6ad8"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/wayland-screenshot-2026-11-07_12-49-30.png",
+    "bytes": 83656,
+    "sha256": "759ade580cf5149a0656927a06c495cff4a34616304f327413a7369214bc6ad8"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/wayland-screenshot-2026-11-07_12-49-33.png",
+    "bytes": 49539,
+    "sha256": "0b7c2dba2f50e5cafbde569e61704935558f715c30cdf337c7438bd85ac545a3"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/wayland-screenshot-2026-11-07_12-49-35.png",
+    "bytes": 18568,
+    "sha256": "73f2f40cef6ef0f56f7e0fd35039a94d4d27d8eade0fefce9dca250623164b5a"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/wayland-screenshot-2026-11-07_12-49-37.png",
+    "bytes": 18568,
+    "sha256": "73f2f40cef6ef0f56f7e0fd35039a94d4d27d8eade0fefce9dca250623164b5a"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/wayland-screenshot-2026-11-07_12-49-39.png",
+    "bytes": 18568,
+    "sha256": "73f2f40cef6ef0f56f7e0fd35039a94d4d27d8eade0fefce9dca250623164b5a"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/wayland-screenshot-2026-11-07_12-49-42.png",
+    "bytes": 80074,
+    "sha256": "a0228242876d8d0c6b8440a019703d022bd5985fb7d5101fc6e0a2a86e981036"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/weston.log",
+    "bytes": 1707,
+    "sha256": "7eb675b88449ea9e721b66953f11cdb2533c8c0d6460ff4db93e1818d94cc267"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-release-term/wireplumber.log",
+    "bytes": 1091,
+    "sha256": "8aee5529fadb237e9e5ca2d58420542cd3b9873aa36c537ddb0b831c7f9eaaa3"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/client.log",
+    "bytes": 3064,
+    "sha256": "6c7b599def7d9abbc13ec7b0dcbf34ae8ae2528cd86bb8c2e6178ba2652e9e5d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/console.log",
+    "bytes": 161,
+    "sha256": "18d0be521b0c98ef3db4ce68b6d3760bd0804ad834e1f8b88f167f140c980528"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/gnome-frames.jsonl",
+    "bytes": 3260,
+    "sha256": "1d13fdce8937eb7c833be73b8cdf2bd40ffeb7a0950f34695f9b5801d04b9d15"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/gnome.log",
+    "bytes": 3350,
+    "sha256": "9b265cc1f5d82e39186fce7193f3a3bcc0892ecf73a5ab2da63f7a9b3442063c"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/input.log",
+    "bytes": 7143,
+    "sha256": "5eeaf9d1317b12df584e78e630cc703d072be6eeb10443fd8c63198620fb3abe"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/pipewire.log",
+    "bytes": 780,
+    "sha256": "8e3f537cb47d04a984831979a8adff1adaf72b74b5dfeb46fd9c8fccfa0d8727"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/rdp-frames.jsonl",
+    "bytes": 2177,
+    "sha256": "d7699904fb7f577a351d4627c7104004484a43ad07a91973f41960c9344812e8"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/rdp.log",
+    "bytes": 1487,
+    "sha256": "103f05c0675b755ca3c4bb052772bf67e13a11a51e494c6a9fca932df8deafa7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/result.txt",
+    "bytes": 48,
+    "sha256": "f019f9b34cecc7fd078de5cfff9ce74e91d555dedc1bc518deec0dd5f46cd652"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/samples.txt",
+    "bytes": 385696,
+    "sha256": "27d4062c0a10055eb303621db191b0bb609ad3c8fd335dc29f5673b5a06dbd4a"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/seat.log",
+    "bytes": 116,
+    "sha256": "e8ab3941cba0d8eae5ac87ac34bcbc3391d04c35540e3c821c2ee0e4117b3f12"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/session.txt",
+    "bytes": 149,
+    "sha256": "e7cd5e9f605f23cbe6978056544daa3cd55020efd9d32a25697bf747134234da"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/stage.txt",
+    "bytes": 63,
+    "sha256": "24394527cb698c56c1247ba4dbc1faad79770c0727060a427d0fac37944b5129"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/system-bus.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/timeline.jsonl",
+    "bytes": 26072,
+    "sha256": "1ff3422bd9c95580a892af1fc1746e579a36533932c3fbfea80c0f6914a6a925"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/timeline.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/user-session.log",
+    "bytes": 4462,
+    "sha256": "0f05ee8f679905e20a19eed04f6037df1b61c1019897633d83a2ac5d5eec29cc"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-12-32.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-12-34.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-12-36.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-12-38.png",
+    "bytes": 20197,
+    "sha256": "b5b0d201e06f344697772304ebc164967e1b4ea0269d7cef2e2a43a581704b4d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-12-41.png",
+    "bytes": 20197,
+    "sha256": "b5b0d201e06f344697772304ebc164967e1b4ea0269d7cef2e2a43a581704b4d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-12-43.png",
+    "bytes": 20197,
+    "sha256": "b5b0d201e06f344697772304ebc164967e1b4ea0269d7cef2e2a43a581704b4d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-12-45.png",
+    "bytes": 20197,
+    "sha256": "b5b0d201e06f344697772304ebc164967e1b4ea0269d7cef2e2a43a581704b4d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-12-48.png",
+    "bytes": 83702,
+    "sha256": "611c03c6a4b4a765e792442d2450857a9707226d144c38a99f63a96df26d9bf5"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-12-50.png",
+    "bytes": 83702,
+    "sha256": "611c03c6a4b4a765e792442d2450857a9707226d144c38a99f63a96df26d9bf5"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-12-52.png",
+    "bytes": 83702,
+    "sha256": "611c03c6a4b4a765e792442d2450857a9707226d144c38a99f63a96df26d9bf5"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-12-55.png",
+    "bytes": 49433,
+    "sha256": "ccbaf85f25638287e3ec0d9fc1104cbc5a301531aea2a10fbf1fbfcc9b8ceddd"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-12-57.png",
+    "bytes": 18516,
+    "sha256": "88992219a8d125ab76f0e6b4916579fdb1209e658fea31670e957f6cf742e294"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-12-59.png",
+    "bytes": 18516,
+    "sha256": "88992219a8d125ab76f0e6b4916579fdb1209e658fea31670e957f6cf742e294"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-13-01.png",
+    "bytes": 62046,
+    "sha256": "9708020571a2c7047fa724d30331bc45fe02a821689a3975c63c7c9cb8aa52d4"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-13-04.png",
+    "bytes": 80066,
+    "sha256": "0e54d5556d98ca288acc5fe5953ec492156320deac09a60aaf6d008f0091dde3"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-13-06.png",
+    "bytes": 80066,
+    "sha256": "0e54d5556d98ca288acc5fe5953ec492156320deac09a60aaf6d008f0091dde3"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-13-08.png",
+    "bytes": 62046,
+    "sha256": "9708020571a2c7047fa724d30331bc45fe02a821689a3975c63c7c9cb8aa52d4"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-13-10.png",
+    "bytes": 70555,
+    "sha256": "8c5030df19b695cde5618c8c8e7396403c49e05477c8a8b50029d205b95268b7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-13-13.png",
+    "bytes": 70555,
+    "sha256": "8c5030df19b695cde5618c8c8e7396403c49e05477c8a8b50029d205b95268b7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-13-14.png",
+    "bytes": 70555,
+    "sha256": "8c5030df19b695cde5618c8c8e7396403c49e05477c8a8b50029d205b95268b7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-13-17.png",
+    "bytes": 95046,
+    "sha256": "5b506554ca8ea1fb8084338a4072c760b7fa11b2a441d09a5aeb89a7e561b0e9"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wayland-screenshot-2026-11-07_12-13-19.png",
+    "bytes": 101926,
+    "sha256": "3ddde2d0e337d48daf4ce9ce65c60e6e72030a39ae26f4f90f6aafa6fd378044"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/weston.log",
+    "bytes": 1675,
+    "sha256": "0d5043730d5c489b1c22e153aa9dcc3fdeb5d6a924556b444aac419499f887d1"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-shutdown-r3/wireplumber.log",
+    "bytes": 1091,
+    "sha256": "706994fecb6a3439f0c4e02d840f93d39345b7ce1d80d508b1d9e37355d353ac"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/client.log",
+    "bytes": 3064,
+    "sha256": "59a3508b98594bf77a0cbc97ea6a578cf2c16ed23bf217f225358f8a17f98a0d"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/console.log",
+    "bytes": 161,
+    "sha256": "6befac1b0b5baffec566eaddb93ecb075002ebe34fc6cf3564e1c3d2743e1ae7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/gnome-frames.jsonl",
+    "bytes": 2381,
+    "sha256": "733864077bab399ea63100ab71f856eabd443b07af7221865b5ab74160d96d29"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/gnome.log",
+    "bytes": 3298,
+    "sha256": "b9a72d2ac87623cf78aaddf8d92509ae6924b806f3268c592592cd9a18109cd4"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/input.log",
+    "bytes": 7140,
+    "sha256": "8b883442e80d17f4c4ddb59f68d7e797539fedda2fae064e9e1464220824ec30"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/pipewire.log",
+    "bytes": 780,
+    "sha256": "87ef50dc3a3858f49be552908591a737633542d4662880941df23f86f77423ea"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/rdp-frames.jsonl",
+    "bytes": 1529,
+    "sha256": "6b102bc9e3fd8028e7bc4f0b40b4921ce71f0d7234ca5b99abd350ca8d2abcd1"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/rdp.log",
+    "bytes": 1487,
+    "sha256": "d9ef46608ce6f139cfaf2012511a609851dceb183eeea058774be360ac603c06"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/result.txt",
+    "bytes": 48,
+    "sha256": "f019f9b34cecc7fd078de5cfff9ce74e91d555dedc1bc518deec0dd5f46cd652"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/samples.txt",
+    "bytes": 379439,
+    "sha256": "1f7c2cc2d794a337596b725d0c8ddf8b6cba0436d18b838518dafd65f868283b"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/seat.log",
+    "bytes": 116,
+    "sha256": "e8ab3941cba0d8eae5ac87ac34bcbc3391d04c35540e3c821c2ee0e4117b3f12"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/session.txt",
+    "bytes": 150,
+    "sha256": "411db8a953db3e1c08e10801f14eaf736e00381757d69b6cdbaf4f5ef01b88a1"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/stage.txt",
+    "bytes": 63,
+    "sha256": "3d7ce9583903f9ad0f0f016a8404dc7dbf944723945bce6baf6292aaac60aa5c"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/system-bus.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/timeline.jsonl",
+    "bytes": 20807,
+    "sha256": "f84e41185aef30b219ae11811d2118aefd56723d4e0c9aaa12ef356ef3ae3d4e"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/timeline.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/user-session.log",
+    "bytes": 4414,
+    "sha256": "e879843a83639b3a32a6ffce2801d50a9785b90be3baf540b25e8b79ad27e39c"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-05-53.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-05-55.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-05-57.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-00.png",
+    "bytes": 5545,
+    "sha256": "03c3421a7b54a96075ee802d7ccc2590f9379d781b94f87557cc34bf8927cf32"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-02.png",
+    "bytes": 20322,
+    "sha256": "f8f44eb0b0a3ff02ef130b80db4e9a83dfa313ded623546d7d1f207a53362789"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-04.png",
+    "bytes": 20322,
+    "sha256": "f8f44eb0b0a3ff02ef130b80db4e9a83dfa313ded623546d7d1f207a53362789"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-06.png",
+    "bytes": 20322,
+    "sha256": "f8f44eb0b0a3ff02ef130b80db4e9a83dfa313ded623546d7d1f207a53362789"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-09.png",
+    "bytes": 20322,
+    "sha256": "f8f44eb0b0a3ff02ef130b80db4e9a83dfa313ded623546d7d1f207a53362789"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-11.png",
+    "bytes": 82377,
+    "sha256": "3a1a9e3eca7237a00f6613e3bda5a2ae30cbd182b7678846af4953003a70cadc"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-13.png",
+    "bytes": 83722,
+    "sha256": "17172ae36bcec88a68c0c10015760616b8f00da748bd8f86f4f7e94177255c46"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-16.png",
+    "bytes": 83722,
+    "sha256": "17172ae36bcec88a68c0c10015760616b8f00da748bd8f86f4f7e94177255c46"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-18.png",
+    "bytes": 49646,
+    "sha256": "c7c9dfdf2b9ad93f47ffefa99f48e88ba908924aac069ac9f7f13651feaa9cf9"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-20.png",
+    "bytes": 18673,
+    "sha256": "2179e3336a7ed81fc322ef75f395c2d05b2cc82ac5a1a2d99f3752647b47f7e7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-23.png",
+    "bytes": 18673,
+    "sha256": "2179e3336a7ed81fc322ef75f395c2d05b2cc82ac5a1a2d99f3752647b47f7e7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-25.png",
+    "bytes": 62142,
+    "sha256": "d01d8ce995e11a6d94d6e78805861506cfc7455f515b6dfb3fcaff3aa3f36ec4"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-26.png",
+    "bytes": 18673,
+    "sha256": "2179e3336a7ed81fc322ef75f395c2d05b2cc82ac5a1a2d99f3752647b47f7e7"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-29.png",
+    "bytes": 80149,
+    "sha256": "9c040af6be5dd31e16b3f15ef179dc14a57a5feaee44c4eb3e9c26e2ea63b0c9"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-31.png",
+    "bytes": 62142,
+    "sha256": "d01d8ce995e11a6d94d6e78805861506cfc7455f515b6dfb3fcaff3aa3f36ec4"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-33.png",
+    "bytes": 62142,
+    "sha256": "d01d8ce995e11a6d94d6e78805861506cfc7455f515b6dfb3fcaff3aa3f36ec4"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-36.png",
+    "bytes": 70652,
+    "sha256": "f4c09eaa6b5efc2fd1641d793d2d23662897866db2d68e747fc8a37eabc44ca2"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wayland-screenshot-2026-11-07_12-06-38.png",
+    "bytes": 70652,
+    "sha256": "f4c09eaa6b5efc2fd1641d793d2d23662897866db2d68e747fc8a37eabc44ca2"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/weston.log",
+    "bytes": 1675,
+    "sha256": "b11849cc21ad8723c7e56ca9b84de8e6f96eef11948edf4402cfb794b2f1c128"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/offline-standard-session/wireplumber.log",
+    "bytes": 1091,
+    "sha256": "ed00d54ce373ebb64c55ea770bc151431c958185bbcd935ae49e81d92a653818"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/scope-tests.txt",
+    "bytes": 308,
+    "sha256": "9b367a13040a7796e1767b0cedd0816615b5448b663d89f0053f68536059b066"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/shell-overlay-build.txt",
+    "bytes": 616,
+    "sha256": "f49eb6971301dd200a0efa450d64ea7cf3fa4b91a999ccf8e3e058deb1f3323c"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/syntax.txt",
+    "bytes": 18,
+    "sha256": "52b59540012ee0a356052bba64d40a87931389e2cddd510234b0a593a1d9951f"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/touch-tests.txt",
+    "bytes": 156,
+    "sha256": "19be9cd316ce6cfd498a1390f612b66174dc4ad32adb116cf08bcbbafd2e2a36"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/trace-abi.txt",
+    "bytes": 144,
+    "sha256": "fedfdbd749a041ecfdf63608cf403c534b36431eb9b6abbf381441051ee8233e"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/v2-memory-accounting.txt",
+    "bytes": 2073,
+    "sha256": "0b8a5f573b7309a5d640e8240ba6298d11bb71dfeccca5de873c8b61af3943cd"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/vt-v8b-vm.txt",
+    "bytes": 1890,
+    "sha256": "50c64b9e4974ddc502bfb5f3957b48defbadf09e2e59bee9831be7bcf953411b"
+  },
+  {
+    "path": "logs/gnome-physical-v2.1/windows-parse.txt",
+    "bytes": 42,
+    "sha256": "1d94121d16d599c34cf9ed47f02eeda0d4b6f84e703c083688acdf5343d34dc5"
+  },
+  {
+    "path": "scripts/Start-GNOME-Physical.ps1",
+    "bytes": 1862,
+    "sha256": "a6d9af5d0df45ee91dd224ebd87aaf8c756bf39c046dcea5c3e5bf138b4c09e2"
+  },
+  {
+    "path": "scripts/Stop-GNOME-Physical.ps1",
+    "bytes": 559,
+    "sha256": "a40e981dfa613546a6d7c34fb3f7b85e9a8d8cd83648da07604f75e0670f22df"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/build-grd.sh",
+    "bytes": 1524,
+    "sha256": "2c631819abcf14fd4e5ec16c53e4cc34257d5a00b46576db1f8d61e09349ee12"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/build.sh",
+    "bytes": 1785,
+    "sha256": "8be8f406d3987923b56a664f32e13eae0e6a4111f230d442c01dac7cb92550d0"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/collect-offline.sh",
+    "bytes": 698,
+    "sha256": "ed17fe03f65341e319d755307317a858f5fcb6351f84734b0a0668ed4e3f1081"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/configure-rdp.js",
+    "bytes": 792,
+    "sha256": "96567e1254a521cd21f1400a976988e36a2a05a3c9948872c8238c5e8dbf8939"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/control.py",
+    "bytes": 19665,
+    "sha256": "771e2e36e53bdb20eea4117ebb58ccbccd477e28cd562f3a601f86bd158a4286"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/dbus-trace.c",
+    "bytes": 2256,
+    "sha256": "3a404d10980621c8eda182b6dd27ee328c85c67aabab8971ae22af7f4c815cab"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/devkit-session.sh",
+    "bytes": 1877,
+    "sha256": "4645191e0d5b032f19439bfea0b3445161d06906ddb9d1e3db10457cd59f1196"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/drm-probe.c",
+    "bytes": 8303,
+    "sha256": "b1475807e31d4723fbd8823a1dd2c17ce3544f94910a08b87a8035588ead262e"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/frame-trace.S",
+    "bytes": 844,
+    "sha256": "1231c5e4285927edfbcd2aa51bc047fb5dc48da6338f0f9ff4d48920fd1d2495"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/frame-trace.c",
+    "bytes": 2110,
+    "sha256": "69cf245486071cf6efe1397f9ea53408f9679b5bd25fc2cbaf428838baf549e2"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/grd-egl-fd-init.patch",
+    "bytes": 646,
+    "sha256": "738e144ac622e474b6fb8e2dfe9dcd93ba1e160e3928a039ceb85b37198534ed"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/input.js",
+    "bytes": 2291,
+    "sha256": "d3bf6f39ca2ac24a623f727e1ea449b6633d9ad3c3f40364b0d5cdde0f500b8e"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/make-shell-overlay.py",
+    "bytes": 5187,
+    "sha256": "e9dc14fabaf5c199579b1b039ea5422d854422e1db3bb62ad97baf75d060205c"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/memory-report.py",
+    "bytes": 3756,
+    "sha256": "e1316e3932b90f090e52df8f7520dcf74c980334dd38e1fb1ac749058e3a72a6"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/pack.py",
+    "bytes": 6909,
+    "sha256": "12b63312c455e56174103f9e8e1cfebe8b148314d8d5d2f75e62d1dd4ac785cf"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/rdp-copy-trace.c",
+    "bytes": 2590,
+    "sha256": "ea100721e85a692e6e35015e0e85d2feeefa2139d0f49d832fa1cdaf9e6c9cc5"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/scope-check.sh",
+    "bytes": 1336,
+    "sha256": "116ad26f5437ca54661e1c2454b88ce01a02f81675175fa436c8747622d17301"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/session.sh",
+    "bytes": 13860,
+    "sha256": "0676e04f3c503772d797ebfde4bad5ed63f4836a4dd0048031b216475e7483b7"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/shell-ui/main.js",
+    "bytes": 37584,
+    "sha256": "a5c2e47f3d9710a8f707307fda8f0d321f349c640b8b7e434c4c690e8c66df3c"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/shell-ui/main.js.patch",
+    "bytes": 2424,
+    "sha256": "cac712fffbd5cb7276fe08641a81f9e4092cdfb818f9a975e3fbf014d3cc1f39"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/shell-ui/manifest.json",
+    "bytes": 668,
+    "sha256": "5bdfab08ffc254419bfb62537dfdae9630a006519fc956e0897d26b0258de7dc"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/shell-ui/status/remoteAccess.js",
+    "bytes": 6857,
+    "sha256": "164c7948a738078b88a75ca409f1f8622be33ee6ef9ea88b0731895cb3c7cc70"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/shell-ui/status/remoteAccess.js.patch",
+    "bytes": 957,
+    "sha256": "7abacc0ea4f04768ae0dab539744c6ca41a2ebe3bbee66177de6c25ca69ab619"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/shell-ui/windowPreview.js",
+    "bytes": 22623,
+    "sha256": "123e051bc4d64211617002465db3a37459b71761b45862d83b652920b748cdc7"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/shell-ui/windowPreview.js.patch",
+    "bytes": 1813,
+    "sha256": "15a8b3a3c29c8128e203508971e0c9f2a98deea72479a56493a9586a79d88f2e"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/start-rdp.sh",
+    "bytes": 2275,
+    "sha256": "6d174a1cd64c9c859845f3b12119d728a3ce52d04800288ff8438845bfe72364"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/summarize.py",
+    "bytes": 6095,
+    "sha256": "79f53336e49fd9de765f49c96dbfe267cfc6b57357dd51ae17c45a9771627367"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/test-accounting.py",
+    "bytes": 1057,
+    "sha256": "85f6e40c78e9d7ab11302bf22bd7f992ff3dc35223f7925d265a4a37c17bae80"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/test-controller.py",
+    "bytes": 3128,
+    "sha256": "0b1ffc7a11081f86df2f055a705be1f2cf1849010b1b6567d420ca1850162af9"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/test-grd-egl-failure.c",
+    "bytes": 913,
+    "sha256": "3aca572ad6c8d39d3bfc98865456caf89873bbc0e224d8021a6de44fd533ed7e"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/test-grd-egl-failure.sh",
+    "bytes": 1309,
+    "sha256": "c2e3366aaabf31e503f92f18c47cd3ea1dbf844a1712e6a97f857851803c640b"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/test-offline-x11.sh",
+    "bytes": 559,
+    "sha256": "5fdeaf70faa08f4e8a309f4293e1263108a65ec316adcd601c45a314eebe8bc4"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/test-offline.sh",
+    "bytes": 4061,
+    "sha256": "b6fa99d9894e5ecef6b16c934364c76017cdccb85344f6abd9bf7e83f533ae97"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/test-rdp-copy.c",
+    "bytes": 454,
+    "sha256": "05bd3c6b52f6b0adbd4ba1443267bce253ea7955f2fcd3221976b114c43e906c"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/test-scope.py",
+    "bytes": 1718,
+    "sha256": "c3c0c17c7cf19c6a7d672c796eca95492e9443e1010a870b6b982516abefa329"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/test-touch-map.py",
+    "bytes": 767,
+    "sha256": "60654e5ae6d03c7dd24838f9cfc37f30049b8fef21a3a0ac542f942c01c4cb20"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/test-touch-sequence.py",
+    "bytes": 634,
+    "sha256": "4107077677f6029fa76c501063d20b2e5e247b69445225d54567e0091063e384"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/test-trace.c",
+    "bytes": 1075,
+    "sha256": "c07410b263b54602419381f123822d50a2e9c05a5a2d08f93331ca02c8001f88"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/test-trace.sh",
+    "bytes": 597,
+    "sha256": "3b1cc42dfd6da9d502f619da7ab6d7b4e65599ceb6874a023865810c971e3bef"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/test-vt-vm.sh",
+    "bytes": 1375,
+    "sha256": "637dc6e2ef22ed971cf0c27c9f749118ca8851753716c1a7f369b2d3236f70ba"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/test-vt.c",
+    "bytes": 2616,
+    "sha256": "bfbde2dd5a0d857506a3fb3194804dbd022abb26b7b57fbffb53caf5de9ac4a5"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/test-watchdog.sh",
+    "bytes": 1956,
+    "sha256": "75129c7e5bbef2f38a6f1af6a430739a7e1fc07e8c15033b6a1c2dec3c257a9a"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/touch-map.py",
+    "bytes": 1103,
+    "sha256": "cc75b099fd96db6744bdf6f43ac7cd03e70f081baa796fbb25d1277829f253d1"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/touch-sequence.py",
+    "bytes": 762,
+    "sha256": "a803ddce458bcddf84b977da11885c67d5494846df48e366e74ea45106d18919"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/user-session.sh",
+    "bytes": 3489,
+    "sha256": "c84742adbf9e90a3ea0d56e51966106a75d25419259bc90278d6c93098a8bc5d"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/vt-cleanup.c",
+    "bytes": 5346,
+    "sha256": "32d16c1eb369ed19f7cbcdaa428d3b982f392ad8d36ee46c13e92ad6cc8b0964"
+  },
+  {
+    "path": "userspace/gnome-physical-v2.1/watchdog.c",
+    "bytes": 5315,
+    "sha256": "cb9abd1b8181c479d414fc0d4efcf45ac5d28a496f38a0a4bddd81b3c809a262"
+  }
+]

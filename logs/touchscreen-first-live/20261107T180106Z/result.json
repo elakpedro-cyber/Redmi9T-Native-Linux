@@ -1,0 +1,152 @@
+{
+  "outcome": "STOPPED_AT_LIVE_PREFLIGHT",
+  "reason": "L9 framework state disabled; electrical VDDIO remains unverified, SPI I/O activation declined to avoid potential back-power",
+  "actual_voltage_measured": false,
+  "cached_state_proves_power_off": false,
+  "spi_transfers": 0,
+  "modules_loaded": 0,
+  "touch_events_received": false,
+  "ufs_write_and_discard_fields_unchanged": true,
+  "ufs": {
+    "sda": {
+      "before": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "sdb": {
+      "before": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "sdc": {
+      "before": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "sdd": {
+      "before": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "sde": {
+      "before": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "sdf": {
+      "before": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "dmesg_identical": true,
+  "gpu_state": "suspended",
+  "tty": "tty1",
+  "com4_exclusive_open_after": true,
+  "ssh_after": true,
+  "lcd_user_confirmed_console": true,
+  "reboot_performed": false,
+  "boot_on_disk_sha256": "9ce181e8a6170ce8773a923f03dd10f5edb405d1990fa09b4f4bc12f2e59a610"
+}

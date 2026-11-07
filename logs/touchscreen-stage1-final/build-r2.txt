@@ -1,0 +1,42 @@
+make: Entering directory '/home/hadirpc/Redmi9T-Native-Linux/linux-05441d697f7f9a927264f4058cbbc6a03dfcac9d'
+make[1]: Entering directory '/home/hadirpc/Redmi9T-Native-Linux/touch-stage1-r2.e1sxpW'
+  CC [M]  nvt-spi.o
+  CC [M]  nvt-frame.o
+  LD [M]  lemon_nt36672a_stage1_r2.o
+  CC [M]  spi-geni-qcom-stage1-r2.o
+  MODPOST Module.symvers
+  CC [M]  lemon_nt36672a_stage1_r2.mod.o
+  CC [M]  .module-common.o
+  LD [M]  lemon_nt36672a_stage1_r2.ko
+  CC [M]  spi-geni-qcom-stage1-r2.mod.o
+  LD [M]  spi-geni-qcom-stage1-r2.ko
+make[1]: Leaving directory '/home/hadirpc/Redmi9T-Native-Linux/touch-stage1-r2.e1sxpW'
+make: Leaving directory '/home/hadirpc/Redmi9T-Native-Linux/linux-05441d697f7f9a927264f4058cbbc6a03dfcac9d'
+filename:       /mnt/c/Users/HadirPC/Downloads/platform-tools_r37.0.1-windows/Redmi9T-Native-Linux/artifacts/touchscreen-stage1-final/lemon_nt36672a_stage1_r2.ko
+license:        GPL
+description:    Redmi 9T NT36672A SPI handoff-only experimental input driver
+alias:          of:N*T*Cxiaomi,lemon-nt36672a-handoffC*
+alias:          of:N*T*Cxiaomi,lemon-nt36672a-handoff
+alias:          spi:lemon-nvt-handoff
+depends:        
+name:           lemon_nt36672a_stage1_r2
+vermagic:       7.4.0-rc1-lemon-bringup-v8b SMP preempt aarch64
+parm:           recording_authorized:Explicit evdev-open permission; not an emergency stop switch (bool)
+parm:           stage1_authorized:Explicit experimental handoff-only probe authorization (bool)
+filename:       /mnt/c/Users/HadirPC/Downloads/platform-tools_r37.0.1-windows/Redmi9T-Native-Linux/artifacts/touchscreen-stage1-final/spi-geni-qcom-stage1-r2.ko
+version:        lemon-touch-stage1-r2
+license:        GPL v2
+description:    SPI driver for GENI based QUP cores
+srcversion:     FFB1316D8BFBB0BA4AC44D1
+alias:          of:N*T*Cqcom,sa8255p-geni-spiC*
+alias:          of:N*T*Cqcom,sa8255p-geni-spi
+alias:          of:N*T*Cqcom,geni-spiC*
+alias:          of:N*T*Cqcom,geni-spi
+depends:        
+name:           spi_geni_qcom_stage1_r2
+vermagic:       7.4.0-rc1-lemon-bringup-v8b SMP preempt aarch64
+/home/hadirpc/Redmi9T-Native-Linux/kernel-out-v8b/.config: OK
+/home/hadirpc/Redmi9T-Native-Linux/kernel-out-v8b/arch/arm64/boot/Image: OK
+FAIL_CLOSED_CHECK_AND_RUN_PASS code78; no active path
+R2_SOURCE_GUARDS_PASS CS0 FW5 opt-in; no sensor reset/power/upload or GENI auto-upload
+READONLY_FIXTURE_PASS no mutations; electrical levels never inferred

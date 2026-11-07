@@ -1,0 +1,48 @@
+Date: 1970-01-01 UTC
+[01:20:51.620] weston 14.0.2
+               https://wayland.freedesktop.org
+               Bug reports to: https://gitlab.freedesktop.org/wayland/weston/issues/
+               Build: 14.0.2
+[01:20:51.620] Command line: /usr/bin/weston --backend=drm --drm-device=card0 --renderer=pixman --current-mode --continue-without-input --shell=kiosk --no-config --idle-time=0 --socket=lemon-physical --debug --log=/tmp/weston.log
+[01:20:51.620] OS: Linux, 7.4.0-rc1-lemon-bringup-v8b, #1 SMP PREEMPT_DYNAMIC 2026-11-05 00:00:00 +0000, aarch64
+[01:20:51.621] Flight recorder: enabled
+[01:20:51.621] Starting with no config file.
+[01:20:51.621] Output repaint window is 7 ms maximum.
+[01:20:51.621] Loading module '/usr/lib/libweston-14/drm-backend.so'
+[01:20:51.624] initializing drm backend
+[01:20:51.624] Trying libseat launcher...
+[01:20:51.625] [libseat/libseat.c:62] Seat opened with backend 'seatd'
+[01:20:51.625] [libseat/backend/seatd.c:218] Enabling seat
+[01:20:51.625] libseat: session control granted
+[01:20:51.626] using /dev/dri/card0
+[01:20:51.626] DRM: supports atomic modesetting
+[01:20:51.626] DRM: supports GBM modifiers
+[01:20:51.626] DRM: does not support Atomic async page flip
+[01:20:51.626] DRM: supports picture aspect ratio
+[01:20:51.626] Using Pixman renderer
+[01:20:51.637] warning: no input devices found, but none required as per configuration.
+[01:20:51.637] DRM: head 'Unknown-1' found, connector 39 is connected, EDID make 'unknown', model 'unknown', serial ''
+               Supported EOTF modes: SDR
+               Supported colorimetry modes: default
+[01:20:51.638] Registered plugin API 'weston_drm_output_api_v1' of size 40
+[01:20:51.638] Registered plugin API 'weston_drm_virtual_output_api_v2' of size 48
+[01:20:51.638] Color manager: no-op
+                 protocol support: no
+[01:20:51.638] Output 'Unknown-1' attempts EOTF mode SDR and colorimetry mode default.
+[01:20:51.638] Output 'Unknown-1' using color profile: stock sRGB color profile
+[01:20:51.653] DRM: output Unknown-1 uses shadow framebuffer.
+[01:20:51.653] Output Unknown-1 (crtc 37) video modes:
+               1080x2340@60.0, preferred, current, 151.6 MHz
+[01:20:51.653] Output 'Unknown-1' enabled with head(s) Unknown-1
+[01:20:51.654] Compositor capabilities:
+               arbitrary surface rotation: yes
+               screen capture uses y-flip: no
+               cursor planes: yes
+               arbitrary resolutions: no
+               view mask clipping: yes
+               explicit sync: no
+               color operations: no
+               presentation clock: CLOCK_MONOTONIC, id 1
+               presentation clock resolution: 0.000000001 s
+[01:20:51.655] Loading module '/usr/lib/weston/kiosk-shell.so'
+[01:21:46.319] caught signal 15

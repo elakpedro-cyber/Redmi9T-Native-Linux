@@ -1,0 +1,1 @@
+PASS: ARM64 QEMU NVT contact slots, frame release, checksum, bounds, duplicate ID, watchdog/palm

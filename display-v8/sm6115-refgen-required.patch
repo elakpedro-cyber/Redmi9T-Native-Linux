@@ -1,0 +1,37 @@
+Subject: [PATCH] Require a REFGEN provider before SM6115 DSI host probe
+
+An absent provider otherwise permits a dummy regulator. Reject the
+missing supplier before the host can runtime resume during config
+discovery.
+
+---
+diff --git a/drivers/gpu/drm/msm/dsi/dsi_host.c b/drivers/gpu/drm/msm/dsi/dsi_host.c
+--- a/drivers/gpu/drm/msm/dsi/dsi_host.c
++++ b/drivers/gpu/drm/msm/dsi/dsi_host.c
+@@ -2011,6 +2011,26 @@
+ 	const struct msm_dsi_config *cfg;
+ 	int ret;
+ 
++	/* Review guard: do not probe SM6115 with a dummy REFGEN supply. */
++	if (of_device_is_compatible(pdev->dev.of_node, "qcom,sm6115-dsi-ctrl")) {
++		struct device_node *provider;
++		struct regulator *refgen;
++		bool available;
++
++		provider = of_parse_phandle(pdev->dev.of_node, "refgen-supply", 0);
++		available = provider && of_device_is_available(provider);
++		of_node_put(provider);
++		if (!available)
++			return dev_err_probe(&pdev->dev, -ENODEV,
++					     "SM6115 requires a REFGEN provider\n");
++
++		refgen = regulator_get_optional(&pdev->dev, "refgen");
++		if (IS_ERR(refgen))
++			return dev_err_probe(&pdev->dev, PTR_ERR(refgen),
++					     "SM6115 REFGEN unavailable\n");
++		regulator_put(refgen);
++	}
++
+ 	msm_host = devm_kzalloc(&pdev->dev, sizeof(*msm_host), GFP_KERNEL);
+ 	if (!msm_host)
+ 		return -ENOMEM;

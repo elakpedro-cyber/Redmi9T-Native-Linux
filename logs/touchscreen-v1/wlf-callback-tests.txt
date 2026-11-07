@@ -1,0 +1,95 @@
+In file included from /usr/lib/pkgconfig/../../include/winpr3/winpr/winpr.h:22,
+                 from /usr/lib/pkgconfig/../../include/winpr3/winpr/cmdline.h:23,
+                 from /usr/lib/pkgconfig/../../include/freerdp3/freerdp/client.h:24,
+                 from /build/lemon-touch-callback-test.2TGgJw/test-wlf.c:4:
+/usr/lib/pkgconfig/../../include/winpr3/winpr/sspi.h:940:75: warning: 'SEC_WINPR_NTLM_SETTINGS' is deprecated: [deprecated] [since 3.31.0] use SEC_WINPR_NTLM_SETTINGS_V2 [-Wdeprecated-declarations]
+  940 |     "[since 3.31.0] use SEC_WINNT_AUTH_IDENTITY_WINPR_V2", typedef struct {
+      |                                                                           ^
+/usr/lib/pkgconfig/../../include/winpr3/winpr/platform.h:604:78: note: in definition of macro 'WINPR_DEPRECATED_VAR'
+  604 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+/usr/lib/pkgconfig/../../include/winpr3/winpr/sspi.h:917:62: note: declared here
+  917 |     "[since 3.31.0] use SEC_WINPR_NTLM_SETTINGS_V2", typedef struct {
+      |                                                              ^~~~~~
+/usr/lib/pkgconfig/../../include/winpr3/winpr/platform.h:604:78: note: in definition of macro 'WINPR_DEPRECATED_VAR'
+  604 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+/usr/lib/pkgconfig/../../include/winpr3/winpr/sspi.h:940:75: warning: 'SEC_WINPR_KERBEROS_SETTINGS' is deprecated: [deprecated] [since 3.31.0] use SEC_WINPR_KERBEROS_SETTINGS_V2 [-Wdeprecated-declarations]
+  940 |     "[since 3.31.0] use SEC_WINNT_AUTH_IDENTITY_WINPR_V2", typedef struct {
+      |                                                                           ^
+/usr/lib/pkgconfig/../../include/winpr3/winpr/platform.h:604:78: note: in definition of macro 'WINPR_DEPRECATED_VAR'
+  604 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+/usr/lib/pkgconfig/../../include/winpr3/winpr/sspi.h:925:66: note: declared here
+  925 |     "[since 3.31.0] use SEC_WINPR_KERBEROS_SETTINGS_V2", typedef struct {
+      |                                                                  ^~~~~~
+/usr/lib/pkgconfig/../../include/winpr3/winpr/platform.h:604:78: note: in definition of macro 'WINPR_DEPRECATED_VAR'
+  604 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+In file included from /usr/lib/pkgconfig/../../include/freerdp3/freerdp/client/rdpgfx.h:28,
+                 from /usr/lib/pkgconfig/../../include/freerdp3/freerdp/gdi/gdi.h:34,
+                 from /usr/lib/pkgconfig/../../include/freerdp3/freerdp/freerdp.h:35,
+                 from /usr/lib/pkgconfig/../../include/freerdp3/freerdp/client.h:31:
+/usr/lib/pkgconfig/../../include/freerdp3/freerdp/codecs.h:104:9: warning: 'codecs_free' is deprecated: [deprecated] [since 3.6.0] Use freerdp_client_codecs_free [-Wdeprecated-declarations]
+  104 |         WINPR_DEPRECATED_VAR(
+      |         ^~~~~~~~~~~~~~~~~~~~
+/usr/lib/pkgconfig/../../include/freerdp3/freerdp/codecs.h:102:47: note: declared here
+  102 |                              FREERDP_API void codecs_free(rdpCodecs* codecs));
+      |                                               ^~~~~~~~~~~
+/usr/lib/pkgconfig/../../include/winpr3/winpr/platform.h:604:78: note: in definition of macro 'WINPR_DEPRECATED_VAR'
+  604 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+/usr/lib/pkgconfig/../../include/freerdp3/freerdp/freerdp.h:517:17: warning: 'pVerifyCertificate' is deprecated: [deprecated] Use pVerifyCertificateEx [-Wdeprecated-declarations]
+  517 |                 WINPR_DEPRECATED_VAR("Use VerifyCertificateEx or VerifyX509Certificate  instead",
+      |                 ^~~~~~~~~~~~~~~~~~~~
+/usr/lib/pkgconfig/../../include/freerdp3/freerdp/freerdp.h:520:17: warning: 'pVerifyChangedCertificate' is deprecated: [deprecated] Use pVerifyChangedCertificateEx [-Wdeprecated-declarations]
+  520 |                 WINPR_DEPRECATED_VAR("Use VerifyChangedCertificateEx or VerifyX509Certificate  instead",
+      |                 ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/pkgconfig/../../include/winpr3/winpr/winpr.h:22,
+                 from /usr/lib/pkgconfig/../../include/winpr3/winpr/cmdline.h:23,
+                 from /usr/lib/pkgconfig/../../include/freerdp3/freerdp/client.h:24,
+                 from /build/lemon-touch-callback-test.2TGgJw/touch-pointer.c:10:
+/usr/lib/pkgconfig/../../include/winpr3/winpr/sspi.h:940:75: warning: 'SEC_WINPR_NTLM_SETTINGS' is deprecated: [deprecated] [since 3.31.0] use SEC_WINPR_NTLM_SETTINGS_V2 [-Wdeprecated-declarations]
+  940 |     "[since 3.31.0] use SEC_WINNT_AUTH_IDENTITY_WINPR_V2", typedef struct {
+      |                                                                           ^
+/usr/lib/pkgconfig/../../include/winpr3/winpr/platform.h:604:78: note: in definition of macro 'WINPR_DEPRECATED_VAR'
+  604 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+/usr/lib/pkgconfig/../../include/winpr3/winpr/sspi.h:917:62: note: declared here
+  917 |     "[since 3.31.0] use SEC_WINPR_NTLM_SETTINGS_V2", typedef struct {
+      |                                                              ^~~~~~
+/usr/lib/pkgconfig/../../include/winpr3/winpr/platform.h:604:78: note: in definition of macro 'WINPR_DEPRECATED_VAR'
+  604 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+/usr/lib/pkgconfig/../../include/winpr3/winpr/sspi.h:940:75: warning: 'SEC_WINPR_KERBEROS_SETTINGS' is deprecated: [deprecated] [since 3.31.0] use SEC_WINPR_KERBEROS_SETTINGS_V2 [-Wdeprecated-declarations]
+  940 |     "[since 3.31.0] use SEC_WINNT_AUTH_IDENTITY_WINPR_V2", typedef struct {
+      |                                                                           ^
+/usr/lib/pkgconfig/../../include/winpr3/winpr/platform.h:604:78: note: in definition of macro 'WINPR_DEPRECATED_VAR'
+  604 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+/usr/lib/pkgconfig/../../include/winpr3/winpr/sspi.h:925:66: note: declared here
+  925 |     "[since 3.31.0] use SEC_WINPR_KERBEROS_SETTINGS_V2", typedef struct {
+      |                                                                  ^~~~~~
+/usr/lib/pkgconfig/../../include/winpr3/winpr/platform.h:604:78: note: in definition of macro 'WINPR_DEPRECATED_VAR'
+  604 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+In file included from /usr/lib/pkgconfig/../../include/freerdp3/freerdp/client/rdpgfx.h:28,
+                 from /usr/lib/pkgconfig/../../include/freerdp3/freerdp/gdi/gdi.h:34,
+                 from /usr/lib/pkgconfig/../../include/freerdp3/freerdp/freerdp.h:35,
+                 from /usr/lib/pkgconfig/../../include/freerdp3/freerdp/client.h:31:
+/usr/lib/pkgconfig/../../include/freerdp3/freerdp/codecs.h:104:9: warning: 'codecs_free' is deprecated: [deprecated] [since 3.6.0] Use freerdp_client_codecs_free [-Wdeprecated-declarations]
+  104 |         WINPR_DEPRECATED_VAR(
+      |         ^~~~~~~~~~~~~~~~~~~~
+/usr/lib/pkgconfig/../../include/freerdp3/freerdp/codecs.h:102:47: note: declared here
+  102 |                              FREERDP_API void codecs_free(rdpCodecs* codecs));
+      |                                               ^~~~~~~~~~~
+/usr/lib/pkgconfig/../../include/winpr3/winpr/platform.h:604:78: note: in definition of macro 'WINPR_DEPRECATED_VAR'
+  604 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+/usr/lib/pkgconfig/../../include/freerdp3/freerdp/freerdp.h:517:17: warning: 'pVerifyCertificate' is deprecated: [deprecated] Use pVerifyCertificateEx [-Wdeprecated-declarations]
+  517 |                 WINPR_DEPRECATED_VAR("Use VerifyCertificateEx or VerifyX509Certificate  instead",
+      |                 ^~~~~~~~~~~~~~~~~~~~
+/usr/lib/pkgconfig/../../include/freerdp3/freerdp/freerdp.h:520:17: warning: 'pVerifyChangedCertificate' is deprecated: [deprecated] Use pVerifyChangedCertificateEx [-Wdeprecated-declarations]
+  520 |                 WINPR_DEPRECATED_VAR("Use VerifyChangedCertificateEx or VerifyX509Certificate  instead",
+      |                 ^~~~~~~~~~~~~~~~~~~~
+ARM64_REAL_WLF_CALLBACKS_POINTER_PASS drag second_contact_ignored motion_id up cancel scroll

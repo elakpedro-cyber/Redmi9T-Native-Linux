@@ -1,0 +1,4 @@
+Linux (none) 7.4.0-rc1-lemon-bringup-v8b #1 SMP PREEMPT_DYNAMIC 2026-11-05 00:00:00 +0000 aarch64 Linux
+tty1
+9448.80 75317.19
+a03c6763-1c3d-434c-96c0-57d9d8610652

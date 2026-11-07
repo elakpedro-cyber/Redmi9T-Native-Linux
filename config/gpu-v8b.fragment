@@ -1,0 +1,2 @@
+CONFIG_LOCALVERSION="-lemon-bringup-v8b"
+CONFIG_SM_DISPCC_6115=m

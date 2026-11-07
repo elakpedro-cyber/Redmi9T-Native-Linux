@@ -1,0 +1,8 @@
+{
+  "baseline": "logs\\touchscreen-v1\\20261107T132908Z",
+  "after": "logs\\touchscreen-v1\\20261107T142712Z",
+  "ufs_all_17_fields_unchanged": true,
+  "new_dmesg_lines": 0,
+  "touch_geni_modules_loaded": false,
+  "v21_snapshot_verified_files": 79
+}

@@ -1,0 +1,27 @@
+/dts-v1/;
+/plugin/;
+
+/* Offline schema fixture. No consumer and no probe. */
+&{/soc@0/spmi@1c40000/pmic@3} {
+	#address-cells = <1>;
+	#size-cells = <0>;
+
+	regulator@ec00 {
+		compatible = "qcom,pmi632-lcdb", "qcom,pm8150l-lcdb";
+		reg = <0xec00>;
+		interrupts = <3 0xec 1 1>;
+		status = "disabled";
+
+		ldo {
+			regulator-name = "lcdb_ldo";
+			regulator-min-microvolt = <5500000>;
+			regulator-max-microvolt = <5500000>;
+		};
+
+		ncp {
+			regulator-name = "lcdb_ncp";
+			regulator-min-microvolt = <5500000>;
+			regulator-max-microvolt = <5500000>;
+		};
+	};
+};

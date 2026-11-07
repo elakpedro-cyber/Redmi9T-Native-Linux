@@ -1,0 +1,31 @@
+#!/bin/sh
+# Only /run (tmpfs) receives logs. No internal filesystem is mounted.
+snapshot() {
+    echo "=== UFS snapshot: uptime $(cat /proc/uptime) ==="
+    uname -a
+    cat /run/init-reached
+    cat /proc/partitions
+    ls -l /sys/block /sys/class/scsi_host /sys/class/scsi_disk
+    for dev in 4804000.ufshc 4807000.phy; do
+        p=/sys/bus/platform/devices/$dev
+        echo "=== $dev ==="
+        ls -l "$p"
+        readlink "$p/driver"
+        cat "$p/uevent" "$p/power/runtime_status"
+    done
+    for p in /sys/class/regulator/*; do
+        echo "=== $p ==="
+        cat "$p/name" "$p/state" "$p/microvolts" "$p/num_users"
+    done
+    for p in /sys/kernel/debug/devices_deferred /sys/kernel/debug/clk/clk_summary /sys/kernel/debug/regulator/regulator_summary; do
+        if [ -r "$p" ]; then echo "=== $p ==="; cat "$p"; fi
+    done
+    cat /proc/mounts
+    dmesg
+}
+snapshot
+sleep 5
+snapshot
+sleep 10
+snapshot
+echo 'LEMON_UFS_DIAGNOSTICS_V4_COMPLETE'

@@ -1,0 +1,6 @@
+[W][01:20:54.122012] mod.rt       | [     module-rt.c:  331 translate_error()] RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+[W][01:20:54.122156] mod.rt       | [     module-rt.c:  995 do_rtkit_setup()] RTKit does not give us MaxRealtimePriority, using 1
+[W][01:20:54.122778] mod.rt       | [     module-rt.c:  331 translate_error()] RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+[W][01:20:54.122802] mod.rt       | [     module-rt.c: 1000 do_rtkit_setup()] RTKit does not give us MinNiceLevel, using 0
+[W][01:20:54.123174] mod.rt       | [     module-rt.c:  331 translate_error()] RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+[W][01:20:54.123196] mod.rt       | [     module-rt.c: 1005 do_rtkit_setup()] RTKit does not give us RTTimeUSecMax, using -1

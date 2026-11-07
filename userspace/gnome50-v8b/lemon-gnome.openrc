@@ -1,0 +1,17 @@
+#!/sbin/openrc-run
+description="Staged RAM-only GNOME session"
+command=/tmp/lemon-gnome50/watchdog
+command_args="120 /bin/sh /tmp/lemon-gnome50/run.sh"
+command_background=yes
+pidfile=/run/lemon-gnome-test.pid
+output_log=/tmp/lemon-gnome50/openrc-session.log
+error_log=/tmp/lemon-gnome50/openrc-session.log
+retry="TERM/10/KILL/2"
+
+start_pre() {
+    local stage=/tmp/lemon-gnome50
+    [ -d "$stage" ] && [ ! -L "$stage" ] &&
+        [ "$(stat -c '%u:%a' "$stage")" = 0:700 ] &&
+        [ "$(stat -f -c %T "$stage")" = tmpfs ] || return 1
+    "$command" 5 /bin/sh "$stage/run.sh" --check-only
+}

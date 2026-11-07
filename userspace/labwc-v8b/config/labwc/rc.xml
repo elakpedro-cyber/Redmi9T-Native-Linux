@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<labwc_config>
+  <core><xwayland>no</xwayland></core>
+  <keyboard>
+    <default />
+    <keybind key="W-Return"><action name="Execute" command="foot -w 400x205 /bin/sh -i" /></keybind>
+    <keybind key="W-space"><action name="ShowMenu" menu="root-menu" /></keybind>
+  </keyboard>
+  <mouse><default /></mouse>
+</labwc_config>

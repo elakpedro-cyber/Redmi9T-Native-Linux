@@ -1,0 +1,9 @@
+#!/rescue/busybox sh
+export HOME=/root USER=root LOGNAME=root SHELL=/rescue/sh
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+cd /root
+echo 'USB_RESCUE_SHELL_V6: static BusyBox; independent of OpenRC and Alpine libraries'
+for p in /run/init-reached /run/openrc-reached; do
+    if [ -r "$p" ]; then /rescue/busybox cat "$p"; else echo "Not reached: $p"; fi
+done
+exec /rescue/busybox sh -i

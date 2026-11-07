@@ -1,0 +1,65 @@
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="pm8941_pwrkey"
+P: Phys=pm8941_pwrkey/input0
+S: Sysfs=/devices/platform/soc@0/1c40000.spmi/spmi-0/0-00/1c40000.spmi:pmic@0:pon@800/1c40000.spmi:pmic@0:pon@800:pwrkey/input/input0
+U: Uniq=
+H: Handlers=kbd event0 
+B: PROP=0
+B: EV=3
+B: KEY=10000000000000 0
+
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="pm8941_resin"
+P: Phys=pm8941_resin/input0
+S: Sysfs=/devices/platform/soc@0/1c40000.spmi/spmi-0/0-00/1c40000.spmi:pmic@0:pon@800/1c40000.spmi:pmic@0:pon@800:resin/input/input1
+U: Uniq=
+H: Handlers=kbd event1 
+B: PROP=0
+B: EV=3
+B: KEY=4000000000000 0
+
+I: Bus=0019 Vendor=0001 Product=0001 Version=0100
+N: Name="gpio-keys"
+P: Phys=gpio-keys/input0
+S: Sysfs=/devices/platform/gpio-keys/input/input2
+U: Uniq=
+H: Handlers=kbd event2 
+B: PROP=0
+B: EV=3
+B: KEY=8000000000000 0
+
+/dev/input:
+total 0
+crw-------    1 root     root       13,  64 Jan  1 00:00 event0
+crw-------    1 root     root       13,  65 Jan  1 00:00 event1
+crw-------    1 root     root       13,  66 Jan  1 00:00 event2
+
+/sys/class/input:
+total 0
+lrwxrwxrwx    1 root     root             0 Jan  1 01:20 event0 -> ../../devices/platform/soc@0/1c40000.spmi/spmi-0/0-00/1c40000.spmi:pmic@0:pon@800/1c40000.spmi:pmic@0:pon@800:pwrkey/input/input0/event0
+lrwxrwxrwx    1 root     root             0 Jan  1 01:20 event1 -> ../../devices/platform/soc@0/1c40000.spmi/spmi-0/0-00/1c40000.spmi:pmic@0:pon@800/1c40000.spmi:pmic@0:pon@800:resin/input/input1/event1
+lrwxrwxrwx    1 root     root             0 Jan  1 01:20 event2 -> ../../devices/platform/gpio-keys/input/input2/event2
+lrwxrwxrwx    1 root     root             0 Jan  1 01:20 input0 -> ../../devices/platform/soc@0/1c40000.spmi/spmi-0/0-00/1c40000.spmi:pmic@0:pon@800/1c40000.spmi:pmic@0:pon@800:pwrkey/input/input0
+lrwxrwxrwx    1 root     root             0 Jan  1 01:20 input1 -> ../../devices/platform/soc@0/1c40000.spmi/spmi-0/0-00/1c40000.spmi:pmic@0:pon@800/1c40000.spmi:pmic@0:pon@800:resin/input/input1
+lrwxrwxrwx    1 root     root             0 Jan  1 01:20 input2 -> ../../devices/platform/gpio-keys/input/input2
+EVENT=/sys/class/input/event0
+pm8941_pwrkey
+pm8941_pwrkey/input0
+0
+3
+0
+/sys/devices/platform/soc@0/1c40000.spmi/spmi-0/0-00/1c40000.spmi:pmic@0:pon@800/1c40000.spmi:pmic@0:pon@800:pwrkey/input/input0
+EVENT=/sys/class/input/event1
+pm8941_resin
+pm8941_resin/input0
+0
+3
+0
+/sys/devices/platform/soc@0/1c40000.spmi/spmi-0/0-00/1c40000.spmi:pmic@0:pon@800/1c40000.spmi:pmic@0:pon@800:resin/input/input1
+EVENT=/sys/class/input/event2
+gpio-keys
+gpio-keys/input0
+0
+3
+0
+/sys/devices/platform/gpio-keys/input/input2

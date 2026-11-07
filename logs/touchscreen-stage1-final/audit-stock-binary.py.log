@@ -1,0 +1,15 @@
+{
+  "image": "reports\\stock-recovery\\kernel",
+  "bytes": 30978064,
+  "sha256": "4e9946d0160031469fe1d664e75d1e282539ca92dddd21349bd34188154ccdba",
+  "literal_offset": "0x142f8e6",
+  "xrefs": [
+    [
+      "0x7f9938",
+      "0x7f9944"
+    ]
+  ],
+  "scope": "static disassembly only; register field attribution requires separate evidence",
+  "verified_zero_store_file_offset": "0x7f98b4",
+  "field_attribution": "CS0 follows stock spi_device u32 speed/u8 CS/u8 bits/u16 mode layout, nearby mode print and Xiaomi probe source; not an electrical measurement"
+}

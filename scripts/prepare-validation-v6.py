@@ -1,0 +1,31 @@
+from pathlib import Path
+root=Path(__file__).resolve().parents[1]
+t=(root/'scripts/validate-v5.py').read_text().replace('v5','v6').replace('V5','V6')
+t=t.replace("['', '-v2','-v3','-v4']", "['', '-v2','-v3','-v4','-v5']")
+t=t.replace("entries['etc/lemon/usbnet-mode'][1].strip()==b'off','default USB mode ACM-only'", "entries['etc/lemon/usbnet-mode'][1].strip()==b'ncm','v6 USB mode NCM with ACM'")
+t=t.replace("runlevels==['etc/runlevels/default/lemon-health'],'only explicit RAM-only OpenRC service enabled'", "set(runlevels)=={'etc/runlevels/default/lemon-health','etc/runlevels/default/lemon-net','etc/runlevels/default/lemon-sshd'},'only health, USB IP and SSH services enabled'")
+t=t.replace("entries['root/.ssh/authorized_keys'][1]==b'','no bundled SSH authentication keys'", "entries['root/.ssh/authorized_keys'][1]==(root/'config/ssh-authorized-keys-v6').read_bytes(),'authorized public key matches intended Windows user key'")
+a=t.index("rescue=json.loads");b=t.index("for path in ['bin/busybox'",a)
+t=t[:a]+'''functional=json.loads((root/'reports/v6-functional-tests.json').read_text())
+check(functional['status']=='PASS' and len(functional['cases'])==7,'NCM model, static shell, ARM64 SSH auth and SCP tests')
+check(entries['usr/lib/ssh/sftp-server'][1][:4]==b'\x7fELF','SFTP server packaged for modern Windows SCP')
+for path,source in [('usr/local/sbin/lemon-usb-gadget','lemon-usb-gadget-v6'),('etc/init.d/lemon-net','lemon-net-v6'),('etc/init.d/lemon-sshd','lemon-sshd-v6')]:
+    check(entries[path][1]==(root/'config'/source).read_bytes(),'packaged v6 service: '+path)
+    check(bool(entries[path][0][1]&0o111),'executable v6 service: '+path)
+sshd=entries['etc/init.d/lemon-sshd'][1].decode()
+check('-F -E -s -j -k' in sshd and '-p 192.168.77.2:22' in sshd and 'need lemon-net' in sshd,'SSH password disabled, USB-address-only bind and network dependency')
+check('/run/dropbear/host_ed25519' in sshd and '/run/ssh-hostkey.txt' in sshd,'unique runtime RAM host key and COM fingerprint path')
+check(entries['root/.ssh/authorized_keys'][0][1]&0o777==0o600 and entries['root/.ssh'][0][1]&0o777==0o700,'SSH key directory/file permissions')
+check((art/'Image-v6').read_bytes()==(art/'Image-v5').read_bytes(),'v5 hardware-confirmed kernel unchanged')
+check((art/'bootshim-v6.Image').read_bytes()==(art/'bootshim-v5.Image').read_bytes(),'v5 hardware-confirmed wrapper unchanged')
+for name,info in json.loads((root/'snapshots/v5-known-good/MANIFEST.json').read_text()).items():
+    check(sha(root/'snapshots/v5-known-good'/name)==info['sha256'],'working v5 snapshot unchanged: '+name)
+''' +t[b:]
+t=t.replace("check('openrc (OpenRC' in (root/'reports/rootfs-v6-execution.txt').read_text(),'ARM64 Alpine/OpenRC/tool executions under QEMU-user recorded')", "check('PASS' in (root/'reports/v6-functional-tests.log').read_text(),'actual ARM64 SSH functional execution recorded')")
+t=t.replace('pmaports-v6-check.json', 'pmaports-v5-check.json')
+t=t.replace("'etc/init.d/lemon-health'])", "'etc/init.d/lemon-health','etc/init.d/lemon-net','etc/init.d/lemon-sshd','usr/local/sbin/lemon-usb-gadget'])")
+t=t.replace("check('/run/dropbear/host_ed25519' in sshd", "check('run/dropbear/host_ed25519' not in entries,'runtime SSH private key not packaged')\ncheck('/run/dropbear/host_ed25519' in sshd")
+t=t.replace("'usb_network_default':'off'", "'usb_network_default':'CDC NCM + ACM'")
+t=t.replace('V6_OFFLINE_VALIDATED_V4_HARDWARE_CONFIRMED','V6_OFFLINE_VALIDATED_V5_HARDWARE_CONFIRMED')
+t=t.replace('v6 physical boot, Alpine/OpenRC as PID1 on lemon, regression UFS/ACM/display, USB network enumeration/traffic and SSH. QEMU-user is not a complete OS boot.','v6 physical boot, Windows UsbNcm binding, exact COM number, NCM traffic, regression UFS/ACM, SSH over real USB. Offline SSH used WSL loopback only.')
+(root/'scripts/validate-v6.py').write_text(t,newline='\n')

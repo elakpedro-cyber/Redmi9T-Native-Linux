@@ -1,0 +1,439 @@
+{
+  "samples": 17,
+  "page_size": 4096,
+  "peak_sample": {
+    "uptime": 4892.99,
+    "processes": [
+      {
+        "pid": 1592,
+        "name": "dbus-daemon",
+        "role": "Other",
+        "pss_kib": 400,
+        "rss_kib": 1500,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485089
+      },
+      {
+        "pid": 1618,
+        "name": "seatd-launch",
+        "role": "Other",
+        "pss_kib": 185,
+        "rss_kib": 572,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485160
+      },
+      {
+        "pid": 1619,
+        "name": "seatd",
+        "role": "Other",
+        "pss_kib": 241,
+        "rss_kib": 680,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485160
+      },
+      {
+        "pid": 1620,
+        "name": "weston",
+        "role": "Weston",
+        "pss_kib": 33069,
+        "rss_kib": 48516,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485161
+      },
+      {
+        "pid": 1624,
+        "name": "dbus-run-sessio",
+        "role": "Other",
+        "pss_kib": 85,
+        "rss_kib": 716,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485170
+      },
+      {
+        "pid": 1631,
+        "name": "dbus-daemon",
+        "role": "Other",
+        "pss_kib": 696,
+        "rss_kib": 1756,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485172
+      },
+      {
+        "pid": 1632,
+        "name": "sh",
+        "role": "Other",
+        "pss_kib": 203,
+        "rss_kib": 1052,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485172
+      },
+      {
+        "pid": 2042,
+        "name": "pipewire",
+        "role": "PipeWire",
+        "pss_kib": 2116,
+        "rss_kib": 4932,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485410
+      },
+      {
+        "pid": 2051,
+        "name": "wireplumber",
+        "role": "WirePlumber",
+        "pss_kib": 21704,
+        "rss_kib": 58576,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485431
+      },
+      {
+        "pid": 2052,
+        "name": "gnome-session-b",
+        "role": "Other",
+        "pss_kib": 5769,
+        "rss_kib": 22356,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485431
+      },
+      {
+        "pid": 2053,
+        "name": "gnome-remote-de",
+        "role": "GRD",
+        "pss_kib": 132865,
+        "rss_kib": 229008,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485431
+      },
+      {
+        "pid": 2054,
+        "name": "kgx",
+        "role": "Other",
+        "pss_kib": 101485,
+        "rss_kib": 166944,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485431
+      },
+      {
+        "pid": 2057,
+        "name": "sh",
+        "role": "Other",
+        "pss_kib": 274,
+        "rss_kib": 1076,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485431
+      },
+      {
+        "pid": 2089,
+        "name": "gnome-shell",
+        "role": "Shell/Mutter",
+        "pss_kib": 167732,
+        "rss_kib": 284308,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485453
+      },
+      {
+        "pid": 2173,
+        "name": "at-spi-bus-laun",
+        "role": "Other",
+        "pss_kib": 1808,
+        "rss_kib": 8608,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485553
+      },
+      {
+        "pid": 2181,
+        "name": "dbus-daemon",
+        "role": "Other",
+        "pss_kib": 299,
+        "rss_kib": 1432,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485557
+      },
+      {
+        "pid": 2334,
+        "name": "at-spi2-registr",
+        "role": "Other",
+        "pss_kib": 904,
+        "rss_kib": 5480,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485589
+      },
+      {
+        "pid": 2677,
+        "name": "gnome-shell-cal",
+        "role": "Other",
+        "pss_kib": 6185,
+        "rss_kib": 24588,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485779
+      },
+      {
+        "pid": 2690,
+        "name": "evolution-sourc",
+        "role": "Other",
+        "pss_kib": 9437,
+        "rss_kib": 34368,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485790
+      },
+      {
+        "pid": 2704,
+        "name": "goa-daemon",
+        "role": "Other",
+        "pss_kib": 19675,
+        "rss_kib": 67616,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485809
+      },
+      {
+        "pid": 2706,
+        "name": "dconf-service",
+        "role": "Other",
+        "pss_kib": 638,
+        "rss_kib": 4448,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485813
+      },
+      {
+        "pid": 2716,
+        "name": "gjs",
+        "role": "Other",
+        "pss_kib": 14185,
+        "rss_kib": 35660,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485821
+      },
+      {
+        "pid": 2726,
+        "name": "evolution-calen",
+        "role": "Other",
+        "pss_kib": 11652,
+        "rss_kib": 33720,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485826
+      },
+      {
+        "pid": 2731,
+        "name": "ibus-daemon",
+        "role": "Other",
+        "pss_kib": 3283,
+        "rss_kib": 10124,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485827
+      },
+      {
+        "pid": 2768,
+        "name": "goa-identity-se",
+        "role": "Other",
+        "pss_kib": 2407,
+        "rss_kib": 9520,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485844
+      },
+      {
+        "pid": 2788,
+        "name": "ibus-dconf",
+        "role": "Other",
+        "pss_kib": 2066,
+        "rss_kib": 8988,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485851
+      },
+      {
+        "pid": 2789,
+        "name": "ibus-extension-",
+        "role": "Other",
+        "pss_kib": 11736,
+        "rss_kib": 29204,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485852
+      },
+      {
+        "pid": 2795,
+        "name": "ibus-portal",
+        "role": "Other",
+        "pss_kib": 1831,
+        "rss_kib": 8440,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485853
+      },
+      {
+        "pid": 2827,
+        "name": "evolution-addre",
+        "role": "Other",
+        "pss_kib": 12954,
+        "rss_kib": 35476,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485864
+      },
+      {
+        "pid": 2945,
+        "name": "ibus-engine-sim",
+        "role": "Other",
+        "pss_kib": 2028,
+        "rss_kib": 9140,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485902
+      },
+      {
+        "pid": 3056,
+        "name": "pulseaudio",
+        "role": "Other",
+        "pss_kib": 8007,
+        "rss_kib": 12112,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 485923
+      },
+      {
+        "pid": 3420,
+        "name": "gsettings-helpe",
+        "role": "Other",
+        "pss_kib": 2306,
+        "rss_kib": 9652,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 486055
+      },
+      {
+        "pid": 3482,
+        "name": "wlfreerdp3",
+        "role": "RDP client",
+        "pss_kib": 229569,
+        "rss_kib": 245012,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 486170
+      },
+      {
+        "pid": 3648,
+        "name": "glycin-svg",
+        "role": "Other",
+        "pss_kib": 5779,
+        "rss_kib": 14132,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 486262
+      },
+      {
+        "pid": 4678,
+        "name": "sh",
+        "role": "Other",
+        "pss_kib": 338,
+        "rss_kib": 1188,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 486669
+      },
+      {
+        "pid": 7634,
+        "name": "gnome-control-c",
+        "role": "Other",
+        "pss_kib": 94280,
+        "rss_kib": 164880,
+        "rss_source": "smaps_rollup",
+        "start_ticks": 488773
+      }
+    ],
+    "incomplete_pids": [],
+    "mem_available_kib": 1299672,
+    "pss_kib": 908191,
+    "rss_kib": 1595780
+  },
+  "groups_at_same_peak_sample": {
+    "Other": {
+      "pss_kib": 321136,
+      "rss_kib": 725428,
+      "pids": [
+        1592,
+        1618,
+        1619,
+        1624,
+        1631,
+        1632,
+        2052,
+        2054,
+        2057,
+        2173,
+        2181,
+        2334,
+        2677,
+        2690,
+        2704,
+        2706,
+        2716,
+        2726,
+        2731,
+        2768,
+        2788,
+        2789,
+        2795,
+        2827,
+        2945,
+        3056,
+        3420,
+        3648,
+        4678,
+        7634
+      ]
+    },
+    "Weston": {
+      "pss_kib": 33069,
+      "rss_kib": 48516,
+      "pids": [
+        1620
+      ]
+    },
+    "PipeWire": {
+      "pss_kib": 2116,
+      "rss_kib": 4932,
+      "pids": [
+        2042
+      ]
+    },
+    "WirePlumber": {
+      "pss_kib": 21704,
+      "rss_kib": 58576,
+      "pids": [
+        2051
+      ]
+    },
+    "GRD": {
+      "pss_kib": 132865,
+      "rss_kib": 229008,
+      "pids": [
+        2053
+      ]
+    },
+    "Shell/Mutter": {
+      "pss_kib": 167732,
+      "rss_kib": 284308,
+      "pids": [
+        2089
+      ]
+    },
+    "RDP client": {
+      "pss_kib": 229569,
+      "rss_kib": 245012,
+      "pids": [
+        3482
+      ]
+    }
+  },
+  "scenario_ranges_kib": {
+    "startup/desktop": {
+      "minimum": 0,
+      "maximum": 545523
+    },
+    "Console present": {
+      "minimum": 342622,
+      "maximum": 843121
+    },
+    "Settings present": {
+      "minimum": 903116,
+      "maximum": 908191
+    }
+  },
+  "minimum_mem_available_kib": 1286240,
+  "limitations": [
+    "Coherent sampling window, not an atomic snapshot",
+    "Missing/exited PIDs are listed, not silently attributed to another cohort",
+    "RSS sums double count shared mappings; PSS divides shared pages",
+    "PSS excludes unmapped tmpfs/rootfs/kernel/driver memory",
+    "Changes with app set and warm caches are not proof of a leak"
+  ]
+}

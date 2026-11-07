@@ -1,0 +1,9 @@
+{
+  "identity": "uname -a; cat /sys/class/tty/tty0/active /proc/uptime; cat /proc/sys/kernel/random/boot_id",
+  "input": "cat /proc/bus/input/devices; ls -l /sys/class/input /dev/input; for p in /sys/class/input/event*; do echo EVENT=$p; cat \"$p/device/name\" \"$p/device/phys\" \"$p/device/properties\" \"$p/device/capabilities/ev\" \"$p/device/capabilities/abs\"; readlink -f \"$p/device\"; done",
+  "buses": "ls -l /sys/bus/spi/devices /sys/class/spi_master; ls -l /sys/bus/spi/drivers; lsmod; cat /proc/interrupts",
+  "device-tree": "find /sys/firmware/devicetree/base -name \"*spi*\" -o -name \"*qup*\" -o -name \"*novatek*\"; for p in /proc/device-tree/aliases/spi*; do [ ! -f \"$p\" ] || { echo ALIAS=$p; cat \"$p\"; echo; }; done",
+  "dt-status": "for p in $(find /sys/firmware/devicetree/base -name \"spi@4a88000\" -o -name \"i2c@4a88000\" -o -name \"geniqup@4ac0000\"); do echo NODE=$p; for n in status compatible reg pinctrl-0; do if [ -f \"$p/$n\" ]; then echo PROPERTY=$n; od -An -tx1 \"$p/$n\"; fi; done; done",
+  "safety": "cat /proc/mounts /proc/swaps; for p in /sys/block/sd?; do echo DISK=$p; cat \"$p/stat\"; done; cat /sys/bus/platform/devices/5e00000.display-subsystem/driver_override; cat /sys/bus/platform/devices/5900000.gpu/power/runtime_status",
+  "dmesg": "dmesg"
+}

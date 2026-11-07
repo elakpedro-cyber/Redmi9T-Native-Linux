@@ -1,0 +1,33 @@
+Collecting vmlinux-to-elf==1.2.2
+  Downloading vmlinux_to_elf-1.2.2-py3-none-any.whl.metadata (14 kB)
+Collecting lz4 (from vmlinux-to-elf==1.2.2)
+  Downloading lz4-4.4.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Collecting zstandard>=0.25.0 (from vmlinux-to-elf==1.2.2)
+  Downloading zstandard-0.25.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.3 kB)
+Collecting minilzo>=1.2 (from vmlinux-to-elf==1.2.2)
+  Downloading minilzo-1.2.tar.gz (76 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 76.6/76.6 kB 3.6 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting peewee>=3.17 (from vmlinux-to-elf==1.2.2)
+  Downloading peewee-4.5.3-py3-none-any.whl.metadata (10 kB)
+Downloading vmlinux_to_elf-1.2.2-py3-none-any.whl (6.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 5.6 MB/s eta 0:00:00
+Downloading peewee-4.5.3-py3-none-any.whl (194 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 194.5/194.5 kB 13.8 MB/s eta 0:00:00
+Downloading zstandard-0.25.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 6.9 MB/s eta 0:00:00
+Downloading lz4-4.4.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 9.2 MB/s eta 0:00:00
+Building wheels for collected packages: minilzo
+  Building wheel for minilzo (pyproject.toml): started
+  Building wheel for minilzo (pyproject.toml): finished with status 'done'
+  Created wheel for minilzo: filename=minilzo-1.2-cp312-cp312-linux_x86_64.whl size=47478 sha256=2925682c94345e6a6a9c0d5fe6bf521306e6061c1dc8db43bd7bf2be009e0d6f
+  Stored in directory: /root/.cache/pip/wheels/46/d8/d4/5466cb61377e7e3fce30347cd7ec67be99a201c49f05641d05
+Successfully built minilzo
+Installing collected packages: zstandard, peewee, minilzo, lz4, vmlinux-to-elf
+Successfully installed lz4-4.4.5 minilzo-1.2 peewee-4.5.3 vmlinux-to-elf-1.2.2 zstandard-0.25.0

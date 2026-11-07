@@ -1,0 +1,12 @@
+[
+  {
+    "path": "C:\\Users\\HadirPC\\Downloads\\platform-tools_r37.0.1-windows\\Redmi9T-Native-Linux\\artifacts\\lemon-gnome-physical-lcd-v2.1-aarch64.tar.gz",
+    "bytes": 548756171,
+    "sha256": "260dcb7493ccf70effa34e617ebf7314485068783bfdffc3739248ed5504fad9"
+  },
+  {
+    "path": "C:\\Users\\HadirPC\\Downloads\\platform-tools_r37.0.1-windows\\Redmi9T-Native-Linux\\artifacts\\boot-linux-test-v8b.img",
+    "bytes": 24707072,
+    "sha256": "9ce181e8a6170ce8773a923f03dd10f5edb405d1990fa09b4f4bc12f2e59a610"
+  }
+]

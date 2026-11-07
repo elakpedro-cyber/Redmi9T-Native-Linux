@@ -1,0 +1,9 @@
+W 01:20:54.351868             mod.rt ../src/modules/module-rt.c:331:translate_error: RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+W 01:20:54.352298             mod.rt ../src/modules/module-rt.c:995:do_rtkit_setup: RTKit does not give us MaxRealtimePriority, using 1
+W 01:20:54.353327             mod.rt ../src/modules/module-rt.c:331:translate_error: RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+W 01:20:54.353406             mod.rt ../src/modules/module-rt.c:1000:do_rtkit_setup: RTKit does not give us MinNiceLevel, using 0
+W 01:20:54.354038             mod.rt ../src/modules/module-rt.c:331:translate_error: RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+W 01:20:54.354115             mod.rt ../src/modules/module-rt.c:1005:do_rtkit_setup: RTKit does not give us RTTimeUSecMax, using -1
+[1:20:54.756822054] [188]  INFO Camera camera_manager.cpp:340 libcamera v0.7.1
+[1:20:54.757573721] [239]  WARN IPAManager ipa_manager.cpp:115 Public key not valid
+[1:20:54.761078408] [239] ERROR DmaBufAllocator dma_buf_allocator.cpp:119 Could not open any dma-buf provider

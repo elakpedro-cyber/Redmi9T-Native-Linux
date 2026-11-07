@@ -1,0 +1,18 @@
+#!/sbin/openrc-run
+description="Dropbear SSH on USB only, public key authentication"
+command=/usr/sbin/dropbear
+command_args="-F -E -s -j -k -r /run/dropbear/host_ed25519 -p 192.168.77.2:22"
+command_background=yes
+pidfile=/run/lemon-sshd.pid
+output_log=/run/dropbear.log
+error_log=/run/dropbear.log
+depend() { need lemon-net; }
+start_pre() {
+    [ -s /root/.ssh/authorized_keys ] || { eerror 'No authorized public key'; return 1; }
+    checkpath -d -m 0700 /run/dropbear
+    if [ ! -s /run/dropbear/host_ed25519 ]; then
+        /usr/bin/dropbearkey -t ed25519 -f /run/dropbear/host_ed25519 || return 1
+    fi
+    /usr/bin/dropbearkey -y -f /run/dropbear/host_ed25519 > /run/ssh-hostkey.txt || return 1
+    cat /run/ssh-hostkey.txt
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "file": "main.js",
+    "base_sha256": "6e8236a1b8aad8ad2125473173954e4aa0bc17b372bd8809ef55ccc09fe93994",
+    "patched_sha256": "a5c2e47f3d9710a8f707307fda8f0d321f349c640b8b7e434c4c690e8c66df3c"
+  },
+  {
+    "file": "windowPreview.js",
+    "base_sha256": "ae91d24f72a2fbc01aed18c96232631eb26722399f86c7d47634c1cabcc35d26",
+    "patched_sha256": "123e051bc4d64211617002465db3a37459b71761b45862d83b652920b748cdc7"
+  },
+  {
+    "file": "status/remoteAccess.js",
+    "base_sha256": "8a5a484c8cb18abecfddf02c07f007d4c8441ec9c154a6375f19c12b4df045e0",
+    "patched_sha256": "164c7948a738078b88a75ca409f1f8622be33ee6ef9ea88b0731895cb3c7cc70"
+  }
+]

@@ -1,0 +1,11 @@
+--- /home/hadirpc/Redmi9T-Native-Linux/physical-v21-sources/gnome-remote-desktop-50.1/src/grd-egl-thread.c	2026-04-16 00:02:48.000000000 +0300
++++ /home/hadirpc/Redmi9T-Native-Linux/gnome50-build.hT7bPE/build/grd-v21.bzPuq8/gnome-remote-desktop-50.1/src/grd-egl-thread.c	2026-11-07 15:05:23.980802760 +0300
+@@ -733,6 +733,8 @@
+   g_autoptr (GrdEglThread) egl_thread = NULL;
+ 
+   egl_thread = g_new0 (GrdEglThread, 1);
++  egl_thread->drm_render_node_fd = -1;
++  egl_thread->impl.drm_render_node_fd = -1;
+   egl_thread->slot_table =
+     g_hash_table_new_full (NULL, NULL,
+                            NULL, (GDestroyNotify) replaceable_task_free);

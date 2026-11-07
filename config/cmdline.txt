@@ -1,0 +1,1 @@
+rdinit=/init console=tty0 loglevel=8 ignore_loglevel printk.time=1 keep_bootcon clk_ignore_unused pd_ignore_unused panic=0

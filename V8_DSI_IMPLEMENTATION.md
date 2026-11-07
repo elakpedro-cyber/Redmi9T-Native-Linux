@@ -1,0 +1,13 @@
+# v8 — MDSS, DPU и DSI
+
+Образ этапа A включает SM6115 DPU, DSI host и PHY 14 нм в `msm.ko`. Штатный SM6115 DTSI задаёт MDSS `5e00000`, DPU `5e01000`, DSI0 `5e94000`, PHY `5e94400`, dispcc `5f00000`, MDSS GDSC, RPM VDDCX, interconnects и apps SMMU streams `0x420/0x421`. В графе DPU INTF1 связан с входом DSI0, а DSI0 использует byte/pixel PLL от PHY. Порт панели пока не подключён.
+
+`config/display-safe-v8.dts` добавляет явное `status = "disabled"` к DPU в проверенном v7 DT. Офлайн-проверка сравнивает все свойства дерева, включая результирующее дерево после bootshim. MDSS, DPU, DSI, PHY, dispcc и подсветка остаются отключены, SimpleDRM продолжает использовать firmware framebuffer. MSM остаётся модулем с ручным запуском и `separate_gpu_kms=1`.
+
+`display-v8/td4330-profile.c` содержит собранный прототип режима и транспорта, без привязки к устройству. Из совпавших TWRP, stock-merged и Xiaomi DT извлечены 77 init-пакетов и 2 off-пакета. Сохраняются wire types `0x05` и `0x39`, VC0, LP и задержки, в том числе 85 мс после sleep-out. MSM возвращает длину DMA-пакета с заголовком, поэтому транспорт принимает успешный результат от длины payload и обрывается при ошибке или короткой передаче.
+
+Параметры режима: RGB888, 4 линии `0 1 2 3`, non-burst sync-event, горизонталь `1080/1140/1148/1208`, вертикаль `2340/2366/2370/2394`, pixel clock 173517 кГц. Остаётся проверить отображение BLLP/LP11, EoT и момент перехода в video mode на API MSM. [Параметры Xiaomi](https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/02ca1a919564a9b176a79cce09c40977f833e9ac/arch/arm64/boot/dts/vendor/qcom/dsi-panel-td4330-truly-v2-singlemipi-fhd-vid.dtsi).
+
+Для будущего `drm_panel` нужны проверенная привязка supplies и backlight, отдельные prepare/enable/disable/unprepare с обратным порядком отката, двусторонний DSI output endpoint и передача владения framebuffer. MSM/KMS может вытеснить SimpleDRM при регистрации или захватить уже работающий тракт, поэтому отдельный тест B должен исключить KMS master и panel child, а первый modeset нужно согласовывать отдельно.
+
+Для этапа B подготовлен отдельный DT fixture `display-v8/host-phy-review.dts`. Он включает только dispcc, MDSS, host и PHY, сохраняя disabled DPU и отсутствие panel child. В коде MSM регистрация host происходит в probe через `dsi_init → msm_dsi_manager_register → msm_dsi_host_register`. Поиск внешнего bridge происходит позже в component bind. Sysfs driver symlink сам по себе недостаточен для зачёта B, поскольку probe может вернуть успех при `-ENODEV`. Понадобится запись об успешном `mipi_dsi_host_register` и отсутствии передач. Даже этот probe может обращаться к clocks и power domains. Fixture используется только для проверки DT на ПК.

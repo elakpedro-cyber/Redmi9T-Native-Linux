@@ -1,0 +1,322 @@
+{
+  "TWRP-live": {
+    "blob": "reports/live.dtb",
+    "sha256": "9556530b9351d2375f7a63375b93572ce996e9b72997326f96ee63f7a9a7ef7c",
+    "bus": "/soc/spi@4a88000",
+    "pinctrl": [
+      {
+        "property": "pinctrl-0",
+        "phandle_in_this_blob": "0xfd",
+        "target": "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_active",
+        "nodes": {
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_active": {
+            "phandle": [
+              "0xfd"
+            ]
+          },
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_active/mux": {
+            "pins": [
+              "gpio6",
+              "gpio7",
+              "gpio71"
+            ],
+            "function": [
+              "qup2"
+            ]
+          },
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_active/config": {
+            "pins": [
+              "gpio6",
+              "gpio7",
+              "gpio71"
+            ],
+            "drive-strength": [
+              "0x6"
+            ],
+            "bias-pull-down": []
+          }
+        }
+      },
+      {
+        "property": "pinctrl-0",
+        "phandle_in_this_blob": "0xfe",
+        "target": "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_cs0_active",
+        "nodes": {
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_cs0_active": {
+            "phandle": [
+              "0xfe"
+            ]
+          },
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_cs0_active/mux": {
+            "pins": [
+              "gpio80"
+            ],
+            "function": [
+              "qup2"
+            ]
+          },
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_cs0_active/config": {
+            "pins": [
+              "gpio80"
+            ],
+            "drive-strength": [
+              "0x6"
+            ],
+            "bias-pull-up": []
+          }
+        }
+      },
+      {
+        "property": "pinctrl-1",
+        "phandle_in_this_blob": "0xff",
+        "target": "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_sleep",
+        "nodes": {
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_sleep": {
+            "phandle": [
+              "0xff"
+            ]
+          },
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_sleep/mux": {
+            "pins": [
+              "gpio6",
+              "gpio7",
+              "gpio71"
+            ],
+            "function": [
+              "gpio"
+            ]
+          },
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_sleep/config": {
+            "pins": [
+              "gpio6",
+              "gpio7",
+              "gpio71"
+            ],
+            "drive-strength": [
+              "0x6"
+            ],
+            "bias-pull-down": []
+          }
+        }
+      },
+      {
+        "property": "pinctrl-1",
+        "phandle_in_this_blob": "0x100",
+        "target": "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_cs0_sleep",
+        "nodes": {
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_cs0_sleep": {
+            "phandle": [
+              "0x100"
+            ]
+          },
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_cs0_sleep/mux": {
+            "pins": [
+              "gpio80"
+            ],
+            "function": [
+              "gpio"
+            ]
+          },
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_cs0_sleep/config": {
+            "pins": [
+              "gpio80"
+            ],
+            "drive-strength": [
+              "0x6"
+            ],
+            "bias-pull-up": []
+          }
+        }
+      }
+    ],
+    "touch": {
+      "reg": [
+        "0x1"
+      ],
+      "spi-max-frequency": [
+        "0x927c00"
+      ],
+      "novatek,reset-gpio": [
+        "0x11",
+        "0x67",
+        "0x0"
+      ],
+      "novatek,irq-gpio": [
+        "0x11",
+        "0x5d",
+        "0x2001"
+      ],
+      "spi-cs-clk-delay": [
+        "0xc8"
+      ],
+      "spi-inter-words-delay": [
+        "0x0"
+      ]
+    },
+    "supplies": {
+      "touch_vddio-supply": "/soc/qcom,rpm-smd/rpm-regulator-ldoa9/regulator-l9",
+      "touch_lab-supply": "/soc/qcom,spmi@1c40000/qcom,pmi632@3/qpnp-lcdb@ec00/ldo",
+      "touch_ibb-supply": "/soc/qcom,spmi@1c40000/qcom,pmi632@3/qpnp-lcdb@ec00/ncp"
+    }
+  },
+  "stock-overlay-result": {
+    "blob": "reports/stock-overlay-result.dtb",
+    "sha256": "b8d1bfcd93101f134a272f268cb7636c047e1b5f96ea1a051973463c5ca7d194",
+    "bus": "/soc/spi@4a88000",
+    "pinctrl": [
+      {
+        "property": "pinctrl-0",
+        "phandle_in_this_blob": "0xfc",
+        "target": "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_active",
+        "nodes": {
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_active": {
+            "phandle": [
+              "0xfc"
+            ]
+          },
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_active/mux": {
+            "pins": [
+              "gpio6",
+              "gpio7",
+              "gpio71"
+            ],
+            "function": [
+              "qup2"
+            ]
+          },
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_active/config": {
+            "pins": [
+              "gpio6",
+              "gpio7",
+              "gpio71"
+            ],
+            "drive-strength": [
+              "0x6"
+            ],
+            "bias-pull-down": []
+          }
+        }
+      },
+      {
+        "property": "pinctrl-0",
+        "phandle_in_this_blob": "0xfd",
+        "target": "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_cs0_active",
+        "nodes": {
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_cs0_active": {
+            "phandle": [
+              "0xfd"
+            ]
+          },
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_cs0_active/mux": {
+            "pins": [
+              "gpio80"
+            ],
+            "function": [
+              "qup2"
+            ]
+          },
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_cs0_active/config": {
+            "pins": [
+              "gpio80"
+            ],
+            "drive-strength": [
+              "0x6"
+            ],
+            "bias-pull-up": []
+          }
+        }
+      },
+      {
+        "property": "pinctrl-1",
+        "phandle_in_this_blob": "0xfe",
+        "target": "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_sleep",
+        "nodes": {
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_sleep": {
+            "phandle": [
+              "0xfe"
+            ]
+          },
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_sleep/mux": {
+            "pins": [
+              "gpio6",
+              "gpio7",
+              "gpio71"
+            ],
+            "function": [
+              "gpio"
+            ]
+          },
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_sleep/config": {
+            "pins": [
+              "gpio6",
+              "gpio7",
+              "gpio71"
+            ],
+            "drive-strength": [
+              "0x6"
+            ],
+            "bias-pull-down": []
+          }
+        }
+      },
+      {
+        "property": "pinctrl-1",
+        "phandle_in_this_blob": "0xff",
+        "target": "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_cs0_sleep",
+        "nodes": {
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_cs0_sleep": {
+            "phandle": [
+              "0xff"
+            ]
+          },
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_cs0_sleep/mux": {
+            "pins": [
+              "gpio80"
+            ],
+            "function": [
+              "gpio"
+            ]
+          },
+          "/soc/pinctrl@400000/qupv3_se2_spi_pins/qupv3_se2_spi_cs0_sleep/config": {
+            "pins": [
+              "gpio80"
+            ],
+            "drive-strength": [
+              "0x6"
+            ],
+            "bias-pull-up": []
+          }
+        }
+      }
+    ],
+    "touch": {
+      "reg": [
+        "0x1"
+      ],
+      "spi-max-frequency": [
+        "0x927c00"
+      ],
+      "novatek,reset-gpio": [
+        "0x11",
+        "0x67",
+        "0x0"
+      ],
+      "novatek,irq-gpio": [
+        "0x11",
+        "0x5d",
+        "0x2001"
+      ],
+      "spi-cs-clk-delay": [
+        "0xc8"
+      ],
+      "spi-inter-words-delay": [
+        "0x0"
+      ]
+    },
+    "supplies": {
+      "touch_vddio-supply": "/soc/qcom,rpm-smd/rpm-regulator-ldoa9/regulator-l9",
+      "touch_lab-supply": "/soc/qcom,spmi@1c40000/qcom,pmi632@3/qpnp-lcdb@ec00/ldo",
+      "touch_ibb-supply": "/soc/qcom,spmi@1c40000/qcom,pmi632@3/qpnp-lcdb@ec00/ncp"
+    }
+  }
+}

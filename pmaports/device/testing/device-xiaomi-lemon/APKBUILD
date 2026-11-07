@@ -1,0 +1,25 @@
+maintainer="Redmi9T bring-up project"
+pkgname=device-xiaomi-lemon
+pkgver=0.1
+pkgrel=0
+pkgdesc="Xiaomi Redmi 9T NFC experimental mainline RAM-only bring-up"
+url="https://postmarketos.org"
+license="MIT"
+arch="aarch64"
+options="!check !archcheck"
+depends="linux-xiaomi-lemon busybox openrc"
+makedepends="devicepkg-dev"
+source="deviceinfo kernel-cmdline.conf"
+
+build() {
+    devicepkg_build "$startdir" "$pkgname"
+}
+
+package() {
+    devicepkg_package "$startdir" "$pkgname"
+}
+
+sha512sums="
+e9513ddb27696dcd7d3b845287701499ae3599136642b5b9cc437413e7464812c222e199bfc03039ee68728bdabc0b9abab374ad2a546b3815ae4a4fab344e7c  deviceinfo
+b77262f9f77d7e9340a0189a5267ef1d5425eada2885a303fb4fd4c5effc5a5952a430bd00100857737db696b131a9c6ddc08d804b14240d29c0644ad1b4d7a5  kernel-cmdline.conf
+"

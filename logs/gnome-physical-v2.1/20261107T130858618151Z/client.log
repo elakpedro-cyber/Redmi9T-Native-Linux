@@ -1,0 +1,22 @@
+[01:21:01:797] [738:000002e2] [WARN][com.freerdp.client.common.cmdline] - [freerdp_warn_deprecated]: [deprecated] /usr/bin/wlfreerdp3 client has been deprecated
+[01:21:01:797] [738:000002e2] [WARN][com.freerdp.client.common.cmdline] - [freerdp_warn_deprecated]: As replacement there is a SDL3 based client available.
+[01:21:01:797] [738:000002e2] [WARN][com.freerdp.client.common.cmdline] - [freerdp_warn_deprecated]: If you are interested in keeping /usr/bin/wlfreerdp3 client alive get in touch with the developers
+[01:21:01:798] [738:000002e2] [WARN][com.freerdp.client.common.cmdline] - [warn_contact_details]:  If problems occur please check https://github.com/FreeRDP/FreeRDP/issues for known issues!
+[01:21:01:798] [738:000002e2] [WARN][com.freerdp.client.common.cmdline] - [warn_contact_details]: Be prepared to fix issues yourself though as nobody is actively working on this.
+[01:21:01:798] [738:000002e2] [WARN][com.freerdp.client.common.cmdline] - [warn_contact_details]:  Developers hang out in https://matrix.to/#/#FreeRDP:matrix.org?via=matrix.org - don't hesitate to ask some questions. (replies might take some time depending on your timezone) - if you intend using this component write us a message
+
+[01:21:01:991] [738:000002e2] [WARN][com.freerdp.core.rdp] - [log_build_warn][0xfff6cfa46210]: *************************************************
+[01:21:01:991] [738:000002e2] [WARN][com.freerdp.core.rdp] - [log_build_warn][0xfff6cfa46210]: This build is using [runtime-check] build options:
+[01:21:01:991] [738:000002e2] [WARN][com.freerdp.core.rdp] - [log_build_warn][0xfff6cfa46210]: * 'WITH_VERBOSE_WINPR_ASSERT=ON'
+[01:21:01:991] [738:000002e2] [WARN][com.freerdp.core.rdp] - [log_build_warn][0xfff6cfa46210]: *
+[01:21:01:991] [738:000002e2] [WARN][com.freerdp.core.rdp] - [log_build_warn][0xfff6cfa46210]: [runtime-check] build options might slow down the application
+[01:21:01:991] [738:000002e2] [WARN][com.freerdp.core.rdp] - [log_build_warn][0xfff6cfa46210]: *************************************************
+[01:21:02:069] [738:000002e2] [ERROR][com.winpr.sspi.Kerberos] - [kerberos_AcquireCredentialsHandleA]: krb5_parse_name (Configuration file does not specify default realm [-1765328160])
+[01:21:02:069] [738:000002e2] [ERROR][com.winpr.sspi.Kerberos] - [kerberos_AcquireCredentialsHandleA]: krb5_parse_name (Configuration file does not specify default realm [-1765328160])
+fuse: device /dev/fuse not found. Kernel module not loaded?
+[01:21:02:241] [738:000002e2] [WARN][com.winpr.thread] - [SetThreadPriority]: pthread_setschedprio(0) not implemented, requires POSIX 2008 or later
+[01:21:46:009] [738:000002e2] [ERROR][com.freerdp.core] - [rdp_set_error_info]: ERRINFO_LOGOFF_BY_USER [0x0001000C]
+[01:21:46:009] [738:000002e2] [ERROR][com.freerdp.core.rdp] - [rdp_recv_callback_int][0xfff6cfa46210]: CONNECTION_STATE_CAPABILITIES_EXCHANGE_DEMAND_ACTIVE status STATE_RUN_QUIT_SESSION [-2]
+[01:21:46:009] [738:000002e2] [ERROR][com.freerdp.core.transport] - [transport_check_fds]: transport_check_fds: transport->ReceiveCallback() - STATE_RUN_QUIT_SESSION [-2]
+[01:21:46:051] [738:000002e2] [WARN][com.freerdp.client.common.cliprdr.file] - [cliprdr_file_session_terminate]: winpr_PathFileExists(/tmp/com.freerdp.client.cliprdr.738) failed
+[01:21:46:056] [738:000002e2] [WARN][com.freerdp.cache.pointer] - [resetPointer]: rdpPointer::SetDefault failed

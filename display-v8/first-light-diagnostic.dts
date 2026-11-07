@@ -1,0 +1,7 @@
+/dts-v1/;
+/plugin/;
+
+/* Use only over the disabled KMS/MX review tree. Keep the RAM reservation. */
+&{/chosen/framebuffer@5c000000} {
+	status = "disabled";
+};

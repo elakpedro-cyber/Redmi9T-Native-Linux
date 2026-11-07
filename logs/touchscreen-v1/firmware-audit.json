@@ -1,0 +1,144 @@
+{
+  "bytes": 118784,
+  "sha256": "36dccc95785b40bb5bc0cc4764bc80dc066ce358dd7fb3c1afebaca670b9276f",
+  "fw_need_write_size": 110592,
+  "version": 6,
+  "partitions": [
+    {
+      "name": "ILM",
+      "offset": 256,
+      "address": 0,
+      "size_inclusive": 60211,
+      "bytes": 60212,
+      "computed_checksum": 4289091159,
+      "header_crc": 1154833182
+    },
+    {
+      "name": "DLM",
+      "offset": 72800,
+      "address": 161536,
+      "size_inclusive": 1535,
+      "bytes": 1536,
+      "computed_checksum": 4294886882,
+      "header_crc": 2046920603
+    },
+    {
+      "name": "INFO",
+      "offset": 106496,
+      "address": 178176,
+      "size_inclusive": 2047,
+      "bytes": 2048,
+      "computed_checksum": 4294884991,
+      "header_crc": 709880312
+    },
+    {
+      "name": "INFO",
+      "offset": 83968,
+      "address": 151040,
+      "size_inclusive": 5119,
+      "bytes": 5120,
+      "computed_checksum": 4294778295,
+      "header_crc": 2200481081
+    },
+    {
+      "name": "INFO",
+      "offset": 60468,
+      "address": 60212,
+      "size_inclusive": 4740,
+      "bytes": 4741,
+      "computed_checksum": 4294475355,
+      "header_crc": 2361202731
+    },
+    {
+      "name": "INFO",
+      "offset": 65208,
+      "address": 156160,
+      "size_inclusive": 3968,
+      "bytes": 3969,
+      "computed_checksum": 4294596881,
+      "header_crc": 1973175053
+    },
+    {
+      "name": "INFO",
+      "offset": 69176,
+      "address": 131072,
+      "size_inclusive": 3600,
+      "bytes": 3601,
+      "computed_checksum": 4294592782,
+      "header_crc": 4055695771
+    },
+    {
+      "name": "INFO",
+      "offset": 0,
+      "address": 0,
+      "size_inclusive": 0,
+      "bytes": 0,
+      "computed_checksum": 0,
+      "header_crc": 0
+    },
+    {
+      "name": "INFO",
+      "offset": 0,
+      "address": 0,
+      "size_inclusive": 0,
+      "bytes": 0,
+      "computed_checksum": 0,
+      "header_crc": 0
+    },
+    {
+      "name": "INFO",
+      "offset": 0,
+      "address": 0,
+      "size_inclusive": 0,
+      "bytes": 0,
+      "computed_checksum": 0,
+      "header_crc": 0
+    },
+    {
+      "name": "INFO",
+      "offset": 0,
+      "address": 0,
+      "size_inclusive": 0,
+      "bytes": 0,
+      "computed_checksum": 0,
+      "header_crc": 0
+    },
+    {
+      "name": "INFO",
+      "offset": 0,
+      "address": 0,
+      "size_inclusive": 0,
+      "bytes": 0,
+      "computed_checksum": 0,
+      "header_crc": 0
+    },
+    {
+      "name": "INFO",
+      "offset": 0,
+      "address": 0,
+      "size_inclusive": 0,
+      "bytes": 0,
+      "computed_checksum": 0,
+      "header_crc": 0
+    },
+    {
+      "name": "INFO",
+      "offset": 0,
+      "address": 0,
+      "size_inclusive": 0,
+      "bytes": 0,
+      "computed_checksum": 0,
+      "header_crc": 0
+    },
+    {
+      "name": "INFO",
+      "offset": 0,
+      "address": 150640,
+      "size_inclusive": 255,
+      "bytes": 256,
+      "computed_checksum": 4294959342,
+      "header_crc": 3909224696
+    }
+  ],
+  "warning": "Structure audit only: PID, signature, SRAM allowlist, powered hardware and upload safety are not proven"
+}

@@ -1,0 +1,22 @@
+/dts-v1/;
+/plugin/;
+
+/* Review only. Keep every display controller disabled while inspecting the graph. */
+&{/soc@0/clock-controller@5f00000} {
+    status = "disabled";
+};
+&{/soc@0/display-subsystem@5e00000} {
+    status = "disabled";
+};
+&{/soc@0/display-subsystem@5e00000/display-controller@5e01000} {
+    status = "disabled";
+};
+&{/soc@0/display-subsystem@5e00000/dsi@5e94000} {
+    status = "disabled";
+};
+&{/soc@0/display-subsystem@5e00000/phy@5e94400} {
+    status = "disabled";
+};
+&{/backlight-dsi} {
+    status = "disabled";
+};

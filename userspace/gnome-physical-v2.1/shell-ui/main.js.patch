@@ -1,0 +1,52 @@
+--- v2/main.js
++++ v2.1/main.js
+@@ -382,16 +382,40 @@
+ }
+ 
+ async function _notifyGnomeSessionReady() {
++    let ending = false;
++    global.context.connect('prepare-shutdown', () => (ending = true));
+     try {
+-        let params = GLib.Variant.new('(ss)', ['org.gnome.Shell.desktop', '']);
+-        await Gio.DBus.session.call(
+-            'org.gnome.SessionManager',
+-            '/org/gnome/SessionManager',
+-            'org.gnome.SessionManager',
+-            'RegisterClient', params, null,
+-            Gio.DBusCallFlags.NONE, -1, null);
+-    } catch (e) {
+-        log(`Error notifying gnome-session that we're ready: ${e.message}`);
++        const reply = await Gio.DBus.session.call(
++            'org.gnome.SessionManager', '/org/gnome/SessionManager',
++            'org.gnome.SessionManager', 'RegisterClient',
++            new GLib.Variant('(ss)', ['org.gnome.Shell.desktop', '']), null,
++            Gio.DBusCallFlags.NONE, 3000, null);
++        const [client] = reply.deepUnpack();
++        print(`LEMON_SESSION_REGISTERED client=${client}`);
++        const subscription = Gio.DBus.session.signal_subscribe(
++            'org.gnome.SessionManager', 'org.gnome.SessionManager.ClientPrivate',
++            null, client, null, Gio.DBusSignalFlags.NONE,
++            async (_connection, _sender, _path, _iface, signal) => {
++                if (signal === 'QueryEndSession' || signal === 'EndSession') {
++                    try {
++                        await Gio.DBus.session.call(
++                            'org.gnome.SessionManager', client,
++                            'org.gnome.SessionManager.ClientPrivate', 'EndSessionResponse',
++                            new GLib.Variant('(bs)', [true, '']), null,
++                            Gio.DBusCallFlags.NONE, 1500, null);
++                        print(`LEMON_SESSION_ACK ${signal}`);
++                    } catch (error) {
++                        logError(error, `Session response failed: ${signal}`);
++                    }
++                }
++                if ((signal === 'EndSession' || signal === 'Stop') && !ending) {
++                    ending = true;
++                    global.context.terminate();
++                }
++            });
++        global.connect('shutdown', () => Gio.DBus.session.signal_unsubscribe(subscription));
++    } catch (error) {
++        logError(error, 'Unable to register Shell session lifecycle');
+     }
+ }
+ 

@@ -1,0 +1,7 @@
+{
+  "scope": "physical Redmi 9T v8b",
+  "mode": "C",
+  "seconds": 60,
+  "profile": "baseline",
+  "test_actions": true
+}

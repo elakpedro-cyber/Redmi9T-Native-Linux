@@ -1,0 +1,17 @@
+{
+  "C": {
+    "status": "offline-pass",
+    "hardware_v21": "not tested",
+    "reason": "v2 display route retained; lifecycle and GRD fixes validated in ARM64 QEMU"
+  },
+  "B": {
+    "status": "blocked",
+    "hardware_v21": "not tested",
+    "reason": "Use C; new v2.1 lifecycle has not been validated with Devkit, retained v2 is available separately"
+  },
+  "A": {
+    "status": "blocked",
+    "hardware_v21": "not tested",
+    "reason": "Native render-only topology/seat/renderer guard not implemented"
+  }
+}

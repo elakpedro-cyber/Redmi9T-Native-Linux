@@ -1,0 +1,23 @@
+RDP_SETTINGS_PREPARED TLS paths and credentials-only authentication
+Init TPM credentials failed because No TPM device found, using GKeyFile as fallback.
+
+** (gnome-remote-desktop-daemon:190): WARNING **: 01:20:59.395: Init TPM credentials failed because No TPM device found, using GKeyFile as fallback
+libEGL warning: failed to get driver name for fd -1
+
+libEGL warning: MESA-LOADER: failed to retrieve device information
+
+libEGL warning: failed to get driver name for fd -1
+
+MESA: error: ZINK: vkCreateInstance failed (VK_ERROR_INCOMPATIBLE_DRIVER)
+libEGL warning: egl: failed to create dri2 screen
+** Message: 01:21:01.580: RDP server started
+[01:21:02:032] [190:000000be] [WARN][com.freerdp.core.rdp] - [log_build_warn][0xff3c2432d040]: *************************************************
+[01:21:02:032] [190:000000be] [WARN][com.freerdp.core.rdp] - [log_build_warn][0xff3c2432d040]: This build is using [runtime-check] build options:
+[01:21:02:032] [190:000000be] [WARN][com.freerdp.core.rdp] - [log_build_warn][0xff3c2432d040]: * 'WITH_VERBOSE_WINPR_ASSERT=ON'
+[01:21:02:032] [190:000000be] [WARN][com.freerdp.core.rdp] - [log_build_warn][0xff3c2432d040]: *
+[01:21:02:032] [190:000000be] [WARN][com.freerdp.core.rdp] - [log_build_warn][0xff3c2432d040]: [runtime-check] build options might slow down the application
+[01:21:02:033] [190:000000be] [WARN][com.freerdp.core.rdp] - [log_build_warn][0xff3c2432d040]: *************************************************
+** Message: 01:21:02.567: [RDP.RDPGFX] CapsAdvertise: Accepting capability set with version RDPGFX_CAPVERSION_107, Client cap flags: H264 (AVC444): true, H264 (AVC420): true
+[01:21:45:969] [190:000000be] [INFO][com.freerdp.core] - [rdp_print_errinfo]: ERRINFO_RPC_INITIATED_DISCONNECT (0x00000001):The disconnection was initiated by an administrative tool on the server in another session.
+[01:21:45:969] [190:000000be] [ERROR][com.freerdp.core.peer] - [rdp_set_error_info]: ERRINFO_RPC_INITIATED_DISCONNECT [0x00010001]
+** Message: 01:21:46.196: RDP server stopped

@@ -1,0 +1,56 @@
+#!/rescue/busybox sh
+export PATH=/rescue:/sbin:/bin:/usr/sbin:/usr/bin
+g=${LEMON_GADGET_ROOT:-/sys/kernel/config/usb_gadget/lemon}
+udc_root=${LEMON_UDC_ROOT:-/sys/class/udc}
+mkdir -p "$g" || exit 1
+cd "$g" || exit 1
+# ACM is always created and linked first, retaining ttyGS0 and interface zero.
+echo 0x1d6b > idVendor
+echo 0x0106 > idProduct
+echo 0xef > bDeviceClass
+echo 0x02 > bDeviceSubClass
+echo 0x01 > bDeviceProtocol
+mkdir -p strings/0x409 configs/c.1/strings/0x409 functions/acm.usb0 || exit 1
+echo lemon-bringup > strings/0x409/serialnumber
+echo Linux > strings/0x409/manufacturer
+echo 'Redmi9T ACM + NCM' > strings/0x409/product
+echo 'ACM console + NCM Ethernet' > configs/c.1/strings/0x409/configuration
+echo 250 > configs/c.1/MaxPower
+ln -s functions/acm.usb0 configs/c.1/acm.usb0 || exit 1
+network=0
+if mkdir -p functions/ncm.usb0 &&
+   echo 02:00:00:00:77:02 > functions/ncm.usb0/dev_addr &&
+   echo 02:00:00:00:77:01 > functions/ncm.usb0/host_addr &&
+   ln -s functions/ncm.usb0 configs/c.1/ncm.usb0; then
+    network=1
+else
+    rm -f configs/c.1/ncm.usb0
+    rmdir functions/ncm.usb0 2>/dev/null
+    echo 'NCM creation failed; using ACM only'
+fi
+acm_identity() {
+    echo 0x0104 > idProduct
+    echo 0 > bDeviceClass
+    echo 0 > bDeviceSubClass
+    echo 0 > bDeviceProtocol
+}
+[ "$network" = 1 ] || acm_identity
+n=0
+while [ "$n" -lt 60 ]; do
+    udc=$(ls "$udc_root" 2>/dev/null | head -n 1)
+    [ -n "$udc" ] && break
+    sleep 1
+    n=$((n+1))
+done
+[ -n "$udc" ] || { echo 'No UDC available'; exit 1; }
+if ! echo "$udc" > UDC; then
+    # A failed bind may be retried as ACM-only, but never unbind a live gadget.
+    [ -z "$(cat UDC 2>/dev/null)" ] || exit 1
+    [ "$network" = 1 ] || exit 1
+    rm -f configs/c.1/ncm.usb0
+    rmdir functions/ncm.usb0 2>/dev/null
+    acm_identity
+    echo "$udc" > UDC || exit 1
+    network=0
+fi
+echo "Bound $udc; NCM=$network; host enumeration unverified"

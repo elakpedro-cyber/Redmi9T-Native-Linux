@@ -1,0 +1,120 @@
+{
+  "method": "read-only first 1MiB /dev/sda10; no phone mount/write",
+  "metadata_max_size": 65536,
+  "slots": 2,
+  "logical_block_size": 4096,
+  "partitions": [
+    {
+      "slot": 0,
+      "name": "system",
+      "attributes": 1,
+      "extents": [
+        {
+          "sectors": 1903400,
+          "type": 0,
+          "target_sector": 2048,
+          "source": 0
+        }
+      ],
+      "bytes": 974540800
+    },
+    {
+      "slot": 0,
+      "name": "vendor",
+      "attributes": 1,
+      "extents": [
+        {
+          "sectors": 2032424,
+          "type": 0,
+          "target_sector": 1905664,
+          "source": 0
+        }
+      ],
+      "bytes": 1040601088
+    },
+    {
+      "slot": 0,
+      "name": "product",
+      "attributes": 1,
+      "extents": [
+        {
+          "sectors": 4692280,
+          "type": 0,
+          "target_sector": 3938304,
+          "source": 0
+        }
+      ],
+      "bytes": 2402447360
+    },
+    {
+      "slot": 0,
+      "name": "system_ext",
+      "attributes": 1,
+      "extents": [
+        {
+          "sectors": 1664496,
+          "type": 0,
+          "target_sector": 8630784,
+          "source": 0
+        }
+      ],
+      "bytes": 852221952
+    },
+    {
+      "slot": 1,
+      "name": "product",
+      "attributes": 0,
+      "extents": [
+        {
+          "sectors": 7558352,
+          "type": 0,
+          "target_sector": 2048,
+          "source": 0
+        }
+      ],
+      "bytes": 3869876224
+    },
+    {
+      "slot": 1,
+      "name": "system",
+      "attributes": 0,
+      "extents": [
+        {
+          "sectors": 2254440,
+          "type": 0,
+          "target_sector": 7561216,
+          "source": 0
+        }
+      ],
+      "bytes": 1154273280
+    },
+    {
+      "slot": 1,
+      "name": "system_ext",
+      "attributes": 0,
+      "extents": [
+        {
+          "sectors": 2320096,
+          "type": 0,
+          "target_sector": 9816064,
+          "source": 0
+        }
+      ],
+      "bytes": 1187889152
+    },
+    {
+      "slot": 1,
+      "name": "vendor",
+      "attributes": 0,
+      "extents": [
+        {
+          "sectors": 2790744,
+          "type": 0,
+          "target_sector": 12136448,
+          "source": 0
+        }
+      ],
+      "bytes": 1428860928
+    }
+  ]
+}

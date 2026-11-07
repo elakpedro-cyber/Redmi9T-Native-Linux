@@ -1,0 +1,9 @@
+#!/sbin/openrc-run
+description="RAM-only lemon bring-up health snapshot"
+start() {
+    ebegin "Recording lemon v5 OpenRC health"
+    echo LEMON_OPENRC_V5_REACHED > /run/openrc-reached
+    echo 'LEMON_OPENRC_V5_REACHED: OpenRC default runlevel executing' > /dev/kmsg
+    /usr/local/sbin/lemon-diagnostics >/run/lemon-diagnostics.log 2>&1 &
+    eend 0
+}

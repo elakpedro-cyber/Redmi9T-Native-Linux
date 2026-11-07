@@ -1,0 +1,14 @@
+99: static int rpm_reg_is_enabled(struct regulator_dev *rdev)
+100: {
+101: 	struct qcom_rpm_reg *vreg = rdev_get_drvdata(rdev);
+102: 
+103: 	return vreg->is_enabled;
+104: }
+105: 
+121: static int rpm_reg_get_voltage(struct regulator_dev *rdev)
+122: {
+123: 	struct qcom_rpm_reg *vreg = rdev_get_drvdata(rdev);
+124: 
+125: 	return vreg->uV;
+126: }
+127: 

@@ -1,0 +1,10 @@
+/dts-v1/;
+/plugin/;
+/ {
+    fragment@0 {
+        target-path = "/soc/gpu@5900000/zap-shader";
+        __overlay__ {
+            firmware-name = "qcom/sm6115/xiaomi/lemon/a610_zap.mdt";
+        };
+    };
+};

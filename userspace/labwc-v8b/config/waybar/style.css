@@ -1,0 +1,4 @@
+* { font-family: DejaVu Sans; font-size: 13px; }
+window#waybar { background: #263749; color: #ffffff; }
+#clock, #custom-label, #custom-terminal { padding: 0 12px; }
+#custom-terminal { background: #3b5773; }

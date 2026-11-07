@@ -1,0 +1,42 @@
+[
+  {
+    "path": "logs/touchscreen-first-live/20261107T180106Z/after.txt",
+    "bytes": 32899,
+    "sha256": "7ba814ad058cc9f747b5a520955b5161ab88edbbe5af02b37f298070c66b64e2"
+  },
+  {
+    "path": "logs/touchscreen-first-live/20261107T180106Z/before.txt",
+    "bytes": 42231,
+    "sha256": "7a521f1e08ca33e841458d5018a7be69e4b29b00ce6ac63219b24a85b43418e6"
+  },
+  {
+    "path": "logs/touchscreen-first-live/20261107T180106Z/boot-readback.txt",
+    "bytes": 68,
+    "sha256": "b6790f1862fe9c1ce04214cdecfaaab61785231603551a32022d7b9987f78bfd"
+  },
+  {
+    "path": "logs/touchscreen-first-live/20261107T180106Z/com4-preflight.raw",
+    "bytes": 237,
+    "sha256": "cb1f41be7b452f2e572dac9f985eed7d53dd9cfe97401e13d2d81bea5723b0e3"
+  },
+  {
+    "path": "logs/touchscreen-first-live/20261107T180106Z/identity.txt",
+    "bytes": 428,
+    "sha256": "5e2dc89434f03b54d3338f497b7bc4dd87660af49f451bf070f3f7c8ada80247"
+  },
+  {
+    "path": "logs/touchscreen-first-live/20261107T180106Z/result.json",
+    "bytes": 2324,
+    "sha256": "e6fde226e1cc1c2b14de581ba098df17e690f5c58cb2ff19a44d03ca1b3a3e12"
+  },
+  {
+    "path": "logs/touchscreen-first-live/20261107T180106Z/rpm-cache-source.txt",
+    "bytes": 348,
+    "sha256": "9d6f17e11c8811e5b9023c1ee931d79179fc24dcb71f6b1ea4280948bc67cf92"
+  },
+  {
+    "path": "TOUCHSCREEN_FIRST_LIVE_RESULTS.md",
+    "bytes": 7595,
+    "sha256": "bcfc218cae936f75141ad29be9e66fd1d808be08826e3a42763f039641d88dfb"
+  }
+]

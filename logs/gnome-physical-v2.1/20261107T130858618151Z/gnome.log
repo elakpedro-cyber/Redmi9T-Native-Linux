@@ -1,0 +1,60 @@
+LEMON_PRIVILEGE_OK identity
+LEMON_PRIVILEGE_OK non-root
+LEMON_PRIVILEGE_OK environment
+LEMON_PRIVILEGE_OK runtime-traverse
+LEMON_PRIVILEGE_OK home-access
+LEMON_PRIVILEGE_OK runtime-owner-mode
+LEMON_PRIVILEGE_OK runtime-tmpfs
+LEMON_PRIVILEGE_OK system-bus-address
+LEMON_PRIVILEGE_OK system-bus-socket
+LEMON_PRIVILEGE_OK session-bus-address
+LEMON_PRIVILEGE_OK executable-kgx
+LEMON_PRIVILEGE_OK executable-gnome-control-center
+LEMON_PRIVILEGE_OK executable-nautilus
+LEMON_PRIVILEGE_OK executable-gnome-text-editor
+LEMON_PRIVILEGE_OK render-device
+LEMON_PRIVILEGE_OK render-owner-mode
+LEMON_PRIVILEGE_OK render-open
+LEMON_PRIVILEGE_OK tls-owner-mode-rdp-test.crt
+LEMON_PRIVILEGE_OK tls-readable-rdp-test.crt
+LEMON_PRIVILEGE_OK tls-owner-mode-rdp-test.key
+LEMON_PRIVILEGE_OK tls-readable-rdp-test.key
+LEMON_PRIVILEGE_OK tls-owner-mode-rdp-credentials
+LEMON_PRIVILEGE_OK tls-readable-rdp-credentials
+LEMON_PRIVILEGE_OK runtime-remove
+LEMON_PRIVILEGE_OK wayland-socket-bind
+LEMON_PRIVILEGE_PREFLIGHT_OK
+1970/01/01 01:20:54 socat[173] W exiting on signal 15
+LEMON_PIPEWIRE_READY attempt=2
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Activating service name='org.a11y.Bus' requested by ':1.24' (uid=1000 pid=226 comm="/usr/bin/gnome-shell --wayland --headless --no-x11")
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Successfully activated service 'org.a11y.Bus'
+dbus-daemon[316]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=1000 pid=226 comm="/usr/bin/gnome-shell --wayland --headless --no-x11")
+dbus-daemon[316]: Successfully activated service 'org.a11y.atspi.Registry'
+SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Activating service name='org.gnome.Shell.Screencast' requested by ':1.20' (uid=1000 pid=226 comm="/usr/bin/gnome-shell --wayland --headless --no-x11")
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Activating service name='org.gnome.Shell.CalendarServer' requested by ':1.20' (uid=1000 pid=226 comm="/usr/bin/gnome-shell --wayland --headless --no-x11")
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Activating service name='org.gnome.evolution.dataserver.Sources5' requested by ':1.31' (uid=1000 pid=413 comm="/usr/libexec/gnome-shell-calendar-server")
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Activating service name='org.gnome.OnlineAccounts' requested by ':1.32' (uid=1000 pid=426 comm="/usr/libexec/evolution-source-registry")
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Activating service name='ca.desrt.dconf' requested by ':1.20' (uid=1000 pid=226 comm="/usr/bin/gnome-shell --wayland --headless --no-x11")
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Successfully activated service 'ca.desrt.dconf'
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Successfully activated service 'org.gnome.evolution.dataserver.Sources5'
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Activating service name='org.gnome.Shell.Notifications' requested by ':1.20' (uid=1000 pid=226 comm="/usr/bin/gnome-shell --wayland --headless --no-x11")
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Activating service name='org.gnome.evolution.dataserver.Calendar8' requested by ':1.31' (uid=1000 pid=413 comm="/usr/libexec/gnome-shell-calendar-server")
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Successfully activated service 'org.gnome.Shell.CalendarServer'
+goa-daemon-Message: 01:20:58.422: goa-daemon version 3.58.1 starting
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Activating service name='org.gnome.Identity' requested by ':1.35' (uid=1000 pid=440 comm="/usr/libexec/goa-daemon")
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Successfully activated service 'org.gnome.Identity'
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Successfully activated service 'org.gnome.OnlineAccounts'
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Successfully activated service 'org.gnome.evolution.dataserver.Calendar8'
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Activating service name='org.freedesktop.portal.IBus' requested by ':1.39' (uid=1000 pid=467 comm="ibus-daemon --panel disable")
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Successfully activated service 'org.freedesktop.portal.IBus'
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Activating service name='org.gnome.evolution.dataserver.AddressBook10' requested by ':1.36' (uid=1000 pid=462 comm="/usr/libexec/evolution-calendar-factory")
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Successfully activated service 'org.gnome.Shell.Notifications'
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Successfully activated service 'org.gnome.evolution.dataserver.AddressBook10'
+dbus-daemon[117]: [session uid=1000 pid=117 pidfd=5] Successfully activated service 'org.gnome.Shell.Screencast'
+USER_LOGOUT_REQUEST
+()
+USER_GNOME_SESSION_REAPED
+USER_STOP component=rdp pid=190
+USER_STOP component=wireplumber pid=188
+USER_STOP component=pipewire pid=179

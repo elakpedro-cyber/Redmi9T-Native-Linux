@@ -1,0 +1,4 @@
+::sysinit:/sbin/openrc sysinit
+::wait:/sbin/openrc boot
+::wait:/sbin/openrc default
+tty1::respawn:/sbin/getty -L -n -l /usr/local/sbin/lemon-root-shell 115200 tty1 linux

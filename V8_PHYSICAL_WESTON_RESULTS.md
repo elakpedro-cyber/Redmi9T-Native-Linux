@@ -1,0 +1,20 @@
+# Redmi 9T NFC — Weston на встроенном LCD
+
+**Физический Weston подтверждён. GNOME native KMS на LCD пока не запущен.**
+
+## TTY и первый графический сеанс
+
+1. По SSH `tty0/active` указал `tty1`. `vtcon1` привязан к fbcon, `FBIOGET_CON2FBMAP` вернул `tty1 → fb0`. Пользователь увидел на LCD строку **LEMON LCD CHECK 7F31** сразу после записи в `/dev/tty1`. Это подтверждает обновление унаследованного физического вывода на живом v8b. [Лог VT](logs/v8b-physical-weston/tty-marker.txt)
+2. `card0` — SimpleDRM. CRTC 37 использовал FB 40, plane 35 с XR24, connector 39 `Unknown-1`. В режиме 1080×2340 получен DRM master, выделен и освобождён отдельный 32-bpp dumb buffer с pitch 4320 без KMS commit. [Лог DRM](logs/v8b-physical-weston/kms-probe.txt)
+3. Weston 14.0.2 запущен с DRM/Pixman на `card0`. Лог подтвердил atomic KMS, shadow framebuffer, текущий режим 1080×2340@60 и старт desktop shell. Пользователь увидел рабочий стол на LCD. Тайминги физической панели не менялись. Тест использовал отдельную VT2. Доступ к DRM был ограничен `card0` через приватный набор узлов `/dev` в RAM-окружении. [Лог Weston](logs/v8b-physical-weston/hardware-weston.txt) · [Запуск и восстановление](userspace/headless-v8/run-physical-weston.sh)
+4. Таймер в изолированном сеансе был установлен на 26 секунд, независимый watchdog ограничивал пространство процессов 30 секундами. Обёртка вернула код 1, журнал Weston не содержит фатальной ошибки после запуска shell. Восстановление вернуло 0, активной снова стала `tty1`. В логе есть предупреждения об отсутствующих курсорах drag-and-drop. Физический ввод не входил в испытание Weston.
+
+SSH и NCM остались доступны, Windows видела COM4. После теста временная директория удалена, процессов Weston/seatd не осталось. MDSS сохраняет `lemon-stage-b-hold`, MDSS и DISPCC не привязаны. Снимки UFS sda–sdf совпали, новых сообщений о GPU/IOMMU faults в них нет. Прошивки, перезагрузки и изменения дисплейного питания не выполнялись. [Состояние после теста](logs/v8b-physical-weston/mutter-topology.txt)
+
+## Граница совместимости Mutter 50.2
+
+- **Аппаратная топология:** у `card0` единственный KMS-выход. У `card1` драйвер MSM, но `GETRESOURCES` возвращает `EOPNOTSUPP`. `renderD128` остаётся MSM render node. Все три узла объявляют PRIME import/export. Это возможности API, передача конкретного кадра между FD610 и SimpleDRM ещё не проверена. [Живой probe](logs/v8b-physical-weston/mutter-topology.txt)
+- **Текущая сборка GNOME:** проектный FD610 guard явно отклоняет native-сессию с монитором. Кроме того, native Mutter перечисляет `card*` и по умолчанию пытается создать KMS backend для каждого. В этом пути `drmModeGetResources()` обязателен, а отдельный Adreno отвечает `EOPNOTSUPP`. Для Weston хватило seatd. В живой системе отсутствует сеанс elogind, который требуется native Mutter для управления VT и DRM. [Локальный guard](userspace/gnome50-v8b/require-render-node.patch) · [Native backend](https://github.com/GNOME/mutter/blob/50.2/src/backends/native/meta-backend-native.c) · [KMS init](https://github.com/GNOME/mutter/blob/50.2/src/backends/native/meta-kms-impl-device.c)
+- **Кандидат для отдельной RAM-сборки:** сохранить `card0` как KMS-only и явно зарегистрировать FD610 как источник GBM/EGL без KMS-ресурсов. Проверять FD610 на основном renderer до запуска Shell. Для переноса кадров сначала использовать существующий путь Mutter `primary-gpu-cpu`, который читает кадр из основного renderer в dumb buffer вторичного выхода. Это CPU-копирование уже отрисованного кадра. Одна переменная окружения текущую топологию не исправляет. Нужны отдельная VT-сессия elogind, проверка CPU-копирования с действующим pitch, запрет программного основного renderer и тест возврата VT. [Выбор режима копирования](https://github.com/GNOME/mutter/blob/50.2/src/backends/native/meta-renderer-native.c) · [Копирование в dumb buffer](https://github.com/GNOME/mutter/blob/50.2/src/backends/native/meta-onscreen-native.c)
+
+Рабочий headless GNOME оставлен контрольной сборкой. Stage C/B сохраняет NO-GO для повторной аппаратной инициализации дисплея.

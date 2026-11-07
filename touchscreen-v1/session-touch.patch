@@ -1,0 +1,36 @@
+--- v2.1/session.sh
++++ touchscreen-v1/session-touch.sh
+@@ -100,6 +100,13 @@
+             chmod 755 "$g/usr/libexec/mutter-devkit"
+         fi
+     fi
++    if [ -n "${LEMON_TOUCH_EVENT:-}" ]; then
++        cp "$base/wlfreerdp3-touch" "$w/usr/bin/wlfreerdp3.touch"
++        chmod 755 "$w/usr/bin/wlfreerdp3.touch"
++        mv "$w/usr/bin/wlfreerdp3.touch" "$w/usr/bin/wlfreerdp3"
++        cp "$base/libuwac0.so.0" "$w/usr/lib/libuwac0.so.0"
++        cp "$base/touch-pointer.so" "$w/run/touch-pointer.so"
++    fi
+     cp "$base/frame-trace.so" "$w/run/frame-trace.so"
+     chmod 644 "$w/run/frame-trace.so"
+     if [ "${LEMON_MEASURE:-0}" = 1 ]; then
+@@ -188,6 +195,9 @@
+         mknod "$w/dev/tty0" c 4 0
+         mknod "$w/dev/tty2" c 4 2
+         mknod "$w/dev/tty" c 5 0
++        if [ -n "${LEMON_TOUCH_EVENT:-}" ]; then
++            /bin/sh "$base/prepare-private-input.sh" "$w" "$LEMON_TOUCH_EVENT" "$5"
++        fi
+         /bin/busybox openvt -s -w -c 2 -- /bin/busybox chroot "$w" /bin/busybox sh -c '
+             exec /usr/bin/seatd-launch -- /usr/bin/weston --backend=drm --drm-device=card0 \
+                 --renderer=pixman --current-mode --continue-without-input --shell=kiosk \
+@@ -223,6 +233,9 @@
+         grep -q ':0D3D .* 0A ' /proc/net/tcp /proc/net/tcp6
+         WAYLAND_DISPLAY=lemon-physical chroot "$w" /bin/busybox sh -c \
+             'export LD_PRELOAD=/run/frame-trace.so LEMON_FRAME_TRACE=/tmp/rdp-frames.jsonl
++             if [ -f /run/touch-pointer.so ]; then
++                 export LD_PRELOAD=$LD_PRELOAD:/run/touch-pointer.so LEMON_TOUCH_POINTER=${LEMON_TOUCH_POINTER:-drag}
++             fi
+              if [ -f /run/rdp-copy-trace.so ]; then
+                  export LD_PRELOAD=$LD_PRELOAD:/run/rdp-copy-trace.so LEMON_RDP_COPY_TRACE=/tmp/rdp-copies.jsonl
+              fi

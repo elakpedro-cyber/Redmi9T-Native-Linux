@@ -1,0 +1,93 @@
+--- a/src/backends/native/meta-renderer-native.c
++++ b/src/backends/native/meta-renderer-native.c
+@@ -2142,14 +2142,33 @@
+   MetaRenderer *renderer = META_RENDERER (renderer_native);
+   MetaBackend *backend = meta_renderer_get_backend (renderer);
+   MetaBackendNative *backend_native = META_BACKEND_NATIVE (backend);
++  const char *required_node = g_getenv ("LEMON_REQUIRE_RENDER_NODE");
+   const char *device_path;
+   MetaRenderDevice *render_device;
+   MetaRendererNativeGpuData *renderer_gpu_data;
+ 
+   if (!gpu_kms)
+-    return create_renderer_gpu_data_surfaceless (renderer_native, error);
++    {
++      if (required_node)
++        {
++          g_set_error (error, G_IO_ERROR, G_IO_ERROR_FAILED,
++                       "Required DRM render node %s unavailable; software fallback refused",
++                       required_node);
++          return NULL;
++        }
++      return create_renderer_gpu_data_surfaceless (renderer_native, error);
++    }
+ 
+   device_path = meta_gpu_kms_get_file_path (gpu_kms);
++  if (required_node &&
++      (!meta_backend_is_headless (backend) ||
++       g_strcmp0 (required_node, device_path) != 0))
++    {
++      g_set_error (error, G_IO_ERROR, G_IO_ERROR_FAILED,
++                   "Headless renderer requires %s, found %s",
++                   required_node, device_path);
++      return NULL;
++    }
+   render_device = meta_backend_native_get_render_device (backend_native,
+                                                          device_path,
+                                                          error);
+@@ -2159,6 +2178,16 @@
+       return NULL;
+     }
+ 
++  if (required_node &&
++      (!META_IS_RENDER_DEVICE_GBM (render_device) ||
++       !meta_render_device_is_hardware_accelerated (render_device)))
++    {
++      g_set_error (error, G_IO_ERROR, G_IO_ERROR_FAILED,
++                   "Required render node %s did not provide hardware GBM",
++                   required_node);
++      return NULL;
++    }
++
+   if (META_IS_RENDER_DEVICE_GBM (render_device))
+     {
+       renderer_gpu_data = create_renderer_gpu_data_gbm (renderer_native,
+--- a/src/backends/native/meta-render-device.c
++++ b/src/backends/native/meta-render-device.c
+@@ -78,6 +78,7 @@
+   EGLint *attributes;
+   EGLContext egl_context;
+   const char *renderer_str;
++  const char *required_node = g_getenv ("LEMON_REQUIRE_RENDER_NODE");
+ 
+   attributes = (EGLint[]) {
+     EGL_CONTEXT_CLIENT_VERSION, 2,
+@@ -110,11 +111,27 @@
+     }
+ 
+   renderer_str = (const char *) glGetString (GL_RENDERER);
+-  if (g_str_has_prefix (renderer_str, "llvmpipe") ||
++  if (required_node &&
++      (g_strcmp0 (required_node, meta_device_file_get_path (priv->device_file)) != 0 ||
++       !renderer_str ||
++       (g_strcmp0 (renderer_str, "FD610") != 0 &&
++        !g_str_has_prefix (renderer_str, "FD610 "))))
++    {
++      g_warning ("LEMON_FD610_REJECTED node=%s renderer=%s",
++                 meta_device_file_get_path (priv->device_file),
++                 renderer_str ? renderer_str : "(none)");
++      goto out_current_context;
++    }
++
++  if (!renderer_str ||
++      g_str_has_prefix (renderer_str, "llvmpipe") ||
+       g_str_has_prefix (renderer_str, "softpipe") ||
+       g_str_has_prefix (renderer_str, "swrast"))
+     goto out_current_context;
+ 
++  if (required_node)
++    g_message ("LEMON_FD610_EGL_VERIFIED node=%s renderer=%s",
++               required_node, renderer_str);
+   priv->is_hardware_rendering = TRUE;
+ 
+ out_current_context:

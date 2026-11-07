@@ -1,0 +1,43 @@
+Subject: [PATCH] Keep the lemon LM36923 boost disabled during probe
+
+Defer boost initialization until the first nonzero brightness request.
+Return initialization errors before any brightness register writes.
+
+---
+diff --git a/drivers/leds/leds-lm3692x.c b/drivers/leds/leds-lm3692x.c
+--- a/drivers/leds/leds-lm3692x.c
++++ b/drivers/leds/leds-lm3692x.c
+@@ -9,6 +9,7 @@
+ #include <linux/log2.h>
+ #include <linux/module.h>
+ #include <linux/mutex.h>
++#include <linux/of.h>
+ #include <linux/regmap.h>
+ #include <linux/regulator/consumer.h>
+ #include <linux/slab.h>
+@@ -338,9 +339,11 @@
+ 	if (brt_val == 0) {
+ 		ret = lm3692x_leds_disable(led);
+ 		goto out;
+-	} else {
+-		lm3692x_leds_enable(led);
+-	}
++	}
++
++	ret = lm3692x_leds_enable(led);
++	if (ret)
++		goto out;
+ 
+ 	ret = lm3692x_fault_check(led);
+ 	if (ret) {
+@@ -488,6 +491,10 @@
+ 	if (ret)
+ 		return ret;
+ 
++	/* On lemon the first nonzero brightness must be a separate test. */
++	if (led->model_id == LM36923_MODEL && of_machine_is_compatible("xiaomi,lemon"))
++		return 0;
++
+ 	ret = lm3692x_leds_enable(led);
+ 	if (ret)
+ 		return ret;

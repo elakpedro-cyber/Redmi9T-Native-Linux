@@ -1,0 +1,11 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "modules-left": ["custom/label"],
+  "modules-center": ["clock"],
+  "modules-right": ["custom/terminal"],
+  "custom/label": {"format": "Labwc", "tooltip": false},
+  "clock": {"format": "{:%H:%M}", "interval": 60, "tooltip": false},
+  "custom/terminal": {"format": "Terminal", "on-click": "foot -w 400x205 /bin/sh -i", "tooltip": false}
+}

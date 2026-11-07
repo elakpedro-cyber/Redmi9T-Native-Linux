@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: GPL-2.0-only OR BSD-2-Clause
+/dts-v1/;
+/plugin/;
+
+#include <dt-bindings/power/qcom-rpmpd.h>
+
+/* Offline review only. Stock votes RETENTION before off, unlike genpd. */
+&mdss_dsi0_phy {
+	power-domains = <&rpmpd SM6115_VDDMX>;
+	required-opps = <&rpmpd_opp_nom>;
+	status = "disabled";
+};
+

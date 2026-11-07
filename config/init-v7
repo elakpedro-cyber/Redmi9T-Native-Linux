@@ -1,0 +1,37 @@
+#!/rescue/busybox sh
+export PATH=/rescue:/sbin:/bin:/usr/sbin:/usr/bin
+mount -t devtmpfs devtmpfs /dev
+echo 'LEMON_INIT_V7_REACHED: native Linux /init executing' > /dev/kmsg
+mkdir -p /dev/pts /proc /sys /run /tmp
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+cat /sys/firmware/devicetree/base/chosen/xiaomi,bootshim-info > /dev/kmsg
+mount -t tmpfs tmpfs /run
+echo 'LEMON_INIT_V7_REACHED' > /run/init-reached
+mount -t tmpfs tmpfs /tmp
+mount -t devpts devpts /dev/pts
+{
+    for d in /sys/block/sd*; do
+        echo "$d"
+        cat "$d/stat" "$d/device/ioerr_cnt"
+    done
+    cat /proc/mounts /proc/swaps
+} > /run/ufs-stat-initial.txt
+echo "Redmi9T Native Linux: initramfs reached"
+uname -a
+mount -t configfs configfs /sys/kernel/config
+mkdir -p /sys/fs/pstore
+mount -t pstore pstore /sys/fs/pstore
+(
+    /usr/local/sbin/lemon-usb-gadget || { echo 'USB gadget setup failed'; exit 1; }
+    dmesg > /run/boot-dmesg.txt
+    while :; do
+        /rescue/getty -L -n -l /usr/local/sbin/lemon-root-shell 115200 ttyGS0 vt100
+        sleep 1
+    done
+) >/run/usb-setup.log 2>&1 &
+
+
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+echo 'Starting Alpine BusyBox init and OpenRC in RAM'
+exec /sbin/init

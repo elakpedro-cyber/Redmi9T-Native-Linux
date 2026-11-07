@@ -1,0 +1,42 @@
+/* REVIEW ONLY: not applied or compiled into a DTB. No controller/power enable here. */
+&spi2 {
+    /* SE2 is 0x4a88000. Stock DT child@1 is overridden to runtime CS0 by driver. */
+    #address-cells = <1>;
+    #size-cells = <0>;
+    num-cs = <1>;
+    pinctrl-0 = <&lemon_touch_spi_data &lemon_touch_spi_cs>;
+    touchscreen@0 {
+        compatible = "xiaomi,lemon-nt36672a-handoff";
+        reg = <0>;
+        spi-max-frequency = <9600000>;
+        qcom,cs-delay-counter = <200>;
+        qcom,inter-word-delay-counter = <0>;
+        interrupts-extended = <&tlmm 93 IRQ_TYPE_EDGE_RISING>;
+        /* Reset line is TLMM103, stock raw flags0. No reset consumer here:
+         * logical assertion polarity/lifecycle must not be invented. */
+        touchscreen-size-x = <1080>;
+        touchscreen-size-y = <2340>;
+        /* No stock-cs0-reviewed or validated-touch-handoff opt-in until electrical/FW/CS gates pass.
+         * Shared VDDIO=PM6125 L9, LAB/IBB=PMI632 LCDB. This driver never votes them.
+         * Stock raw CS delay counter=200 is not a nanosecond value. The private
+         * GENI patch applies that raw field without guessing its time unit.
+         */
+        status = "disabled";
+    };
+};
+
+/* Stock pin sets and electrical settings. Source review only. */
+&tlmm {
+    lemon_touch_spi_data: lemon-touch-spi-data-state {
+        pins = "gpio6", "gpio7", "gpio71";
+        function = "qup2";
+        drive-strength = <6>;
+        bias-pull-down;
+    };
+    lemon_touch_spi_cs: lemon-touch-spi-cs-state {
+        pins = "gpio80";
+        function = "qup2";
+        drive-strength = <6>;
+        bias-pull-up;
+    };
+};

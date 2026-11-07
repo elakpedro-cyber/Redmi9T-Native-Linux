@@ -1,0 +1,73 @@
+# SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
+%YAML 1.2
+---
+$id: http://devicetree.org/schemas/input/touchscreen/xiaomi,lemon-nt36672a-handoff.yaml#
+$schema: http://devicetree.org/meta-schemas/core.yaml#
+
+title: Local Redmi 9T Novatek SPI handoff review fixture
+
+maintainers:
+  # Reserved, non-deliverable placeholder for this local test fixture only.
+  - Local offline fixture <nobody@example.invalid>
+
+description: |
+  Private offline fixture, not an accepted upstream binding. It describes
+  only the disabled candidate. Runtime firmware handoff, electrical state
+  and hardware activation are outside the scope of this schema.
+
+allOf:
+  - $ref: touchscreen.yaml#
+  - $ref: /schemas/spi/spi-peripheral-props.yaml#
+
+properties:
+  compatible:
+    const: xiaomi,lemon-nt36672a-handoff
+
+  reg:
+    const: 1
+
+  spi-max-frequency:
+    const: 9600000
+
+  spi-cpol: false
+  spi-cpha: false
+  spi-cs-high: false
+  spi-lsb-first: false
+
+  interrupts-extended:
+    maxItems: 1
+
+  qcom,cs-delay-counter:
+    description: Raw stock CS delay counter, not a nanosecond value.
+    $ref: /schemas/types.yaml#/definitions/uint32
+    const: 200
+
+  qcom,inter-word-delay-counter:
+    description: Raw stock inter-word delay counter.
+    $ref: /schemas/types.yaml#/definitions/uint32
+    const: 0
+
+  touchscreen-size-x:
+    const: 1080
+
+  touchscreen-size-y:
+    const: 2340
+
+  reset-gpios: false
+  xiaomi,validated-touch-handoff: false
+
+  status:
+    const: disabled
+
+required:
+  - compatible
+  - reg
+  - spi-max-frequency
+  - interrupts-extended
+  - qcom,cs-delay-counter
+  - qcom,inter-word-delay-counter
+  - touchscreen-size-x
+  - touchscreen-size-y
+  - status
+
+unevaluatedProperties: false

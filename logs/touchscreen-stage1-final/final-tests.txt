@@ -1,0 +1,5 @@
+FAIL_CLOSED_CHECK_AND_RUN_PASS code78; no active path
+R2_SOURCE_GUARDS_PASS CS0 FW5 opt-in; no sensor reset/power/upload or GENI auto-upload
+READONLY_FIXTURE_PASS no mutations; electrical levels never inferred
+/home/hadirpc/Redmi9T-Native-Linux/kernel-out-v8b/.config: OK
+/home/hadirpc/Redmi9T-Native-Linux/kernel-out-v8b/arch/arm64/boot/Image: OK

@@ -1,0 +1,182 @@
+{
+  "decision": "NO-GO for active hardware test",
+  "phone_access": false,
+  "old_cs1_hardware_assumption_revoked": true,
+  "files": [
+    {
+      "path": "artifacts/touchscreen-stage1-final/lemon_nt36672a_stage1_r2.ko",
+      "bytes": 18192,
+      "sha256": "f8568912cb6b502246fccec3391405f76f7b33abc3e74ce1852979efa5ceb267"
+    },
+    {
+      "path": "artifacts/touchscreen-stage1-final/spi-geni-qcom-stage1-r2.ko",
+      "bytes": 29928,
+      "sha256": "3e5c9562e25f239e466d0814ef864987725d2d04a8cc827341d36725c07efa16"
+    },
+    {
+      "path": "logs/touchscreen-stage1-final/audit-firmware-final.py.log",
+      "bytes": 79,
+      "sha256": "691bd2063ca5ee3a5f3b5dfc59514edf338e709bf20c06e2dab2bcfe28763810"
+    },
+    {
+      "path": "logs/touchscreen-stage1-final/audit-stage1.py.log",
+      "bytes": 79,
+      "sha256": "6f1827a0b09bd5c2706030141228923b4d72c1a6a3a3180cdde56569feae7e09"
+    },
+    {
+      "path": "logs/touchscreen-stage1-final/audit-stock-binary.py.log",
+      "bytes": 574,
+      "sha256": "8a731d9ceadc922e81ee103c4c8550512c6d267334e0f59457bdf61bf03b1521"
+    },
+    {
+      "path": "logs/touchscreen-stage1-final/build-r2.txt",
+      "bytes": 2400,
+      "sha256": "e4a0059b913baefce33681969ff6a2edf4ec4741d70c84f1dd70d3c4e80b6f9e"
+    },
+    {
+      "path": "logs/touchscreen-stage1-final/build-stage.txt",
+      "bytes": 58,
+      "sha256": "726f82c2b3d107a1582e1727d31a36e8cce81e61feba36f05862de61a8a141fc"
+    },
+    {
+      "path": "logs/touchscreen-stage1-final/checkpatch-r2.txt",
+      "bytes": 142,
+      "sha256": "fdf4178251ace337dc6cc4e9da68e3b3e64876dc7ad86abeba0504424ee121c6"
+    },
+    {
+      "path": "logs/touchscreen-stage1-final/final-tests.txt",
+      "bytes": 348,
+      "sha256": "b33876cae64cad3f9a4d36795556efd87797241a08b3e325a6d76893bce6c66c"
+    },
+    {
+      "path": "logs/touchscreen-stage1-final/kallsyms-extract.txt",
+      "bytes": 4886,
+      "sha256": "4641b33bf40cede51e87a021f601b612f5bf5b03412b758682bc21cc1b86da96"
+    },
+    {
+      "path": "logs/touchscreen-stage1-final/kernel-before.sha256",
+      "bytes": 262,
+      "sha256": "3da1c3ebeced275e3fbb85086b43d53365b5383353ffe0ec6393a1a8f8f0c44d"
+    },
+    {
+      "path": "logs/touchscreen-stage1-final/offline-tests.txt",
+      "bytes": 307,
+      "sha256": "622558a96c2b5b4d84d1896a1116d9b71c7740b068db6e02d8f5da2c484f9d86"
+    },
+    {
+      "path": "logs/touchscreen-stage1-final/preservation.json",
+      "bytes": 206,
+      "sha256": "769996b960a2e8854cd59390e0e115c8ba04e181ff0e7373ecd6dc8031db7660"
+    },
+    {
+      "path": "logs/touchscreen-stage1-final/probe-string-xrefs.txt",
+      "bytes": 6551,
+      "sha256": "72d7ee77e41d2be8014b31e8863e3b314b67512aac4214415b08000f94aac81c"
+    },
+    {
+      "path": "logs/touchscreen-stage1-final/recovery-normal-versions.json",
+      "bytes": 1034,
+      "sha256": "2b438c76478151a008d8ed2339a755281450a947f997c3a1933c18427dbda8bb"
+    },
+    {
+      "path": "logs/touchscreen-stage1-final/stock-binary.json",
+      "bytes": 574,
+      "sha256": "8a731d9ceadc922e81ee103c4c8550512c6d267334e0f59457bdf61bf03b1521"
+    },
+    {
+      "path": "logs/touchscreen-stage1-final/stock-comparison.json",
+      "bytes": 8987,
+      "sha256": "ea18fd12313d195718762c5de149770ba80d56954add1ad84d34765fbb15bc5b"
+    },
+    {
+      "path": "logs/touchscreen-stage1-final/tools-install.txt",
+      "bytes": 2730,
+      "sha256": "ae5015e02a0ee241ca4de8ee10d2e57e063c27c02212050e5a00a668a1db9515"
+    },
+    {
+      "path": "touchscreen-v1/audit-firmware-final.py",
+      "bytes": 1353,
+      "sha256": "c6cb122d7d16b32d2ece96aa82909154549413dfa0c966371b3934e66f2192bb"
+    },
+    {
+      "path": "touchscreen-v1/audit-stage1.py",
+      "bytes": 3432,
+      "sha256": "689cf4f6537236e8336b8d3456a451df9a6f6113e05ba50f2ee1d40088faaac1"
+    },
+    {
+      "path": "touchscreen-v1/audit-stock-binary.py",
+      "bytes": 2645,
+      "sha256": "ca5a2ed948c744d3c955604c6f87f70b92650a1968540a4a4e492a0b82f29321"
+    },
+    {
+      "path": "touchscreen-v1/build-stage1-r2.sh",
+      "bytes": 3085,
+      "sha256": "20b1d88bf1c58ea7ba9abf01c7159b7120d0881eabf6d62dc3bfdce04a5ca930"
+    },
+    {
+      "path": "touchscreen-v1/stage1-r2/lemon-geni-delay.h",
+      "bytes": 424,
+      "sha256": "231460422b2e1df5fc00a45e6f717976da5e32e2a2e15a9b5efda5f8c6ab585d"
+    },
+    {
+      "path": "touchscreen-v1/stage1-r2/Makefile",
+      "bytes": 114,
+      "sha256": "2f7e23aea5b6bb3df0b9583269dde80802f6a931e6106eb9cffeaa997ab2b30b"
+    },
+    {
+      "path": "touchscreen-v1/stage1-r2/nvt-frame.c",
+      "bytes": 2194,
+      "sha256": "0e7824e7b454bb53877f48d555fae396ad15986f338b1a4530ee25a45977cb27"
+    },
+    {
+      "path": "touchscreen-v1/stage1-r2/nvt-frame.h",
+      "bytes": 696,
+      "sha256": "1f9c83a1268ec0ef64c5b1066b7b84ca379f65fed9290fa226239040e76685c8"
+    },
+    {
+      "path": "touchscreen-v1/stage1-r2/nvt-spi.c",
+      "bytes": 8790,
+      "sha256": "bdf0bf107804c5bf7b0a4e76e11af4d1044a14cd0301506a041817991b0e6f3a"
+    },
+    {
+      "path": "touchscreen-v1/stage1-r2/qcom-geni-se-comparison.c",
+      "bytes": 52421,
+      "sha256": "db212819a7d0f82a402101a6c645d7824c131dc0271cbab51159db5738ebe1bd"
+    },
+    {
+      "path": "touchscreen-v1/stage1-r2/spi-geni-qcom-stage1-r2.c",
+      "bytes": 38428,
+      "sha256": "151c146f7485fdfeb6957a3113b0066899a04a79dac0666bf0b085c52074eb79"
+    },
+    {
+      "path": "touchscreen-v1/stage1-r2/stock-spi-device.h",
+      "bytes": 49419,
+      "sha256": "c0876ca36b6940c2d09f1a54322b8e680de64ff41c6086bf1fa843b651663b83"
+    },
+    {
+      "path": "touchscreen-v1/stage1-r2/touch-handoff-stage1-r2.dtsi",
+      "bytes": 1634,
+      "sha256": "8bdace2908855bea5ded58e5f4010403639fc4828f17d73a8571a5a688694603"
+    },
+    {
+      "path": "touchscreen-v1/stage1-readonly.sh",
+      "bytes": 1458,
+      "sha256": "5fddd57cffb357e934e61a8a794bcf9816176179e689488c7601d87017558aa9"
+    },
+    {
+      "path": "touchscreen-v1/stage1-test.py",
+      "bytes": 1879,
+      "sha256": "fa74a6ff38fe46b5489a6ed0b0877c1014e0f407014d3dd947d33599b2268259"
+    },
+    {
+      "path": "touchscreen-v1/test-stage1-final.py",
+      "bytes": 2326,
+      "sha256": "ba4fb01b5423a86ccb130fea47f511e34a04468a9bbfcb907132cf4d1194783c"
+    },
+    {
+      "path": "TOUCHSCREEN_STAGE1_FINAL.md",
+      "bytes": 24973,
+      "sha256": "3082c3f5277a3f92da03780dbf5e6db165a63afdb049e07b6b0cad594e71f0ef"
+    }
+  ]
+}

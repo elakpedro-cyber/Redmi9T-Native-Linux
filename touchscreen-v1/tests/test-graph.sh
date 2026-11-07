@@ -1,0 +1,103 @@
+#!/bin/bash
+set -euo pipefail
+if [ "${LEMON_TEST_SCRIPT_FROZEN:-0}" != 1 ]; then
+    export LEMON_TEST_SCRIPT_FROZEN=1
+    exec /bin/bash -c "$(cat "$0")" "$0" "$@"
+fi
+cd "$(dirname "$0")/../.."
+project=$PWD
+case "${1:-C}" in C) viewer=rdp;; B) viewer=devkit;; *) exit 2;; esac
+base=$(mktemp -d /home/hadirpc/Redmi9T-Native-Linux/physical-v21-offline.XXXXXX)
+log="$project/logs/touchscreen-v1/offline-${2:-${1:-C}}"
+mkdir -p "$log"
+rm -f "$log/samples.txt"
+printf '%s\n' "$base" >"$log/stage.txt"
+xvfb=
+cleanup_xvfb() {
+    if [ -n "$xvfb" ]; then kill -TERM "$xvfb" 2>/dev/null || :; wait "$xvfb" 2>/dev/null || :; fi
+}
+trap cleanup_xvfb EXIT
+if [ "${LEMON_OFFLINE_X11_AUTO:-0}" = 1 ]; then
+    : >"$log/x-display"
+    Xvfb -displayfd 3 -screen 0 720x1280x24 -nolisten tcp -ac -noreset 3>"$log/x-display" >"$log/xvfb.log" 2>&1 &
+    xvfb=$!
+    for _ in $(seq 1 50); do [ ! -s "$log/x-display" ] || break; sleep .1; done
+    export LEMON_OFFLINE_X11=":$(cat "$log/x-display")"
+fi
+cp -al /home/hadirpc/Redmi9T-Native-Linux/physical-gnome.hz2hQr "$base/gnome"
+cp -al /home/hadirpc/Redmi9T-Native-Linux/gnome-parent.40RdpU "$base/weston"
+for root in "$base/gnome" "$base/weston"; do
+    for dir in dev proc sys run tmp; do rm -rf -- "$root/$dir"; mkdir -m 755 "$root/$dir"; done
+done
+cp userspace/gnome-physical-v2.1/{session.sh,user-session.sh,devkit-session.sh,input.js,configure-rdp.js,start-rdp.sh,scope-check.sh} "$base/"
+cp artifacts/gnome-physical-v2.1/{watchdog,vt-cleanup,drm-probe,frame-trace.so,dbus-trace.so,rdp-copy-trace.so} "$base/"
+cp -r userspace/gnome-physical-v2.1/shell-ui "$base/"
+cp artifacts/gnome-physical-v2.1/gnome-remote-desktop-daemon "$base/"
+mv "$base/drm-probe" "$base/probe"
+cp artifacts/touchscreen-v1/wlfreerdp3-touch "$base/weston/usr/bin/wlfreerdp3.touch"
+chmod 755 "$base/weston/usr/bin/wlfreerdp3.touch"
+mv "$base/weston/usr/bin/wlfreerdp3.touch" "$base/weston/usr/bin/wlfreerdp3"
+cp artifacts/touchscreen-v1/libuwac0.so.0 "$base/weston/usr/lib/libuwac0.so.0"
+cp artifacts/touchscreen-v1/touch-pointer.so "$base/weston/run/touch-pointer.so"
+python3 - "$base/session.sh" <<'PY'
+from pathlib import Path
+import sys
+p=Path(sys.argv[1]);s=p.read_text()
+old='export LD_PRELOAD=/run/frame-trace.so LEMON_FRAME_TRACE=/tmp/rdp-frames.jsonl'
+assert old in s
+s=s.replace(old,'export LD_PRELOAD=/run/frame-trace.so:/run/touch-pointer.so LEMON_TOUCH_POINTER=drag LEMON_FRAME_TRACE=/tmp/rdp-frames.jsonl')
+p.write_bytes(s.encode())
+PY
+
+chmod 755 "$base/watchdog" "$base/vt-cleanup"
+# Only the namespace supervisor is native on the PC; all userspace remains ARM64/QEMU.
+gcc -O2 -Wall -Wextra -Werror userspace/gnome-physical-v2.1/watchdog.c -o "$base/watchdog.native"
+mv "$base/watchdog.native" "$base/watchdog"
+if [ "${LEMON_OFFLINE_FAIL_STAGE:-}" = missing-grd ]; then
+    rm "$base/gnome-remote-desktop-daemon"
+fi
+if [ "${LEMON_OFFLINE_FAIL_STAGE:-}" = rdp-exit ]; then
+    printf '#!/bin/sh\necho INJECTED_RDP_EXIT >&2\nexit 23\n' >"$base/start-rdp.sh"
+fi
+set +e
+LEMON_PHYSICAL_VIEWER=$viewer LEMON_TEST_ACTIONS=1 LEMON_CAPTURE=1 /bin/sh "$base/session.sh" "$base" "${LEMON_OFFLINE_SECONDS:-90}" offline >"$log/session.txt" 2>&1 &
+session=$!
+elapsed=0
+while kill -0 "$session" 2>/dev/null; do
+    {
+        printf 'UPTIME '; cat /proc/uptime
+        for pid in /proc/[0-9]*; do
+            case "$(readlink "$pid/root" 2>/dev/null)" in "$base"/*)
+                echo "PROCESS ${pid##*/}"
+                cat "$pid/comm" "$pid/stat" 2>/dev/null
+                grep -E '^(Rss|Pss|Pss_Anon|Pss_File|Pss_Shmem|Private_Clean|Private_Dirty|Swap):' "$pid/smaps_rollup" 2>/dev/null
+                ;;
+            esac
+        done
+    } >>"$log/samples.txt"
+    sleep 2
+    elapsed=$((elapsed+2))
+    if [ "${LEMON_OFFLINE_STOP_AFTER:-0}" != 0 ] && [ "$elapsed" -ge "$LEMON_OFFLINE_STOP_AFTER" ] && [ "${stop_sent:-0}" = 0 ]; then
+        kill -"${LEMON_OFFLINE_SIGNAL:-TERM}" "$(cat "$base/watchdog.pid")"
+        stop_sent=1
+    fi
+done
+wait "$session"
+result=$?
+set -e
+echo "OFFLINE_EXIT=$result" | tee "$log/result.txt"
+for path in gnome.log client.log system-bus.log seat.log; do
+    output=$path
+    [ "$path" != gnome.log ] || output=user-session.log
+    [ ! -f "$base/$path" ] || cp "$base/$path" "$log/$output"
+done
+for path in gnome/run/lemon weston/tmp; do
+    find "$base/$path" -maxdepth 1 -type f \( -name '*.log' -o -name '*.jsonl' -o -name '*.png' \) -exec cp {} "$log/" \;
+done
+if grep -F " $base/" /proc/self/mountinfo; then exit 3; fi
+for pid in /proc/[0-9]*; do
+    case "$(readlink "$pid/root" 2>/dev/null || :)" in "$base"/*) echo "LEFTOVER $pid"; exit 3;; esac
+done
+/bin/sh "$base/scope-check.sh" "$base" >>"$log/result.txt"
+if find "$base/gnome/run" "$base/weston/tmp" -type s | grep .; then exit 3; fi
+echo OFFLINE_NAMESPACE_CLEANUP_PASS | tee -a "$log/result.txt"

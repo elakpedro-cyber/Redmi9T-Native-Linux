@@ -1,0 +1,10 @@
+{
+  "gnome": {
+    "bytes": 373354477,
+    "sha256": "f2a37bfbc767f138f1ffa578627e2c5088ca7d2f95b9b754a50ff702a878e98f"
+  },
+  "weston": {
+    "bytes": 135685849,
+    "sha256": "a99c4bc3bc60c6b939d320576f349a3f718d2e85e1f1e94f7233fe2e9f6e7641"
+  }
+}

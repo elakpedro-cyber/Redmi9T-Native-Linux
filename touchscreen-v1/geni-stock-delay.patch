@@ -1,0 +1,78 @@
+Subject: [LOCAL REVIEW] spi: geni: preserve lemon stock raw delay counters
+
+The stock NT36672A SPI profile uses raw CS counter 200 and inter-word
+counter 0. Add opt-in raw fields without guessing their time units.
+Reject this opt-in in GPI DMA mode until that path is separately verified.
+This is a private experimental module patch, not an upstream submission.
+
+---
+--- a/drivers/spi/spi-geni-qcom.c
++++ b/drivers/spi/spi-geni-qcom.c
+@@ -21,6 +21,7 @@
+ #include <linux/pm_opp.h>
+ #include <linux/pm_runtime.h>
+ #include <linux/property.h>
++#include "lemon-geni-delay.h"
+ #include <linux/soc/qcom/geni-se.h>
+ #include <linux/spi/spi.h>
+ #include <linux/spinlock.h>
+@@ -371,7 +372,7 @@
+ 	return 0;
+ }
+ 
+-static void setup_spi_params(struct spi_device *spi_slv,
++static int setup_spi_params(struct spi_device *spi_slv,
+ 			     struct spi_controller *spi)
+ {
+ 	struct spi_geni_master *mas = spi_controller_get_devdata(spi);
+@@ -379,6 +380,15 @@
+ 	u8 chipselect = spi_get_chipselect(spi_slv, 0);
+ 	bool cs_changed = (mas->last_cs != chipselect);
+ 	u32 mode_changed = mas->last_mode ^ spi_slv->mode;
++	u32 cs_delay = 0, word_delay = 0, delay_value;
++	bool raw_delay = device_property_present(&spi_slv->dev, "qcom,cs-delay-counter");
++
++	if (raw_delay &&
++	    (device_property_read_u32(&spi_slv->dev, "qcom,cs-delay-counter", &cs_delay) ||
++	    device_property_read_u32(&spi_slv->dev, "qcom,inter-word-delay-counter", &word_delay) ||
++	    lemon_geni_delay(0, cs_delay, word_delay, &delay_value)))
++		return -EINVAL;
++
+ 
+ 	mas->last_cs = chipselect;
+ 	mas->last_mode = spi_slv->mode;
+@@ -396,8 +406,14 @@
+ 	if ((mode_changed & SPI_CS_HIGH) || (cs_changed && (spi_slv->mode & SPI_CS_HIGH)))
+ 		writel((spi_slv->mode & SPI_CS_HIGH) ? BIT(chipselect) : 0, se->base + SE_SPI_DEMUX_OUTPUT_INV);
+ 
++	if (raw_delay) {
++		lemon_geni_delay(readl(se->base + SE_SPI_DELAY_COUNTERS),
++				 cs_delay, word_delay, &delay_value);
++		writel(delay_value, se->base + SE_SPI_DELAY_COUNTERS);
++	}
+ 	trace_geni_spi_setup_params(mas->dev, chipselect, spi_slv->mode,
+ 				    mode_changed, cs_changed);
++	return 0;
+ }
+ 
+ static void
+@@ -566,10 +582,11 @@
+ 	case GENI_SE_DMA:
+ 		if (spi_geni_is_abort_still_pending(mas))
+ 			return -EBUSY;
+-		setup_spi_params(spi_msg->spi, spi);
+-		return 0;
++		return setup_spi_params(spi_msg->spi, spi);
+ 
+ 	case GENI_GPI_DMA:
++		if (device_property_present(&spi_msg->spi->dev, "qcom,cs-delay-counter"))
++			return -EOPNOTSUPP;
+ 		/* nothing to do for GPI DMA */
+ 		return 0;
+ 	}
+@@ -1340,3 +1357,5 @@
+ 
+ MODULE_DESCRIPTION("SPI driver for GENI based QUP cores");
+ MODULE_LICENSE("GPL v2");
++
++MODULE_VERSION("lemon-touch-v1");

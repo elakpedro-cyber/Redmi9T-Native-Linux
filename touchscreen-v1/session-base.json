@@ -1,0 +1,6 @@
+{
+  "base_sha256": "0676e04f3c503772d797ebfde4bad5ed63f4836a4dd0048031b216475e7483b7",
+  "touch_session_sha256": "c2775d0782158ab1c41f27cfdccdd1d2d28d6cd731c51557018b77c900753ade",
+  "base_modified": false,
+  "activation": "requires explicit LEMON_TOUCH_EVENT and Stage1 validation; not uploaded"
+}

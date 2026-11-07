@@ -1,0 +1,2 @@
+CALIBRATION_PASS 16 axis/rotation combinations, offset bounds, invalid coordinates
+FIRMWARE_NEGATIVE_PASS 5 corrupt/truncated cases on synthetic fixture; no proprietary firmware required

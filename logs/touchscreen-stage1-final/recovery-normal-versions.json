@@ -1,0 +1,32 @@
+[
+  {
+    "name": "vendor/firmware/novatek_ts_fw.bin",
+    "bytes": 118784,
+    "sha256": "aa62ec8f23094177537e121153a826ffa69f425901a4245e01051248c21edeaa",
+    "metadata_version": 5
+  },
+  {
+    "name": "vendor/firmware/nt33672a_tianma_novatek_ts_fw.bin",
+    "bytes": 118784,
+    "sha256": "aa62ec8f23094177537e121153a826ffa69f425901a4245e01051248c21edeaa",
+    "metadata_version": 5
+  },
+  {
+    "name": "vendor/firmware/nt33672a_truly_novatek_ts_fw.bin",
+    "bytes": 118784,
+    "sha256": "36dccc95785b40bb5bc0cc4764bc80dc066ce358dd7fb3c1afebaca670b9276f",
+    "metadata_version": 6
+  },
+  {
+    "name": "vendor/firmware/nt33672d_tianma_novatek_ts_fw.bin",
+    "bytes": 139264,
+    "sha256": "10bd76563340942c30a92062ef3c15a7ba2807a69b6ca75bce7c2554747abf8e",
+    "metadata_version": 11
+  },
+  {
+    "name": "vendor/firmware/nt33672d_xinli_novatek_ts_fw.bin",
+    "bytes": 139264,
+    "sha256": "d406724ffc96b5e05990a2878a3cc7d333cafa34ad356ca06ac948e81c6b09ef",
+    "metadata_version": 10
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "scope": "physical Redmi 9T v8b",
+  "frame_boundaries": [
+    {
+      "file": "gnome-frames.jsonl",
+      "event": "pipewire_nonempty_buffer",
+      "pid_namespace": 226,
+      "object_id": 45,
+      "count": 84,
+      "span_seconds": 28.623,
+      "observed_updates_per_second": 2.9,
+      "max_updates_in_one_second_bin": 21,
+      "interval_ms_p50": 59.049844,
+      "interval_ms_p95": 1893.75026
+    },
+    {
+      "file": "rdp-frames.jsonl",
+      "event": "wayland_surface_commit",
+      "pid_namespace": 738,
+      "object_id": 13,
+      "count": 60,
+      "span_seconds": 30.025,
+      "observed_updates_per_second": 1.965,
+      "max_updates_in_one_second_bin": 12,
+      "interval_ms_p50": 101.949792,
+      "interval_ms_p95": 2339.980989
+    }
+  ],
+  "limitations": [
+    "PipeWire queue != encoded RDP frame; cursor-only updates are possible",
+    "Wayland commit != Weston presentation or LCD scanout",
+    "D-Bus dispatch RTT != input-to-photon latency",
+    "Sampled PSS can miss peaks; QEMU processes include emulator memory"
+  ],
+  "weston": {
+    "repaints_posted": 0,
+    "begin_to_posted_ms_p50": null,
+    "begin_to_posted_ms_p95": null,
+    "scope": "Software repaint submission; not encoded frame latency or photon timing"
+  },
+  "input_dispatch": {
+    "count": 65,
+    "rtt_ms_p50": 11.455,
+    "rtt_ms_p95": 70.066,
+    "rtt_ms_max": 134.329
+  },
+  "rdp_operations": {
+    "scale_rectangle": {
+      "calls": 146,
+      "pixels_processed": 16492896,
+      "duration_ms_sum": 42.246148,
+      "duration_ms_p50": 0.080781,
+      "duration_ms_p95": 1.026511,
+      "failed_calls": 0,
+      "meaning": "rectangle operations, not unique frames; interposed calls only"
+    }
+  },
+  "resources": {
+    "peak_sampled_aggregate_pss_kib": 908191,
+    "max_single_process_cpu_percent_one_core": 143.32,
+    "cpu_clock_ticks_from_trace": 100
+  }
+}

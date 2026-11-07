@@ -1,0 +1,41 @@
+gnome-session-binary[189]: WARNING: Failed to upload environment to systemd: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.freedesktop.systemd1" does not exist
+gnome-session-binary[189]: WARNING: Could not check if unit gnome-session-wayland@lemon-headless.target is active: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.systemd1 was not provided by any .service files
+gnome-session-binary[189]: WARNING: Failed to reset failed state of units: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.freedesktop.systemd1" does not exist
+gnome-session-binary[189]: WARNING: Falling back to non-systemd startup procedure due to error: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.freedesktop.systemd1" does not exist
+gnome-session-binary[189]: WARNING: Using null backend for session tracking
+GLib-GIO-Message: 01:20:54.927: Adding GResources overlay '/org/gnome/shell/ui=/run/lemon/shell-ui'
+libmutter-Message: 01:20:55.004: Running GNOME Shell (using mutter 50.2) as a Wayland display server
+libmutter-Message: 01:20:55.284: LEMON_FD610_EGL_VERIFIED node=/dev/dri/renderD128 renderer=FD610
+libmutter-Message: 01:20:55.290: Added device '/dev/dri/renderD128' (msm) using no mode setting.
+libmutter-Message: 01:20:55.321: Created gbm renderer for '/dev/dri/renderD128'
+libmutter-Message: 01:20:55.321: Integrated GPU /dev/dri/renderD128 selected as primary
+** Message: 01:20:55.349: Obtained a high priority EGL context
+libmutter-Message: 01:20:55.589: Using Wayland display name 'wayland-0'
+GLib-GIO-Message: 01:20:55.910: Opened file '/run/lemon/shell-ui/main.js' as a resource overlay
+
+(gnome-shell:226): libmutter-WARNING **: 01:20:55.919: There is no colord server available
+GLib-GIO-Message: 01:20:56.394: Opened file '/run/lemon/shell-ui/windowPreview.js' as a resource overlay
+GLib-GIO-Message: 01:20:56.541: Opened file '/run/lemon/shell-ui/status/remoteAccess.js' as a resource overlay
+GNOME Shell-Message: 01:20:58.197: Registering session with GDM
+GNOME Shell-Message: 01:20:58.266: Error registering session with GDM: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.DisplayManager was not provided by any .service files
+gnome-session-binary[189]: CODE_FILE=../gnome-session/gsm-manager.c:CODE_LINE=1408:start_phase:Entering running state
+LEMON_SESSION_REGISTERED client=/org/gnome/SessionManager/Client2
+GNOME Shell-Message: 01:20:58.590: Failed to register AuthenticationAgent
+
+(gnome-shell:226): accountsservice-WARNING **: 01:20:58.642: ActUserManager: user (null) has no username (uid: -1)
+GNOME Shell-Message: 01:21:00.852: No permission to control network connections: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.PolicyKit1 was not provided by any .service files
+GNOME Shell-Message: 01:21:00.854: Failed to get PolKit permission: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.PolicyKit1 was not provided by any .service files
+GNOME Shell-Message: 01:21:00.861: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.GeoClue2 was not provided by any .service files
+libmutter-Message: 01:21:02.373: Added virtual monitor Meta-0
+WARNING: Glycin running without sandbox.
+GNOME Shell-Message: 01:21:03.595: GNOME Shell started at Thu Jan 01 1970 01:20:58 GMT+0000 (Coordinated Universal Time)
+GNOME Shell-Message: 01:21:03.618: Registering display with GDM
+GNOME Shell-Message: 01:21:03.714: Error registering display with GDM: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.DisplayManager was not provided by any .service files
+LEMON_SESSION_ACK QueryEndSession
+** Message: 01:21:45.939: Shutting down GNOME Shell
+libmutter-Message: 01:21:46.192: Removed virtual monitor Meta-0
+LEMON_SESSION_ACK EndSession
+
+(gnome-shell:226): Gjs-CRITICAL **: 01:21:46.258: Attempting to call back into JSAPI during the sweeping phase of GC. This is most likely caused by not destroying a Clutter actor or Gtk+ widget with ::destroy signals connected, but can also be caused by using the destroy(), dispose(), or remove() vfuncs. Because it would crash the application, it has been blocked and the JS callback not invoked.
+== Stack trace for context 0xffef3a8b2e00 ==
+The offending signal was notify on ShellWindowTracker 0xffef32458380.

@@ -1,0 +1,289 @@
+{
+  "supplies_shared_with_display": {
+    "touch_vddio-supply": {
+      "provider": "/soc/qcom,rpm-smd/rpm-regulator-ldoa9/regulator-l9",
+      "consumers": [
+        {
+          "node": "/soc/bt_wcn3990",
+          "property": "qca,bt-vdd-io-supply"
+        },
+        {
+          "node": "/soc/spi@4a88000/focaltech@0",
+          "property": "touch_vddio-supply"
+        },
+        {
+          "node": "/soc/spi@4a88000/novatek@1",
+          "property": "touch_vddio-supply"
+        },
+        {
+          "node": "/soc/qcom,msm-audio-apr/qcom,q6core-audio/bolero-cdc/wcd937x-codec",
+          "property": "cdc-vdd-rxtx-supply"
+        },
+        {
+          "node": "/soc/qcom,msm-audio-apr/qcom,q6core-audio/bolero-cdc/wcd937x-codec",
+          "property": "cdc-vddpx-supply"
+        },
+        {
+          "node": "/soc/qcom,cci0/qcom,eeprom1",
+          "property": "cam_vio-supply"
+        },
+        {
+          "node": "/soc/qcom,cci0/qcom,cam-sensor1",
+          "property": "cam_vio-supply"
+        },
+        {
+          "node": "/soc/qcom,cci0/qcom,cam-sensor4",
+          "property": "cam_vio-supply"
+        },
+        {
+          "node": "/soc/qcom,dsi-display-primary",
+          "property": "vddio-supply"
+        }
+      ]
+    },
+    "touch_lab-supply": {
+      "provider": "/soc/qcom,spmi@1c40000/qcom,pmi632@3/qpnp-lcdb@ec00/ldo",
+      "consumers": [
+        {
+          "node": "/soc/spi@4a88000/focaltech@0",
+          "property": "touch_lab-supply"
+        },
+        {
+          "node": "/soc/spi@4a88000/novatek@1",
+          "property": "touch_lab-supply"
+        },
+        {
+          "node": "/soc/qcom,dsi-display-primary",
+          "property": "lab-supply"
+        }
+      ]
+    },
+    "touch_ibb-supply": {
+      "provider": "/soc/qcom,spmi@1c40000/qcom,pmi632@3/qpnp-lcdb@ec00/ncp",
+      "consumers": [
+        {
+          "node": "/soc/spi@4a88000/focaltech@0",
+          "property": "touch_ibb-supply"
+        },
+        {
+          "node": "/soc/spi@4a88000/novatek@1",
+          "property": "touch_ibb-supply"
+        },
+        {
+          "node": "/soc/qcom,dsi-display-primary",
+          "property": "ibb-supply"
+        }
+      ]
+    }
+  },
+  "v8b_l9_limits_uv": [
+    1800000,
+    2000000
+  ],
+  "lcdb_provider_present_in_v8b": false,
+  "enabled_geni_spi_nodes": [
+    "/soc@0/geniqup@4ac0000/spi@4a88000"
+  ],
+  "source_anchors": {
+    "touchscreen-v1/sources/xiaomi/NT36672A/nt36xxx.c": {
+      "sha256": "e87e62381b99835bd0cca2fe662a6f9c5e3acfbc42de319fb0b384a12205de5d",
+      "matches": [
+        {
+          "line": 177,
+          "text": "ts->pwr_vdd = regulator_get(&ts->client->dev, \"touch_vddio\");"
+        },
+        {
+          "line": 194,
+          "text": "ts->pwr_lab = regulator_get(&ts->client->dev, \"touch_lab\");"
+        },
+        {
+          "line": 201,
+          "text": "ts->pwr_ibb = regulator_get(&ts->client->dev, \"touch_ibb\");"
+        },
+        {
+          "line": 1212,
+          "text": "ret = gpio_request_one(ts->reset_gpio, GPIOF_OUT_INIT_LOW, \"NVT-tp-rst\");"
+        },
+        {
+          "line": 1759,
+          "text": "client->chip_select = 0;"
+        },
+        {
+          "line": 1810,
+          "text": "nvt_eng_reset();"
+        },
+        {
+          "line": 1813,
+          "text": "gpio_set_value(ts->reset_gpio, 1);"
+        },
+        {
+          "line": 1928,
+          "text": "queue_delayed_work(nvt_fwu_wq, &ts->nvt_fwu_work, msecs_to_jiffies(14000));"
+        },
+        {
+          "line": 2027,
+          "text": "ret = nvt_ts_enable_regulator(false);//default disable regulator"
+        },
+        {
+          "line": 2331,
+          "text": "if (nvt_ts_enable_regulator(false) < 0)"
+        },
+        {
+          "line": 2386,
+          "text": "gpio_set_value(ts->reset_gpio, 1);"
+        }
+      ]
+    },
+    "touchscreen-v1/sources/xiaomi/NT36672A/nt36xxx.h": {
+      "sha256": "da31535238a58c8cae489ebb8fad2f07f21b8bd169a222fba5f11f3db58021a4",
+      "matches": [
+        {
+          "line": 57,
+          "text": "#define INT_TRIGGER_TYPE IRQ_TYPE_EDGE_RISING"
+        },
+        {
+          "line": 85,
+          "text": "#define NVT_TOUCH_SUPPORT_HW_RST 1"
+        },
+        {
+          "line": 98,
+          "text": "#define BOOT_UPDATE_FIRMWARE_NAME \"novatek_ts_fw.bin\""
+        }
+      ]
+    },
+    "touchscreen-v1/sources/xiaomi/NT36672A/nt36xxx_fw_update.c": {
+      "sha256": "439765702c7afc49f7cf36937148b7b33b2234e5df66aa184cab57018881a93a",
+      "matches": [
+        {
+          "line": 29,
+          "text": "#define FW_BIN_VER_OFFSET (fw_need_write_size - SIZE_4KB)"
+        },
+        {
+          "line": 30,
+          "text": "#define FW_BIN_VER_BAR_OFFSET (FW_BIN_VER_OFFSET + 1)"
+        },
+        {
+          "line": 314,
+          "text": "ret = request_firmware(&fw_entry, filename, &ts->client->dev);"
+        },
+        {
+          "line": 328,
+          "text": "if (*(fw_entry->data + FW_BIN_VER_OFFSET) + *(fw_entry->data + FW_BIN_VER_BAR_OFFSET) != 0xFF) {"
+        },
+        {
+          "line": 330,
+          "text": "NVT_ERR(\"FW_VER=0x%02X, FW_VER_BAR=0x%02X\\n\", *(fw_entry->data+FW_BIN_VER_OFFSET), *(fw_entry->data+FW_BIN_VER_BAR_OFFSET));"
+        },
+        {
+          "line": 564,
+          "text": "static int32_t nvt_write_firmware(const u8 *fwdata, size_t fwsize)"
+        },
+        {
+          "line": 814,
+          "text": "ret = nvt_write_firmware(fw_entry->data, fw_entry->size);"
+        },
+        {
+          "line": 869,
+          "text": "static int32_t nvt_download_firmware(void)"
+        },
+        {
+          "line": 896,
+          "text": "ret = nvt_write_firmware(fw_entry->data, fw_entry->size);"
+        },
+        {
+          "line": 979,
+          "text": "ret = nvt_get_fw_info();"
+        }
+      ]
+    },
+    "touchscreen-v1/sources/xiaomi/spi-geni-qcom.c": {
+      "sha256": "2aa776a9d6f8844610a65751b9545f88e7c7e2e655fac3e650ddccb35de64575",
+      "matches": [
+        {
+          "line": 249,
+          "text": "u32 demux_output_inv = 0;"
+        },
+        {
+          "line": 290,
+          "text": "demux_sel = spi_slv->chip_select;"
+        }
+      ]
+    },
+    "touchscreen-v1/sources/linux/spi-geni-qcom.c": {
+      "sha256": "5ea2354f2efd520f16c3aceeae1b1225fedeeb622ea84060756e7ef65722bda4",
+      "matches": [
+        {
+          "line": 630,
+          "text": "static int spi_geni_init(struct spi_geni_master *mas)"
+        },
+        {
+          "line": 654,
+          "text": "ret = geni_load_se_firmware(se, GENI_SE_SPI);"
+        },
+        {
+          "line": 1247,
+          "text": "static int spi_geni_runtime_suspend(struct device *dev)"
+        },
+        {
+          "line": 1307,
+          "text": "RUNTIME_PM_OPS(spi_geni_runtime_suspend, spi_geni_runtime_resume, NULL)"
+        },
+        {
+          "line": 1330,
+          "text": "static struct platform_driver spi_geni_driver = {"
+        }
+      ]
+    },
+    "logs/v7-authorized/twrp-dmesg-before.txt": {
+      "sha256": "aa65de79cf54589e8547a84b39712afcc49696d18a429846f771b95ecff55608",
+      "matches": [
+        {
+          "line": 874,
+          "text": "[    1.488635] msm-dsi-display soc:qcom,dsi-display-primary: Linked as a consumer to regulator.31"
+        },
+        {
+          "line": 1207,
+          "text": "[    1.733497] [NVT-ts] nvt_ts_probe 1790: mode=0, max_speed_hz=9600000"
+        },
+        {
+          "line": 1217,
+          "text": "[    1.755794] [NVT-ts] nvt_ts_probe 1902: int_trigger_type=1"
+        },
+        {
+          "line": 1238,
+          "text": "[    1.756367] NVT-ts spi1.1: Linked as a consumer to regulator.31"
+        },
+        {
+          "line": 1560,
+          "text": "[   15.840162] [NVT-ts] update_firmware_request 312: filename is nt33672a_truly_novatek_ts_fw.bin"
+        },
+        {
+          "line": 1564,
+          "text": "[   15.945435] [NVT-ts] nvt_update_firmware 976: Update firmware success! <93312 us>"
+        },
+        {
+          "line": 1566,
+          "text": "[   15.945800] [NVT-ts] nvt_get_fw_info 827: fw_ver = 0x05, fw_type = 0x01"
+        },
+        {
+          "line": 1567,
+          "text": "[   15.946259] [NVT-ts] nvt_read_pid 762: PID=5940"
+        }
+      ]
+    },
+    "logs/v8-stage-c-a/hardware.txt": {
+      "sha256": "d812817251c151f0e9c789dd4bfbcb99cffc77c224ea59d57c00cb255f15db5c",
+      "matches": [
+        {
+          "line": 290,
+          "text": "/sys/class/regulator/regulator.11/name=l9,"
+        },
+        {
+          "line": 292,
+          "text": "/sys/class/regulator/regulator.11/num_users=0,"
+        }
+      ]
+    }
+  },
+  "decision": "NO-GO: electrical handoff, runtime rollback and CS0 registration unresolved"
+}

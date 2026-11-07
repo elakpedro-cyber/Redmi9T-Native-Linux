@@ -1,0 +1,22 @@
+Subject: [PATCH] Clear 14 nm DSI PLL control on prepare timeout
+
+A failed clock prepare does not run the clock unprepare callback. Clear
+PLL_START on the error path and return a timeout.
+
+---
+diff --git a/drivers/gpu/drm/msm/dsi/phy/dsi_phy_14nm.c b/drivers/gpu/drm/msm/dsi/phy/dsi_phy_14nm.c
+--- a/drivers/gpu/drm/msm/dsi/phy/dsi_phy_14nm.c
++++ b/drivers/gpu/drm/msm/dsi/phy/dsi_phy_14nm.c
+@@ -553,8 +553,11 @@
+ 					 POLL_TIMEOUT_US);
+ 
+ 	if (unlikely(!locked)) {
++		/* A failed prepare is not followed by this clock's unprepare. */
++		writel(0, cmn_base + REG_DSI_14nm_PHY_CMN_PLL_CNTRL);
++		readl(cmn_base + REG_DSI_14nm_PHY_CMN_PLL_CNTRL);
+ 		DRM_DEV_ERROR(&pll_14nm->phy->pdev->dev, "DSI PLL lock failed\n");
+-		return -EINVAL;
++		return -ETIMEDOUT;
+ 	}
+ 
+ 	DBG("DSI PLL lock success");

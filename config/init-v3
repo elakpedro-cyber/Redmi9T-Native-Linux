@@ -1,0 +1,54 @@
+#!/bin/sh
+export PATH=/bin:/sbin
+mount -t devtmpfs devtmpfs /dev
+echo 'LEMON_INIT_V3_REACHED: native Linux /init executing' > /dev/kmsg
+mkdir -p /dev/pts /proc /sys /run /tmp
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+cat /sys/firmware/devicetree/base/chosen/xiaomi,bootshim-info > /dev/kmsg
+mount -t tmpfs tmpfs /run
+echo 'LEMON_INIT_V3_REACHED' > /run/init-reached
+mount -t tmpfs tmpfs /tmp
+mount -t devpts devpts /dev/pts
+echo "Redmi9T Native Linux: initramfs reached"
+uname -a
+mount -t configfs configfs /sys/kernel/config
+mkdir -p /sys/fs/pstore
+mount -t pstore pstore /sys/fs/pstore
+(
+    g=/sys/kernel/config/usb_gadget/lemon
+    mkdir -p "$g"
+    cd "$g" || exit
+    echo 0x1d6b > idVendor
+    echo 0x0104 > idProduct
+    mkdir -p strings/0x409 configs/c.1/strings/0x409 functions/acm.usb0
+    echo lemon-bringup > strings/0x409/serialnumber
+    echo Linux > strings/0x409/manufacturer
+    echo 'Redmi9T bring-up serial' > strings/0x409/product
+    echo 'ACM console' > configs/c.1/strings/0x409/configuration
+    echo 250 > configs/c.1/MaxPower
+    ln -s functions/acm.usb0 configs/c.1/acm.usb0
+    n=0
+    while [ "$n" -lt 60 ]; do
+        udc=$(ls /sys/class/udc 2>/dev/null | head -n 1)
+        [ -n "$udc" ] && break
+        sleep 1
+        n=$((n + 1))
+    done
+    if [ -z "$udc" ]; then
+        echo 'No USB device controller found' > /dev/kmsg
+        exit
+    fi
+    echo "$udc" > UDC || exit
+    echo "USB ACM bound to $udc; host enumeration unverified" > /dev/kmsg
+    dmesg > /run/boot-dmesg.txt
+    while :; do
+        /bin/getty -L -n -l /bin/sh 115200 ttyGS0 vt100
+        sleep 1
+    done
+) >/run/usb-setup.log 2>&1 &
+echo 'RAM-only system. No internal filesystems mounted. Use dmesg for logs.'
+while :; do
+    setsid /bin/sh -c 'exec /bin/sh </dev/console >/dev/console 2>&1'
+    sleep 1
+done

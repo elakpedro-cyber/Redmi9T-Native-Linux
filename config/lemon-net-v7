@@ -1,0 +1,13 @@
+#!/sbin/openrc-run
+description="Static direct USB NCM link; independent of the ACM console"
+start() {
+    ebegin 'Configuring USB IPv4 192.168.77.2/30'
+    n=0
+    while [ "$n" -lt 15 ]; do
+        /sbin/ip link show usb0 >/dev/null 2>&1 && break
+        sleep 1
+        n=$((n+1))
+    done
+    /sbin/ip address replace 192.168.77.2/30 dev usb0 && /sbin/ip link set usb0 up
+    eend $?
+}

@@ -1,0 +1,65 @@
+/sys/bus/spi/devices:
+total 0
+
+/sys/class/spi_master:
+total 0
+total 0
+drwxr-xr-x    2 root     root             0 Jan  1 01:37 cros-ec-spi
+drwxr-xr-x    2 root     root             0 Jan  1 01:37 ds3234
+drwxr-xr-x    2 root     root             0 Jan  1 01:37 mtd_dataflash
+drwxr-xr-x    2 root     root             0 Jan  1 01:37 rk8xx-spi
+drwxr-xr-x    2 root     root             0 Jan  1 01:37 spi-nor
+drwxr-xr-x    2 root     root             0 Jan  1 01:37 sst25l
+Module                  Size  Used by    Not tainted
+msm                   856064  - 
+ubwc_config            24576  - 
+mdt_loader             12288  - 
+drm_gpuvm              40960  - 
+drm_exec               12288  - 
+drm_display_helper     65536  - 
+cec                    49152  - 
+gpu_sched              40960  - 
+            CPU0       CPU1       CPU2       CPU3       CPU4       CPU5       CPU6       CPU7       
+  11:      31267      10449      15495       9787      42072      64480      35152      21406  GICv3       19 Level     arch_timer
+  14:        811          0          0          0          0          0          0          0  GICv3      226 Edge      glink-rpm
+  15:          0          0          0          0          0          0          0          0  GICv3      311 Edge      smp2p-adsp
+  16:          0          0          0          0          0          0          0          0  GICv3      295 Edge      smp2p-cdsp
+  17:          0          0          0          0          0          0          0          0  GICv3      102 Edge      smp2p-mpss
+  20:          0          0          0          0          0          0          0          0  pmic_arb  34939028 Edge      vpd-detect
+  21:          2          0          0          0          0          0          0          0  pmic_arb  34947220 Edge      cc-state-change
+  22:          0          0          0          0          0          0          0          0  pmic_arb  34955412 Edge      vconn-oc
+  23:          0          0          0          0          0          0          0          0  pmic_arb  34963604 Edge      vbus-change
+  24:          2          0          0          0          0          0          0          0  pmic_arb  34971796 Edge      attach-detach
+  25:          2          0          0          0          0          0          0          0  pmic_arb  34979988 Edge      legacy-cable-detect
+  26:          0          0          0          0          0          0          0          0  pmic_arb  34988180 Edge      try-snk-src-detect
+  27:          0          0          0          0          0          0          0          0  pmic_arb  524416 Edge      pm8941_pwrkey
+  28:          0          0          0          0          0          0          0          0  pmic_arb  532608 Edge      pm8941_resin
+  29:          0          0          0          0          0          0          0          0  GICv3      307 Level     4411000.thermal-sensor
+  30:          0          0          0          0          0          0          0          0  GICv3      222 Level     4411000.thermal-sensor
+  32:      43218      22698      25193      10803       1851       1991       2903       6151  GICv3       39 Level     arch_mem_timer
+  33:          0          0          0          0          0          0          0          0  GICv3       22 Level     arm-pmu
+  34:          0          0          0          0          0          0          0          0  GICv3      195 Level     arm-smmu global fault
+  35:          0          0          0          0          0          0          0          0  GICv3      199 Level     arm-smmu-context-fault
+  43:          0          0          0          0          0          0          0          0  GICv3      113 Level     arm-smmu global fault
+  44:          0          0          0          0          0          0          0          0  GICv3      120 Level     arm-smmu-context-fault
+  45:          0          0          0          0          0          0          0          0  GICv3      121 Level     arm-smmu-context-fault
+  46:          0          0          0          0          0          0          0          0  GICv3      122 Level     arm-smmu-context-fault
+  47:          0          0          0          0          0          0          0          0  GICv3      123 Level     arm-smmu-context-fault
+  48:          0          0          0          0          0          0          0          0  GICv3      124 Level     arm-smmu-context-fault
+  49:          0          0          0          0          0          0          0          0  GICv3      125 Level     arm-smmu-context-fault
+ 108:          0          0          0          0          0          0          0          0  GICv3      454 Level     ss_phy_irq
+ 109:          0          0          0          0          0          0          0          0  GICv3      292 Level     qusb2_phy
+ 110:     337467          0          0          0          0          0          0          0  GICv3      287 Level     dwc3
+ 111:        376          0          0          0          0          0          0          0  GICv3      388 Level     ufshcd
+ 112:          0          0          0          0          0          0          0          0  GICv3      279 Level     bam_dma
+ 113:          0          0          0          0          0          0          0          0  spmi-gpio    4 Edge      Volume Up
+ 114:        327          0          0          0          0          0          0          0  GICv3      209 Level     gpu-irq
+IPI0:       3544       3032       3238       3406       2085       1956       1866       1892  Rescheduling interrupts
+IPI1:      31779      25977      56802      21020       8829      19076      43711     178930  Function call interrupts
+IPI2:          0          0          0          0          0          0          0          0  CPU stop interrupts
+IPI3:          0          0          0          0          0          0          0          0  CPU stop NMIs
+IPI4:      11202       9745      15286       7092       5873       5914       5888       5393  Timer broadcast interrupts
+IPI5:       1212         39         39         94       1332         18         49       8973  IRQ work interrupts
+IPI6:          0          0          0          0          0          0          0          0  CPU backtrace interrupts
+IPI7:          0          0          0          0          0          0          0          0  KGDB roundup interrupts
+ Err:          0

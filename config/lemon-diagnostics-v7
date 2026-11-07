@@ -1,0 +1,21 @@
+#!/bin/sh
+for n in 1 2 3; do
+    echo "=== v7 snapshot $n ==="
+    uname -a
+    cat /etc/os-release /run/init-reached /run/openrc-reached /proc/uptime
+    cat /proc/partitions /proc/mounts
+    lsblk -o NAME,MAJ:MIN,SIZE,TYPE,RO,LOG-SEC,PHY-SEC
+    for d in /sys/block/sd*; do
+        echo "$d"
+        cat "$d/device/model" "$d/device/state" "$d/device/ioerr_cnt" "$d/stat"
+    done
+    ls -l /sys/class/scsi_host /sys/class/scsi_disk
+    readlink /sys/bus/platform/devices/4804000.ufshc/driver
+    readlink /sys/bus/platform/devices/4807000.phy/driver
+    ip address show
+    cat /proc/bus/input/devices
+    cat /proc/fb
+    dmesg
+    [ "$n" = 3 ] || sleep 5
+done
+echo LEMON_V7_DIAGNOSTICS_COMPLETE

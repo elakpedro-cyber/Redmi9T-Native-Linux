@@ -1,0 +1,24 @@
+rootfs / rootfs rw,size=1824648k,nr_inodes=456162 0 0
+devtmpfs /dev devtmpfs rw,relatime,size=1824648k,nr_inodes=456162,mode=755 0 0
+proc /proc proc rw,relatime 0 0
+sysfs /sys sysfs rw,relatime 0 0
+tmpfs /run tmpfs rw,relatime 0 0
+tmpfs /tmp tmpfs rw,relatime 0 0
+devpts /dev/pts devpts rw,relatime,mode=600,ptmxmode=000 0 0
+configfs /sys/kernel/config configfs rw,relatime 0 0
+none /sys/fs/pstore pstore rw,relatime 0 0
+Filename				Type		Size		Used		Priority
+DISK=/sys/block/sda
+       5        0       40        1        0        0        0        0        0        0        1        0        0        0        0        0        0
+DISK=/sys/block/sdb
+       5        0       40        1        0        0        0        0        0        0        1        0        0        0        0        0        0
+DISK=/sys/block/sdc
+       5        0       40        2        0        0        0        0        0        0        2        0        0        0        0        0        0
+DISK=/sys/block/sdd
+       5        0       40        1        0        0        0        0        0        0        1        0        0        0        0        0        0
+DISK=/sys/block/sde
+       7        0       56        2        0        0        0        0        0        0        2        0        0        0        0        0        0
+DISK=/sys/block/sdf
+       5        0       40        2        0        0        0        0        0        0        2        0        0        0        0        0        0
+lemon-stage-b-hold
+suspended

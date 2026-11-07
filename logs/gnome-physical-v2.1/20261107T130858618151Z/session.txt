@@ -1,0 +1,20 @@
+VT active=1 kd_mode=0 vt_mode=0 mask=0x0003
+fbcon map: tty1 -> fb0
+DRM driver=simpledrm
+resources: crtcs=1 connectors=1 encoders=1
+CRTC 37 fb=40 mode_valid=1 mode=1080x2340 clock=151632 htotal=1080 vtotal=2340 flags=0x0
+connector 39 type=0 status=1 encoder=38 modes=1
+plane 35 CRTC=37 fb=40 formats=1
+format=XR24
+DRM master acquired temporarily
+unused dumb buffer: pitch=4320 size=10108928
+WATCHDOG supervisor=1512 namespace_init=1515 limit=60
+WATCHDOG graceful deadline
+NAMESPACE_STOP component=gnome-session pid=110
+NAMESPACE_STOP component=rdp-client pid=738
+NAMESPACE_STOP component=weston pid=101
+NAMESPACE_STOP component=system-bus pid=78
+TTY1_RESTORED
+VT2_RELEASED deferred_checks=1
+SCOPE_CLEAR
+PRIVATE_SOCKETS_AND_HOME_REMOVED
